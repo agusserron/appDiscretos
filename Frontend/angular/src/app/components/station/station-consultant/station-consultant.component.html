@@ -1,0 +1,87 @@
+<html style="display:flex; height: 100%;background-color: lightgrey;">
+
+<body style="width:100%; background-color: lightgrey;height: 100%;">
+    <h1 class="animate__animated animate__backInDown">CONSULTA ESTACION</h1>
+    <div class="alertBox">
+        <alert></alert>
+    </div>
+    <form [formGroup]="stationForm" autocomplete="off">
+        <div class="formulario">
+            <div style="display:flex;margin: 1%;">
+                <mat-form-field class="subItemFieldName" appearance="fill">
+                    <mat-label>Nombre estación</mat-label>
+                    <input type="text" placeholder="Buscar" aria-label="Number" matInput
+                        formControlName="identificacion" required [matAutocomplete]="auto" (click)="clearStationInfo()">
+                    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                        <mat-option *ngFor="let option of filteredOptions | async | slice:0:5"
+                            [value]="option.identificacion" (focus)="onOptionSelected(option)">
+                            {{option.identificacion}}
+                        </mat-option>
+                    </mat-autocomplete>
+                </mat-form-field>
+                <div class="cadaItem">
+                    <mat-form-field appearance="fill" class="subItemField">
+                        <mat-label>Parámetros</mat-label>
+                        <input type="text" matInput formControlName="parametro" required>
+                    </mat-form-field>
+                </div>
+                <div class="cadaItem">
+                    <mat-form-field appearance="fill" class="subItemField">
+                        <mat-label>Departamento</mat-label>
+                        <input type="text" matInput formControlName="departamento" required>
+                    </mat-form-field>
+                </div>
+                <div class="cadaItem">
+                    <mat-form-field appearance="fill" class="subItemField">
+                        <mat-label>Propietario</mat-label>
+                        <input type="text" matInput formControlName="propietario" required>
+                    </mat-form-field>
+                </div>
+                <div class="cadaItem" style="margin-top:1%">
+                    <button mat-raised-button color="primary" (click)="onFinish()">Consultar <mat-icon>search
+                        </mat-icon></button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="bloqueTable">
+        <div style="width:95%;margin-left:1%;background-color: white; display: flex;align-items: end;">
+            <div class="cadaItem">
+                <mat-form-field>
+                    <mat-label>Buscar</mat-label>
+                    <input matInput (keyup)="applyFilter($event)" #input style="padding: 0;">
+                </mat-form-field>
+            </div>
+            <div class="cadaItem">
+                <mat-form-field class="subItemFieldDate" (click)="resetDate()">
+                    <mat-label>Rango fecha</mat-label>
+                    <div style="display:flex;">
+                        <mat-date-range-input [rangePicker]="picker">
+                            <input matStartDate [(ngModel)]="inicioFecha" style="padding: 0;" (ngModelChange)="applyFilterDate()">
+                            <input placeholder='' matEndDate [(ngModel)]="finFecha" style="padding: 0;"  (ngModelChange)="applyFilterDate()">
+                        </mat-date-range-input>
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-date-range-picker #picker></mat-date-range-picker>
+                    </div>
+                </mat-form-field>
+            </div>
+            <div class="cadaItem">
+                <button mat-button [matMenuTriggerFor]="menu2" style="margin-bottom:20%">Descargar
+                    <mat-icon>get_app</mat-icon>
+                </button>
+                <mat-menu #menu2="matMenu">
+                    <button mat-menu-item (click)="tableGenericComponent.exportTable('xls','Reporte estación')">XLS</button>
+                    <button mat-menu-item (click)="tableGenericComponent.exportTable('csv','Reporte estación')">CSV</button>
+                    <button mat-menu-item (click)="exportPDF()">PDF</button>
+                </mat-menu>
+                <app-pdf-creator #pdfGenerator [data]="dataSource" [columns]="['Fecha', 'Concentracion', 'Parametro', 'Tipo', 'Origen']">
+                </app-pdf-creator>
+            </div>
+        </div>
+        <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [displayedColumns]=displayedColumns
+            [pageSize]="8">
+        </app-table-generic>
+    </div>
+</body>
+
+</html>

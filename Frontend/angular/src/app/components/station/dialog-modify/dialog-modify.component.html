@@ -1,0 +1,80 @@
+<div class="dialog-box">
+    <h1 mat-dialog-title class="title">Modificar estación</h1>
+    <div mat-dialog-content>
+        <form [formGroup]="stationFormGroup" autocomplete="off">
+            <div class="row">
+                <div class="column">
+                    <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                        <mat-label>Nombre</mat-label>
+                        <input type="text" formControlName="identificacion" matInput required>
+                    </mat-form-field>
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Codigo</mat-label>
+                        <input type="text" formControlName="codigo" matInput required>
+                    </mat-form-field>
+                    <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                        <mat-label>Parámetro</mat-label>
+                        <mat-select formControlName="parametro" multiple>
+                            <mat-option *ngFor="let param of parametros" [value]="param.id_parametro">{{param.nombre_clave}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Departamento</mat-label>
+                        <mat-select formControlName="departamento" required>
+                            <mat-option *ngFor="let departamento of departamentos" [value]="departamento.id_departamento">
+                                {{departamento.dep_nombre}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                        <mat-label>Latitud</mat-label>
+                        <input type=text formControlName="latitud" matInput required>
+                    </mat-form-field>
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Longitud</mat-label>
+                        <input formControlName="longitud" matInput required>
+                    </mat-form-field>
+                    <mat-form-field class="subItemField" style="margin-right:2%" appearance="fill">
+                        <mat-label>Propietario</mat-label>
+                        <mat-select formControlName="propietario" required>
+                            <mat-option *ngFor="let unPropietario of propietarios" [value]="unPropietario.id_institucion">
+                                {{unPropietario.nombre}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Operador</mat-label>
+                        <mat-select formControlName="opera" required>
+                            <mat-option *ngFor="let unOperador of operadores" [value]="unOperador.id_institucion">
+                                {{unOperador.nombre}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                        <mat-label>Estado</mat-label>
+                        <mat-select formControlName="estado" required>
+                            <mat-option *ngFor="let estado of estados" [value]="estado.viewValue">
+                                {{estado.viewValue}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Periodos</mat-label>
+                        <mat-select formControlName="periodos" multiple>
+                            <mat-option *ngFor="let period of listPeriods" [value]="period.id">{{period.tipo}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
+        <button mat-button cdkFocusInitial (click)="modifyStation()">Modificar <mat-icon>edit</mat-icon></button>
+    </div>
+    <div class="alertBox-container">
+        <div class="alertBox">
+            <alert></alert>
+        </div>
+    </div>
+</div>

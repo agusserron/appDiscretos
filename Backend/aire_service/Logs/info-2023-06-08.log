@@ -1,0 +1,101 @@
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 08:54:16"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 08:54:18"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 08:54:21"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 08:54:22"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 08:54:24"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 08:54:25"}
+{"level":"info","message":"GET getPlant for número enlace: 2000034 /username: admin","timestamp":"2023-06-08 08:54:26"}
+{"level":"info","message":"POST addAireData/idPlant/29003/username: admin","timestamp":"2023-06-08 08:54:57"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 08:56:43"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 08:56:44"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 08:56:46"}
+{"level":"info","message":"GET getPlant for número enlace: 2000034 /username: admin","timestamp":"2023-06-08 08:56:47"}
+{"level":"info","message":"POST addAireData/idPlant/29003/username: admin","timestamp":"2023-06-08 08:57:05"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 08:57:06"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 08:57:57"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 08:58:57"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 08:59:00"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 08:59:02"}
+{"level":"info","message":"GET getPlant for número enlace: 2000034 /username: admin","timestamp":"2023-06-08 08:59:03"}
+{"level":"info","message":"POST addAireData/idPlant/29003/username: admin","timestamp":"2023-06-08 08:59:31"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 08:59:32"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:00:29"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:00:33"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:00:34"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:00:40"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 09:00:51"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 09:00:53"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-06-08 09:00:53"}
+{"level":"info","message":"GET getPlant for número enlace: 2000034 /username: admin","timestamp":"2023-06-08 09:00:53"}
+{"level":"info","message":"POST addAireData/idPlant/29003/username: admin","timestamp":"2023-06-08 09:01:42"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:01:44"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:01:55"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:02:30"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-06-08 09:02:40"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-06-08 09:02:40"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:02:40"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:02:45"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:02:47"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-06-08 09:02:47"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-06-08 09:02:47"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:04:10"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:04:33"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:04:36"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 09:04:38"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-06-08 09:04:38"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-06-08 09:04:38"}
+{"level":"info","message":"GET getStationReport report/station from database  /username: admin","timestamp":"2023-06-08 09:06:17"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:42:49"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:43:41"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:44:11"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:44:30"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:48:38"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:48:56"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:49:13"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:49:23"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:50:54"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:54:39"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:57:22"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:57:29"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:59:00"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:59:02"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:59:42"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:59:44"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:59:54"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 13:59:58"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:00:07"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:00:10"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:00:59"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:01:04"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:01:10"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:01:25"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:01:27"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:01:30"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:01:58"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:02:14"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:02:16"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:02:20"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:02:25"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:02:27"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:02:29"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:02:32"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:02:54"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:03:56"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:03:59"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:08:17"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:09:06"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:09:51"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:09:52"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:09:58"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:03"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:05"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:09"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:13"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:21"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:30"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:38"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:45"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:10:56"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:11:05"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:11:08"}
+{"level":"info","message":"GET getCompanys from database/username: admin","timestamp":"2023-06-08 14:11:13"}

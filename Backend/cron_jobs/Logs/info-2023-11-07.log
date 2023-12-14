@@ -1,0 +1,59 @@
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 12:56:40"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 12:57:40"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:01:00"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:01:31"}
+{"level":"info","message":"Company migrated, rut: \"080005670010\" ,name: \"JUAN TOSCANINI E HIJOS S.A.\"","timestamp":"2023-11-07 13:02:50"}
+{"level":"info","message":"Company migrated, rut: \"215543730019\" ,name: \"MARTÍN NICOLÁS ÁLVAREZ OLIVER\"","timestamp":"2023-11-07 13:02:50"}
+{"level":"info","message":"Company migrated, rut: \"218579640014\" ,name: \"VIBRANTZ COLOR SOLUTIONS URUGUAY S.A.\"","timestamp":"2023-11-07 13:02:50"}
+{"level":"info","message":"Company migrated, rut: \"070158500017\" ,name: \"SILVINA LANS CLADERA\"","timestamp":"2023-11-07 13:02:50"}
+{"level":"info","message":"Company migrated, rut: \"216978970011\" ,name: \"UNIDAD AGROALIMENTARIA METROPOLITANA\"","timestamp":"2023-11-07 13:02:51"}
+{"level":"info","message":"Company migrated, rut: \"211093670018\" ,name: \"CONCREXUR S.A.\"","timestamp":"2023-11-07 13:02:54"}
+{"level":"info","message":"Company migrated, rut: \"212310170016\" ,name: \"VILLA FAVORITA S.A.\"","timestamp":"2023-11-07 13:02:54"}
+{"level":"info","message":"Company migrated, rut: \"217272250012\" ,name: \"RULEMOS S.A.\"","timestamp":"2023-11-07 13:02:56"}
+{"level":"error","message":"Error gettingAllPlants/AxiosError: Request failed with status code 500","timestamp":"2023-11-07 13:03:40"}
+{"level":"error","message":"Error running task migration. Cannot read properties of undefined (reading '0')","stack":"TypeError: Cannot read properties of undefined (reading '0')\n    at migrationPlants (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/cron_jobs/index.js:85:30)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Task._execution (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/cron_jobs/index.js:213:26)","timestamp":"2023-11-07 13:03:55"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:05:40"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:05:51"}
+{"level":"error","message":"Error gettingAllPlants/AxiosError: Request failed with status code 500","timestamp":"2023-11-07 13:06:08"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:08:00"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:08:05"}
+{"level":"error","message":"Error gettingAllPlants/AxiosError: Request failed with status code 500","timestamp":"2023-11-07 13:16:33"}
+{"level":"error","message":"Error running task migration. Cannot read properties of undefined (reading '0')","stack":"TypeError: Cannot read properties of undefined (reading '0')\n    at migrationPlants (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/cron_jobs/index.js:85:30)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Task._execution (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/cron_jobs/index.js:213:26)","timestamp":"2023-11-07 13:17:18"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:20:40"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:20:47"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:21:16"}
+{"level":"info","message":"Plant migrated, idCompany: 25340 ,nroEnlace: \"2009053\"","timestamp":"2023-11-07 13:21:19"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:23:40"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:23:40"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:24:02"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:28:40"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:28:40"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:28:57"}
+{"level":"info","message":"Plant migrated, idCompany: 25340 ,nroEnlace: \"2009053\"","timestamp":"2023-11-07 13:29:26"}
+{"level":"info","message":"Plant migrated, idCompany: 26120 ,nroEnlace: \"9020\"","timestamp":"2023-11-07 13:29:32"}
+{"level":"info","message":"Plant migrated, idCompany: 25578 ,nroEnlace: \"2017083\"","timestamp":"2023-11-07 13:29:46"}
+{"level":"info","message":"Plant migrated, idCompany: 25680 ,nroEnlace: \"2015023\"","timestamp":"2023-11-07 13:29:53"}
+{"level":"error","message":"Error running task migration. Cannot read properties of undefined (reading 'id_departamento')","stack":"TypeError: Cannot read properties of undefined (reading 'id_departamento')\n    at PlantRepository.getDepartamentId (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/shared/datos_db_repositories/repositories/plant.js:97:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async migrationPlants (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/cron_jobs/index.js:101:30)\n    at async Task._execution (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/cron_jobs/index.js:213:26)","timestamp":"2023-11-07 13:30:13"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:31:40"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:31:41"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:31:59"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:38:40"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:38:40"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:38:55"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:39:50"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:39:50"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:40:13"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:41:50"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:41:50"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:44:50"}
+{"level":"error","message":"Error running task migration. Cannot read properties of undefined (reading 'id_departamento')","stack":"TypeError: Cannot read properties of undefined (reading 'id_departamento')\n    at PlantRepository.getDepartamentId (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/shared/datos_db_repositories/repositories/plant.js:97:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async migrationPlants (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/cron_jobs/index.js:103:30)\n    at async Task._execution (file:///C:/Users/mauro.teixeira/Documents/Ambiente/Backend/cron_jobs/index.js:215:26)","timestamp":"2023-11-07 13:45:40"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:48:50"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:48:50"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:49:01"}
+{"level":"info","message":"Start task migration for company and plants, every day at 6:00 am","timestamp":"2023-11-07 13:51:50"}
+{"level":"info","message":"GET adapter/companys totalCompanys:1706","timestamp":"2023-11-07 13:51:50"}
+{"level":"info","message":"GET adapter/plants totalPlants:1277","timestamp":"2023-11-07 13:52:25"}
+{"level":"info","message":"Plant migrated, idCompany: 25268 ,nroEnlace: \"0\"","timestamp":"2023-11-07 13:53:15"}
+{"level":"info","message":"Finish task migration companys from web service, totalCompanys: 1706 and totalMigrated: 0 ","timestamp":"2023-11-07 13:53:15"}
+{"level":"info","message":"Finish task migration plants from web service, totalPlants: 1277 and totalMigrated: 1","timestamp":"2023-11-07 13:53:15"}
+{"level":"info","message":"Migration daily for company and plants completed","timestamp":"2023-11-07 13:53:15"}

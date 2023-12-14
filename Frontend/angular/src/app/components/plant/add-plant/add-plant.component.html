@@ -1,0 +1,51 @@
+<div class="dialog-box">
+    <h1 mat-dialog-title>Agregar planta</h1>
+    <div mat-dialog-content>
+        <form [formGroup]="plantFormGroup" autocomplete="off">
+            <div class="row">
+                <div class="column">
+                    <mat-form-field appearance="fill" class="subItemField" style="margin-right:2%">
+                        <mat-label>Empresa</mat-label>
+                        <input type="text" placeholder="Seleccione Empresa" aria-label="Number" matInput
+                            formControlName="nombreEmpresa" required [matAutocomplete]="auto">
+                        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async | slice:0:5"
+                                [value]="option.nombre">
+                                {{option.nombre}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="subItemField">
+                        <mat-label>Nombre Planta</mat-label>
+                        <input type="text" matInput formControlName="nombrePlanta" required>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="subItemField" style="margin-right:2%">
+                        <mat-label>Nro. Enlace</mat-label>
+                        <input type="number" matInput formControlName="nroEnlace" name="1" aria-label="Number" required>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="subItemField">
+                        <mat-label>Dirección</mat-label>
+                        <input type="search" matInput formControlName="direccion" aria-label="Text" required>
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="subItemField">
+                        <mat-label>Departamento</mat-label>
+                        <mat-select formControlName="departamento" required>
+                            <mat-option *ngFor="let departamento of departamentos" [value]="departamento.id_departamento">
+                                {{departamento.dep_nombre}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="exit()">Cancelar <mat-icon>cancel</mat-icon></button>
+        <button mat-button cdkFocusInitial (click)="validateAndAddPlant()" >Agregar <mat-icon>add</mat-icon></button>
+    </div>
+    <div class="alertBox-container">
+        <div class="alertBox">
+            <alert></alert>
+        </div>
+    </div>
+</div>

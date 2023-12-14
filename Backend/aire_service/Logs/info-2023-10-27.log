@@ -1,0 +1,557 @@
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:38:14"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:38:16"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:38:16"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:38:16"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:38:16"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:38:18"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:38:18"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:38:18"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:38:18"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:38:25"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:38:25"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:38:25"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:38:25"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:40:02"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:40:04"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:40:04"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:40:04"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:40:04"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:40:35"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:40:39"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:40:58"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:41:02"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:41:02"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:41:02"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:41:02"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:41:14"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:41:46"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:41:48"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:41:48"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:41:48"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:41:48"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:42:27"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:42:29"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:42:29"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:42:29"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:42:29"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:43:11"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:43:17"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:43:17"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:43:17"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:43:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:43:29"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:43:34"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:43:36"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:43:36"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:43:36"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:43:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:44:10"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:44:15"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:44:22"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:44:30"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:44:34"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:44:39"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:44:40"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:44:40"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:44:40"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:44:40"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:45:01"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:47:05"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:47:05"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:47:05"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:47:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:47:12"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:47:16"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:47:16"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:47:16"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:47:16"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:51:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:54:40"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:56:06"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:56:06"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:56:06"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:56:06"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:56:35"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:56:35"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:56:35"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:56:35"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:56:54"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:56:54"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:56:54"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:56:54"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:57:16"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:57:18"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:57:18"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:57:18"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:57:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:57:47"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:57:51"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 09:57:53"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 09:57:53"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 09:57:53"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 09:57:53"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:58:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:58:40"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 09:58:52"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:00:45"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:00:58"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:01:11"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:01:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:01:19"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:01:20"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:02:02"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:02:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:02:20"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:02:37"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:02:39"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:02:58"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:02:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:03:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:03:35"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:04:28"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:05:57"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:05:58"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:05:58"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:05:58"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:05:58"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:06:06"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:06:06"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:06:06"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:06:06"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:06:30"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:06:30"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:06:30"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:06:30"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:07:13"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:07:13"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:07:13"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:07:13"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:07:20"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:07:20"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:07:20"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:07:20"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:07:54"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:08:01"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:08:01"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:08:01"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:08:01"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:08:07"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:08:07"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:08:07"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:08:07"}
+{"level":"error","message":"Error getStations/SqlError: (conn=1166311, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON_ARRAYAGG(JSON_OBJECT('id', pm.id, 'tipo', pm.tipo)) AS datosTipos,\n    F...' at line 9\nsql: \n    SELECT\n      ea.id, ea.codigo, ea.identificacion, ea.latitud, ea.longitud, ea.estado,\n      JSON_OBJECT('nombre', d.dep_nombre, 'id', d.id_departamento) AS departamento,\n      JSON_OBJECT('id', pr.id_institucion, 'nombre', pr.nombre) AS propietario,\n      JSON_OBJECT('id', o.id_institucion, 'nombre', o.nombre) AS operador,\n      GROUP_CONCAT(DISTINCT p.nombre_clave SEPARATOR ',') AS parametros,\n      JSON_ARRAYAGG(JSON_OBJECT('id', p.id_parametro, 'nombre', p.nombre_clave)) AS datosParametros,\n      GROUP_CONCAT(DISTINCT pm.tipo SEPARATOR ',') AS tipos\n      JSON_ARRAYAGG(JSON_OBJECT('id', pm.id, 'tipo', pm.tipo)) AS datosTipos,\n    FROM estacion_aire ea\n      LEFT JOIN estacion_aire_parametro eapm ON ea.id = eapm.idEstacion\n      LEFT JOIN estacion_aire_periodo eap ON ea.id = eap.idEstacion\n      LEFT JOIN periodos_muestra pm ON eap.idPeriodo = pm.id\n      LEFT JOIN parametro p ON eapm.idParametro = p.id_parametro\n      LEFT JOIN departamento d ON ea.id_departamento = d.id_departamento\n      LEFT JOIN institucion pr ON ea.id_propietario = pr.id_institucion\n      LEFT JOIN institucion o ON ea.id_operador = o.id_institucion\n    GROUP BY ea.id;\n     - parameters:[]/username: admin","timestamp":"2023-10-27 10:13:12"}
+{"level":"error","message":"Error getStations/SqlError: (conn=1166311, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JSON_ARRAYAGG(JSON_OBJECT('id', pm.id, 'tipo', pm.tipo)) AS datosTipos,\n    F...' at line 9\nsql: \n    SELECT\n      ea.id, ea.codigo, ea.identificacion, ea.latitud, ea.longitud, ea.estado,\n      JSON_OBJECT('nombre', d.dep_nombre, 'id', d.id_departamento) AS departamento,\n      JSON_OBJECT('id', pr.id_institucion, 'nombre', pr.nombre) AS propietario,\n      JSON_OBJECT('id', o.id_institucion, 'nombre', o.nombre) AS operador,\n      GROUP_CONCAT(DISTINCT p.nombre_clave SEPARATOR ',') AS parametros,\n      JSON_ARRAYAGG(JSON_OBJECT('id', p.id_parametro, 'nombre', p.nombre_clave)) AS datosParametros,\n      GROUP_CONCAT(DISTINCT pm.tipo SEPARATOR ',') AS tipos\n      JSON_ARRAYAGG(JSON_OBJECT('id', pm.id, 'tipo', pm.tipo)) AS datosTipos,\n    FROM estacion_aire ea\n      LEFT JOIN estacion_aire_parametro eapm ON ea.id = eapm.idEstacion\n      LEFT JOIN estacion_aire_periodo eap ON ea.id = eap.idEstacion\n      LEFT JOIN periodos_muestra pm ON eap.idPeriodo = pm.id\n      LEFT JOIN parametro p ON eapm.idParametro = p.id_parametro\n      LEFT JOIN departamento d ON ea.id_departamento = d.id_departamento\n      LEFT JOIN institucion pr ON ea.id_propietario = pr.id_institucion\n      LEFT JOIN institucion o ON ea.id_operador = o.id_institucion\n    GROUP BY ea.id;\n     - parameters:[]/username: admin","timestamp":"2023-10-27 10:14:07"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:21:21"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:21:24"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:21:24"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:21:24"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:21:24"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:23:41"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:25:11"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:25:11"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:25:11"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:25:11"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:25:34"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:25:34"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:25:34"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:25:34"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:25:47"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:25:48"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:25:48"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:25:48"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:25:48"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:26:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:26:08"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:26:09"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:26:09"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:26:09"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:26:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:26:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:26:37"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:27:27"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:27:31"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:27:31"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:27:31"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:27:31"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:27:33"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:27:33"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:27:33"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:27:34"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:27:36"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:27:36"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:27:36"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:27:36"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:27:38"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:27:38"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:27:38"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:27:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:28:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:28:08"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:28:15"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:28:17"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:28:17"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:28:17"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:28:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:28:27"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:28:34"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:28:35"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:29:27"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:29:46"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:29:55"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:32:42"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:32:42"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:32:42"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:32:42"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:34:12"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:34:15"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:34:15"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:34:15"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:34:16"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:34:56"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:35:01"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:35:01"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:35:01"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:35:01"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:35:37"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:35:43"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:35:43"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:35:43"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:35:43"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:37:01"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:37:04"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:37:04"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:37:04"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:37:04"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:41:21"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:41:26"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:41:26"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:41:26"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:41:26"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:41:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:42:04"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:42:14"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:42:18"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:43:06"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:43:06"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:43:06"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:43:06"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:44:26"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:44:33"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:44:33"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:44:33"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:44:33"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:47:09"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:47:13"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:47:13"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:47:13"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:47:13"}
+{"level":"info","message":"PUT updateParameterStation/codigo/12345","timestamp":"2023-10-27 10:47:38"}
+{"level":"info","message":"PUT updatePeriodStation/codigo/12345","timestamp":"2023-10-27 10:47:38"}
+{"level":"info","message":"PUT updateStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 10:47:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:47:39"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:47:47"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:47:47"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:47:47"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:47:47"}
+{"level":"info","message":"PUT updateParameterStation/codigo/12345","timestamp":"2023-10-27 10:49:26"}
+{"level":"info","message":"PUT updatePeriodStation/codigo/12345","timestamp":"2023-10-27 10:49:26"}
+{"level":"info","message":"PUT updateStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 10:49:26"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:49:27"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:49:36"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:49:36"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:49:36"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:49:37"}
+{"level":"info","message":"PUT updateParameterStation/codigo/12345","timestamp":"2023-10-27 10:49:54"}
+{"level":"info","message":"PUT updatePeriodStation/codigo/12345","timestamp":"2023-10-27 10:49:54"}
+{"level":"info","message":"PUT updateStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 10:49:54"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:49:55"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:50:00"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:50:00"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:50:00"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:50:00"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 10:50:17"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 10:50:20"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:50:22"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:50:22"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:50:22"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:50:22"}
+{"level":"info","message":"PUT updateParameterStation/codigo/12345","timestamp":"2023-10-27 10:50:34"}
+{"level":"info","message":"PUT updatePeriodStation/codigo/12345","timestamp":"2023-10-27 10:50:34"}
+{"level":"info","message":"PUT updateStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 10:50:34"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:50:35"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:50:46"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:50:46"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:50:46"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:50:46"}
+{"level":"info","message":"PUT updateParameterStation/codigo/12345","timestamp":"2023-10-27 10:50:59"}
+{"level":"info","message":"PUT updatePeriodStation/codigo/12345","timestamp":"2023-10-27 10:50:59"}
+{"level":"info","message":"PUT updateStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 10:50:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:51:00"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 10:51:08"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 10:51:08"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 10:51:08"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 10:51:08"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:52:26"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:52:56"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:53:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:53:44"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:54:49"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:54:52"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:54:58"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:54:59"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 10:55:13"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 10:55:15"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 10:55:17"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 10:55:19"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 10:55:23"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 10:55:26"}
+{"level":"info","message":"DELETE deleteStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 10:55:35"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 10:55:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:16:47"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:16:53"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:16:54"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:17:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:17:11"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:17:19"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:19:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:20:01"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:20:08"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:20:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:20:10"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:20:42"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:21:47"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:22:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:22:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:22:39"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:22:44"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:22:46"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:22:54"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:35"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:36"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:37"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:37"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:37"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:37"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:37"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:37"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:38"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:38"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:38"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:38"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:39"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:39"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:40"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:24:42"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:25:08"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:25:32"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:25:47"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:26:10"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:26:13"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:26:13"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:26:13"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CACC01/username: admin","timestamp":"2023-10-27 11:26:14"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2023-10-27 11:26:20"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-LVMI01/username: admin","timestamp":"2023-10-27 11:26:23"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-LVMI01/username: admin","timestamp":"2023-10-27 11:26:25"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-LVMI01/username: admin","timestamp":"2023-10-27 11:26:26"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-LVMI01/username: admin","timestamp":"2023-10-27 11:26:26"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2023-10-27 11:26:28"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-FSTR01/username: admin","timestamp":"2023-10-27 11:26:34"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:26:39"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 11:26:41"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 11:26:41"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 11:26:41"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 11:26:42"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:27:01"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:27:13"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:36:33"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:36:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:36:41"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:36:42"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:52:49"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:52:52"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:52:53"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:57:22"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:57:35"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:59:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 11:59:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:00:07"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:00:24"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:00:26"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:00:34"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:00:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:00:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:00:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:01:10"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:01:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:01:14"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:01:15"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:01:34"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:01:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:01:39"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:02:21"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:02:23"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:02:41"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:02:50"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:02:51"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:03:04"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:03:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:03:15"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:03:30"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:03:32"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:03:45"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:04:06"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:04:11"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 12:04:15"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:13:43"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:13:50"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:14:11"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:14:13"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:14:13"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:14:13"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:14:13"}
+{"level":"info","message":"POST addPeriodoStation/codigo/12345","timestamp":"2023-10-27 13:14:51"}
+{"level":"info","message":"POST addParameterStation/codigo/12345","timestamp":"2023-10-27 13:14:51"}
+{"level":"info","message":"POST addStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 13:14:51"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:14:52"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:15:01"}
+{"level":"info","message":"POST addStationReport/codigo/12345/username: admin","timestamp":"2023-10-27 13:31:58"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:32:02"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 13:32:09"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 13:32:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:32:11"}
+{"level":"info","message":"GET getReportsStation/codigo/12345/username: admin","timestamp":"2023-10-27 13:32:16"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:33:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:33:05"}
+{"level":"info","message":"GET getReportsStation/codigo/12345/username: admin","timestamp":"2023-10-27 13:33:10"}
+{"level":"info","message":"GET getReportsStation/codigo/12345/username: admin","timestamp":"2023-10-27 13:33:11"}
+{"level":"info","message":"GET getReportsStation/codigo/12345/username: admin","timestamp":"2023-10-27 13:33:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:33:13"}
+{"level":"info","message":"DELETE deleteStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 13:33:19"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:33:20"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:35:56"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:35:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:36:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:36:02"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:36:14"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:36:14"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2023-10-27 13:36:14"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:15"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:17"}
+{"level":"info","message":"GET getPlant for número enlace: 2000034 /username: admin","timestamp":"2023-10-27 13:36:18"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:24"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:27"}
+{"level":"info","message":"GET getPlant for número enlace: 2000034 /username: admin","timestamp":"2023-10-27 13:36:27"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:29"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:30"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:32"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:33"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:36:35"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:38"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:36:39"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:42"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:36:43"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:45"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:36:46"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:36:49"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:49"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:36:51"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:36:55"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-27 13:36:55"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:36:58"}
+{"level":"info","message":"GET getPlant for número enlace: 2006026 /username: admin","timestamp":"2023-10-27 13:39:25"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:39:29"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-27 13:39:37"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:40:05"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:40:07"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-27 13:40:08"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:40:08"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-27 13:40:08"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-27 13:40:12"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:40:12"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:40:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:40:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:40:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:40:20"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:40:21"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:40:23"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2023-10-27 13:40:23"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:40:23"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:40:25"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:40:26"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-27 13:40:26"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-27 13:40:26"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:40:47"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:40:50"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-27 13:40:50"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2023-10-27 13:40:50"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:40:50"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:40:57"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:41:08"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:41:14"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2023-10-27 13:41:19"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:41:58"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:42:00"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:42:00"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:42:00"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:42:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:42:43"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:42:48"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:42:52"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:42:56"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:42:56"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:42:56"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:42:56"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:43:00"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:43:00"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:43:00"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:43:00"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:43:09"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:43:09"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:43:09"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:43:09"}
+{"level":"info","message":"POST addPeriodoStation/codigo/12345","timestamp":"2023-10-27 13:43:27"}
+{"level":"info","message":"POST addParameterStation/codigo/12345","timestamp":"2023-10-27 13:43:27"}
+{"level":"info","message":"POST addStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 13:43:27"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:43:28"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:43:33"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:43:33"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:43:33"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:43:33"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:44:07"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:44:12"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:44:12"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:44:12"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:44:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:46:05"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:46:08"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:46:08"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:46:08"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:46:08"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:47:14"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:51:56"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:52:28"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:52:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:52:46"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:52:49"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:52:49"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:52:49"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:52:49"}
+{"level":"info","message":"PUT updateParameterStation/codigo/12345","timestamp":"2023-10-27 13:54:12"}
+{"level":"info","message":"PUT updatePeriodStation/codigo/12345","timestamp":"2023-10-27 13:54:12"}
+{"level":"info","message":"PUT updateStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 13:54:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:54:13"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 13:56:24"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 13:56:24"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 13:56:24"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 13:56:24"}
+{"level":"info","message":"PUT updateParameterStation/codigo/12345","timestamp":"2023-10-27 13:57:02"}
+{"level":"info","message":"PUT updatePeriodStation/codigo/12345","timestamp":"2023-10-27 13:57:02"}
+{"level":"info","message":"PUT updateStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 13:57:02"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:57:04"}
+{"level":"info","message":"DELETE deleteStationAire/codigo/12345/username: admin","timestamp":"2023-10-27 13:57:22"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-27 13:57:23"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2023-10-27 14:03:56"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2023-10-27 14:03:56"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2023-10-27 14:03:56"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2023-10-27 14:03:56"}

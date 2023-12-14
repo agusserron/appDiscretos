@@ -1,0 +1,3 @@
+{"level":"error","message":"Error getCompanies/SqlError: Cannot execute new commands: connection closed\nsql: select e.id, e.nombre, e.rut, e.emp_direccion from empresa e - parameters:[]/username: admin","timestamp":"2023-11-01 09:52:14"}
+{"level":"error","message":"Error getUnits/SqlError: Cannot execute new commands: connection closed\nsql: select * from vista_unidades_aire vua - parameters:[]/username: admin","timestamp":"2023-11-01 09:52:14"}
+{"level":"error","message":"Error getParameters/SqlError: Cannot execute new commands: connection closed\nsql: select * from vista_parametros_aire vpa - parameters:[]/username: admin","timestamp":"2023-11-01 09:52:14"}

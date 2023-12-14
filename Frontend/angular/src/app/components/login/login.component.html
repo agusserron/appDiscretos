@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Login</title>
+</head>
+<body class="text-center">
+  <div class="container">
+    <img style="display:flex" src="../../../angular-testing/assets/img/logo.png" alt="" width="" height="">
+  </div>
+  <main class="form-signin w-100 m-auto">
+    <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
+    <form [formGroup]="aFormGroup">
+      <div class="form-floating">
+        <input type="text" class="form-control" formControlName="username" id="floatingInput" placeholder="Usuario"
+          name="username">
+        <label for="floatingInput">Usuario</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" formControlName="password" id="floatingPassword" placeholder="Password"
+          name="password"  autocomplete="on">
+        <label for="floatingPassword">Contraseña</label>
+      </div>
+      <div class="checkbox mb-3">
+        <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="recaptcha">
+        </ngx-recaptcha2>
+      </div>
+    </form>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="onLogin()"
+      style="margin-bottom: 5%;">Ingresar</button>
+    <div class="w-100" style="height:50px">
+      <alert></alert>
+    </div>
+    <p class="mt-5 mb-3 text-muted">&copy; Información Ambiental - 2022</p>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+.comboCtrl {
+    margin-left: 0.5%;
+    display: flex;
+    width: 10%;
+}
+
+.title {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    font-family: Poppins, sans-serif;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formulario {
+    border: solid 0px;
+    border-radius: 30px;
+    margin: 1%;
+    background-color: white;
+    text-align: left;
+    height: 70%;
+}
+
+.animate__animated.animate__backInDown {
+    text-align: center;
+    margin-top: 1%
+}
+
+.mat-column-nombre {
+    width: 40%;
+}
+
+.mat-column-rut {
+    width: 20%;
+}
+
+.mat-column-direccion {
+    width: 50%;
+}
+
+.mat-elevation-z8{
+    width: 95%;
+    margin-top:0.5%;
+    margin-left:1%;
+}

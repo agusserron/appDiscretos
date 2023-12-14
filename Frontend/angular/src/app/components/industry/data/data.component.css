@@ -1,0 +1,204 @@
+table {
+    width: 100%;
+}
+
+
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.title {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    font-family: Poppins, sans-serif;
+}
+
+.bloqueTable {
+    margin: 1%;
+}
+
+.colSelect {
+    width: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    background-color: transparent;
+}
+
+.colBuscar {
+    margin-top: 1%;
+    width: 15%;
+}
+
+.bloqueForm {
+    margin-left: 1%;
+    border: solid 0px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.animate__animated.animate__backInDown {
+    text-align: center;
+    margin-top: 1%
+}
+
+.example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.example-margin {
+    margin: 10px;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tablaContainer {
+    overflow-x: auto;
+    max-height: 500px;
+}
+
+.mat-header-cell,
+.mat-cell {
+    position: sticky;
+    top: 0;
+}
+
+.mat-header-cell {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.mat-header-row {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2; 
+}
+
+.mat-column-latitud {
+    width: 6% !important;
+}
+
+.mat-column-longitud {
+    width: 6% !important;
+}
+
+.mat-column-fechaInicio {
+    width: 7% !important;
+}
+
+.mat-column-fechaFin {
+    width: 7% !important;
+}
+
+.mat-column-parametro {
+    width: 5% !important;
+}
+
+.mat-column-unidad {
+    width: 5% !important;
+}
+
+.mat-column-metodologia {
+    width: 15% !important;
+}
+
+.mat-column-valor {
+    width: 4% !important;
+}
+
+.mat-column-valorMaximo {
+    width: 4% !important;
+}
+
+
+.mat-column-frecuencia {
+    width: 8% !important;
+}
+
+.mat-column-equipo {
+    width: 14% !important;
+}
+
+.mat-column-tipoMonitoreo {
+    width: 5% !important;
+}
+
+.mat-column-nroEnlace {
+    width: 7% !important;
+}
+
+.mat-column-nombrePlanta {
+    width: 9% !important;
+}
+
+.mat-column-observaciones {
+    width: 8% !important;
+}
+
+.mat-column-nombrePunto {
+    width: 6% !important;
+}
+
+.tablaContainer {
+    height: 500px;
+}
+
+tr.fila:hover {
+    background-color: lightgrey;
+}
+
+.mat-datepicker-toggle {
+    position: absolute;
+    top: calc(5% - 12px);
+    right: 10px;
+}
+
+.subItemFieldDate{
+    width: 250px;
+}
+
+@media (max-width: 1378px) {
+    .cadaCol {
+        font-size: 11px;
+    }
+
+    th {
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+
+    .mat-column-nombrePunto {
+        width: 6% !important;
+    }
+
+    .tablaContainer {
+        height: 430px;
+        overflow: auto;
+    }
+
+    .mat-column-fechaInicio {
+        width: 10% !important;
+    }
+    
+    .mat-column-fechaFin {
+        width: 8% !important;
+    }
+
+}

@@ -1,0 +1,80 @@
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 08:20:41"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 09:38:59"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 09:39:15"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 09:56:36"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 09:56:40"}
+{"level":"info","message":"GET getAireReport report/idPlant/31382 from database  /username: admin","timestamp":"2023-10-23 10:00:48"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 10:01:34"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:02:15"}
+{"level":"info","message":"GET getAireReportByCity report/city/Can from database  /username: admin","timestamp":"2023-10-23 10:04:08"}
+{"level":"info","message":"GET getAireReportByCity report/city/Canelones from database  /username: admin","timestamp":"2023-10-23 10:04:12"}
+{"level":"info","message":"GET getAireReportByCity report/city/Mercedes from database  /username: admin","timestamp":"2023-10-23 10:04:23"}
+{"level":"info","message":"GET getAireReportByCity report/city/Rio negro from database  /username: admin","timestamp":"2023-10-23 10:04:29"}
+{"level":"info","message":"GET getAireReportByCity report/city/Malvin from database  /username: admin","timestamp":"2023-10-23 10:04:34"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:04:38"}
+{"level":"info","message":"POST addAireData/idPlant/31490/username: admin","timestamp":"2023-10-23 10:13:25"}
+{"level":"info","message":"POST alreadyExist addAireData/idPlant/31490/username: admin","timestamp":"2023-10-23 10:15:29"}
+{"level":"info","message":"POST addAireData/idPlant/31490/username: admin","timestamp":"2023-10-23 10:26:02"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 10:32:29"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 10:33:03"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 10:33:18"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 10:34:51"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 10:39:27"}
+{"level":"info","message":"GET getAireReport report/idPlant/31490 from database  /username: admin","timestamp":"2023-10-23 10:40:00"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:53:06"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:54:01"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:54:38"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:54:39"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:54:40"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:54:40"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:54:41"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 10:54:42"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 11:57:11"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 11:57:12"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-23 11:57:32"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 11:57:32"}
+{"level":"error","message":"Error getPlants/SqlError: (conn=1114689, no: 1054, SQLState: 42S22) Unknown column 'p.departamento' in 'field list'\nsql: select p.id, p.nombre, p.nroEnlace, p.departamento, p.direccion, c.nombre as nombreEmpresa from planta p, empresa c where p.idEmpresa = c.id - parameters:[]/username: admin","timestamp":"2023-10-23 11:57:32"}
+{"level":"error","message":"Error getPlants/SqlError: (conn=1114689, no: 1054, SQLState: 42S22) Unknown column 'p.departamento' in 'field list'\nsql: select p.id, p.nombre, p.nroEnlace, p.departamento, p.direccion, c.nombre as nombreEmpresa from planta p, empresa c where p.idEmpresa = c.id - parameters:[]/username: admin","timestamp":"2023-10-23 11:57:55"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 11:57:55"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-23 11:57:55"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:12:19"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:12:21"}
+{"level":"info","message":"GET getAireReportByCity report/city/Montevideo from database  /username: admin","timestamp":"2023-10-23 12:12:41"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-23 12:12:58"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-23 12:13:01"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-23 12:13:01"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2023-10-23 12:13:02"}
+{"level":"info","message":"GET getAireReport report/idPlant/31382 from database  /username: admin","timestamp":"2023-10-23 12:13:03"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-23 12:13:26"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:13:36"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:14:30"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:14:35"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:14:58"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-23 12:14:59"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:15:01"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2023-10-23 12:15:06"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-23 12:15:15"}
+{"level":"error","message":"Error getPlants/SqlError: (conn=1114689, no: 1054, SQLState: 42S22) Unknown column 'p.departamento' in 'field list'\nsql: select p.id, p.nombre, p.nroEnlace, p.departamento, p.direccion, c.nombre as nombreEmpresa from planta p, empresa c where p.idEmpresa = c.id - parameters:[]/username: admin","timestamp":"2023-10-23 12:15:15"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:15:15"}
+{"level":"error","message":"Error getPlants/SqlError: (conn=1115469, no: 1054, SQLState: 42S22) Unknown column 'p.dep_nombre' in 'field list'\nsql: select p.id, p.nombre, p.nroEnlace, p.dep_nombre as departamento, p.direccion, c.nombre as nombreEmpresa from planta p, empresa c, departamento d \n        where p.idEmpresa = c.id and p.idDepartamento = d.id_departamento - parameters:[]/username: admin","timestamp":"2023-10-23 12:17:44"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-23 12:17:44"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:17:44"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-23 12:18:03"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 12:18:03"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-23 12:18:03"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 13:45:14"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-23 13:45:18"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 13:45:18"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-23 13:45:18"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 13:45:24"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-23 13:45:41"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-23 13:45:45"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-23 13:45:52"}
+{"level":"info","message":"POST addCompany/rutEmpresa/123 to database /username: admin","timestamp":"2023-10-23 13:45:52"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 13:45:54"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 13:46:31"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 13:46:38"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-23 13:46:38"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-23 13:46:38"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-23 13:46:40"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-23 13:46:40"}

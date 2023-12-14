@@ -1,0 +1,32 @@
+<div class="dialog-box">
+    <h1 mat-dialog-title>Agregar empresa</h1>
+    <div mat-dialog-content>
+        <form [formGroup]="companyFormGroup" autocomplete="off">
+            <div class="row">
+                <div class="column">
+                    <mat-form-field appearance="fill" class="subItemField" style="margin-right:2%">
+                        <mat-label>Nombre</mat-label>
+                        <input type="text" matInput formControlName="nombre" >
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="subItemField">
+                        <mat-label>RUT</mat-label>
+                        <input type="number" matInput name="1" formControlName="rut" aria-label="Number">
+                    </mat-form-field>
+                    <mat-form-field appearance="fill" class="subItemField">
+                        <mat-label>Dirección</mat-label>
+                        <input type="text" matInput formControlName="direccion">
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="exit()">Cancelar <mat-icon>cancel</mat-icon></button>
+        <button mat-button cdkFocusInitial (click)="validateAndAddCompany()">Agregar <mat-icon>add</mat-icon></button>
+    </div>
+    <div class="alertBox-container">
+        <div class="alertBox">
+            <alert></alert>
+        </div>
+    </div>
+</div>

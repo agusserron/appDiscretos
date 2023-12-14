@@ -1,0 +1,53 @@
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2023-10-18 08:49:18"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-18 08:55:36"}
+{"level":"error","message":"Error existRUTCompany/TypeError: Do not know how to serialize a BigInt/username: admin","timestamp":"2023-10-18 08:55:36"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-18 09:02:37"}
+{"level":"error","message":"Error existRUTCompany/TypeError: Do not know how to serialize a BigInt/username: admin","timestamp":"2023-10-18 09:03:01"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-18 09:03:10"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-18 09:31:57"}
+{"level":"error","message":"Error existRUTCompany/TypeError: Do not know how to serialize a BigInt/username: admin","timestamp":"2023-10-18 09:32:05"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-18 09:34:26"}
+{"level":"error","message":"Error existRUTCompany/TypeError: Do not know how to serialize a BigInt/username: admin","timestamp":"2023-10-18 09:35:38"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-18 09:38:49"}
+{"level":"error","message":"Error existRUTCompany/TypeError: Do not know how to serialize a BigInt/username: admin","timestamp":"2023-10-18 09:38:53"}
+{"level":"info","message":"GET existRUTCompany from database /username: admin","timestamp":"2023-10-18 09:39:38"}
+{"level":"info","message":"POST rutAlreadyExist addCompany/rutEmpresa/216222380011 to database /username: admin","timestamp":"2023-10-18 09:52:00"}
+{"level":"info","message":"POST addCompany/rutEmpresa/123 to database /username: admin","timestamp":"2023-10-18 09:52:59"}
+{"level":"info","message":"POST rutAlreadyExist addCompany/rutEmpresa/123 to database /username: admin","timestamp":"2023-10-18 09:58:05"}
+{"level":"info","message":"POST rutAlreadyExist addCompany/rutEmpresa/123 to database /username: admin","timestamp":"2023-10-18 09:58:33"}
+{"level":"info","message":"POST addCompany/rutEmpresa/123 to database /username: admin","timestamp":"2023-10-18 09:59:12"}
+{"level":"info","message":"POST addCompany/rutEmpresa/123 to database /username: admin","timestamp":"2023-10-18 10:00:14"}
+{"level":"error","message":"Error getPlants/SqlError: (conn=1049181, no: 1146, SQLState: 42S02) Table 'datos_discretos.company' doesn't exist\nsql: select p.nombre, p.nroEnlace, p.departamento, p.direccion, c.nombre as nombreEmpresa from planta p, company c where p.idEmpresa = c.id - parameters:[]/username: admin","timestamp":"2023-10-18 10:22:47"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 10:23:45"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 10:26:16"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 10:27:00"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 10:27:11"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 10:27:13"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 10:27:14"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2023-10-18 10:31:23"}
+{"level":"info","message":"GET getPlant for número enlace: 1 /username: admin","timestamp":"2023-10-18 10:35:41"}
+{"level":"info","message":"GET getPlant for número enlace: 12 /username: admin","timestamp":"2023-10-18 10:35:50"}
+{"level":"info","message":"GET getPlant for número enlace: 1 /username: admin","timestamp":"2023-10-18 10:36:04"}
+{"level":"info","message":"GET getPlant for número enlace: 8427 /username: admin","timestamp":"2023-10-18 10:36:28"}
+{"level":"error","message":"Error getPlants/TypeError: Assignment to constant variable./username: admin","timestamp":"2023-10-18 11:22:21"}
+{"level":"error","message":"Error getPlants/TypeError: Assignment to constant variable./username: admin","timestamp":"2023-10-18 11:24:11"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 11:28:03"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 11:32:10"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 11:35:38"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 11:44:39"}
+{"level":"error","message":"Error getPlants/TypeError: Cannot read properties of undefined (reading 'departamento')/username: admin","timestamp":"2023-10-18 11:47:35"}
+{"level":"error","message":"Error getPlants/TypeError: Cannot read properties of undefined (reading 'departamento')/username: admin","timestamp":"2023-10-18 11:50:15"}
+{"level":"error","message":"Error getPlants/TypeError: Cannot read properties of undefined (reading 'departamento')/username: admin","timestamp":"2023-10-18 11:50:49"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 11:53:37"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 11:55:26"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 11:56:02"}
+{"level":"info","message":"POST addPlant/nroEnlace/123 to database  /username: admin","timestamp":"2023-10-18 12:53:05"}
+{"level":"info","message":"POST addPlant/nroEnlace/123 to database  /username: admin","timestamp":"2023-10-18 13:01:09"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-18 13:08:58"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2023-10-18 13:11:04"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 13:26:11"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 13:26:14"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 13:26:16"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 13:26:38"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 13:26:40"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2023-10-18 13:26:49"}

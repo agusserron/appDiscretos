@@ -1,0 +1,60 @@
+.formulario {
+    border: solid 0px;
+    border-radius: 30px;
+    margin: 1%;
+    background-color: white;
+    text-align: left;
+    height: 100px;
+    width: 95%;
+    display: flex;
+}
+
+.animate__animated.animate__backInDown {
+    text-align: center;
+    margin-top: 1%
+}
+
+.column {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.alertBox {
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 1%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.cadaItem {
+    margin-left: 1%;
+}
+
+.bloqueTable {
+    margin: 1%;
+}
+
+.colBuscar{
+    margin-left:1%;
+}
+
+.subItemField{
+    width: 160px;
+}
+
+.subItemFieldName{
+    width: 200px;
+}
+
+.subItemFieldDate{
+    width: 250px;
+}
+
+.mat-datepicker-toggle {
+    position: absolute;
+    top: calc(5% - 12px);
+    right: 10px;
+}

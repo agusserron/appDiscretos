@@ -1,0 +1,4 @@
+{"level":"info","message":"POST login/username: admin","timestamp":"2023-11-06 10:29:33"}
+{"level":"info","message":"GET getDataUser/username: admin","timestamp":"2023-11-06 10:29:34"}
+{"level":"info","message":"POST login/username: admin","timestamp":"2023-11-06 13:19:26"}
+{"level":"info","message":"GET getDataUser/username: admin","timestamp":"2023-11-06 13:19:26"}

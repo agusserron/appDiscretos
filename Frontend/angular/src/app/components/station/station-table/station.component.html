@@ -1,0 +1,26 @@
+<html style="display:flex;">
+
+<body style="width:100%; background-color: lightgrey;display: flex; flex-direction: column;">
+    <h1 class="animate__animated animate__backInDown">ESTACIONES</h1>
+    <div style="margin-left:1%">
+        <div style="display:flex;height:60px;width:100%;">
+            <button style="height: 80%;" mat-raised-button (click)="addStation()" color="primary">Agregar <mat-icon>add
+                </mat-icon></button>
+        </div>
+        <div style="margin-top:1%;">
+            <mat-form-field>
+                <mat-label>Buscar</mat-label>
+                <div style="display: flex;">
+                    <input matInput (keyup)="applyFilter($event)" #input>
+                    <mat-icon>search
+                    </mat-icon>
+                </div>
+            </mat-form-field>
+        </div>
+    </div>
+    <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [customCellLogic]="customCellLogicFunction"
+        [displayedColumns]="displayedColumns"
+        [dialogComponents]="[DialogDeleteComponent,DialogModifyComponent]" [pageSize]="8" (dialogClosed)="manageEvent($event)"></app-table-generic>
+</body>
+
+</html>

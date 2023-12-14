@@ -1,0 +1,186 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div style="width:100%;background-color: lightgrey;">
+    <h1 class="animate__animated animate__backInDown">CONSULTA CALIDAD AIRE</h1>
+    <button mat-raised-button [matMenuTriggerFor]="menu" style="margin-left:2%;margin-bottom:1%">Filtrar
+        <mat-icon>filter_list</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="filterEmpresa()">Empresa</button>
+        <button mat-menu-item (click)="filterDepartamento()">Departamento</button>
+    </mat-menu>
+    <div style="display:flex;">
+        <form [formGroup]="dataFormGroup" autocomplete="off" class="bloqueForm">
+            <mat-form-field *ngIf="showEmpresa" appearance="fill" style="margin-left:1%;margin-top: 4%;width:18%;">
+                <mat-label>Empresa</mat-label>
+                <input type="text" placeholder="Seleccione Empresa" aria-label="Number" matInput
+                    formControlName="nombreEmpresa" required [matAutocomplete]="auto" (focus)="setNrosEnlaces()">
+                <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of filteredOptions | async | slice:0:5" [value]="option.nombre">
+                        {{option.nombre}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+            <mat-form-field *ngIf="showEmpresa" appearance="fill" style="margin-left:1%;margin-top: 4%;width:16%;">
+                <mat-label>Nro. Enlace</mat-label>
+                <input type="number" placeholder="Buscar" aria-label="Number" matInput formControlName="nroEnlace"
+                    required [matAutocomplete]="auto2" (click)="setNrosEnlaces()" (focus)="showPlantInfo()">
+                <mat-autocomplete autoActiveFirstOption #auto2="matAutocomplete">
+                    <mat-option *ngFor="let options of filteredOptionsNroEnlace | async | slice:0:5" [value]="options">
+                        {{options}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+            <mat-form-field *ngIf="showEmpresa" appearance="fill" style="margin-left:1%;margin-top: 4%;width:18%;">
+                <mat-label>Nombre planta</mat-label>
+                <input matInput formControlName="nombrePlanta">
+            </mat-form-field>
+            <mat-form-field *ngIf="showEmpresa" appearance="fill" style="margin-left:1%;margin-top: 4%;width:16%;">
+                <mat-label>Dirección planta</mat-label>
+                <input matInput formControlName="direccionPlanta">
+            </mat-form-field>
+            <mat-form-field *ngIf="showEmpresa" appearance="fill" style="margin-left:1%;margin-top: 4%;width:16%;">
+                <mat-label>Departamento</mat-label>
+                <input matInput formControlName="departamentoPlanta">
+            </mat-form-field>
+            <mat-form-field *ngIf="showDepartamento" appearance="fill" style="margin-left:1%;margin-top: 4%;width:20%;">
+                <mat-label>Departamento</mat-label>
+                <mat-select formControlName="departamentoFilter" required>
+                    <mat-option *ngFor="let departamento of departamentos" [value]="departamento.viewValue">
+                        {{departamento.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="loadTable()" class="comboCtrl"
+                style="height:30%;margin-top:5%;margin-left:0.5%;width: 10%;font-size: 12px;">Buscar <mat-icon>search
+                </mat-icon></button>
+        </form>
+        <div style="margin-left:1%;margin-right: 1%; width: 20%;display: flex;font-size: 14px;">
+            <alert></alert>
+        </div>
+    </div>
+
+    <div class="bloqueTable">
+        <div style="width:100%;margin:0;background-color: white; display: flex;align-items: end;">
+            <mat-form-field class="colSelect">
+                <mat-label>Columna</mat-label>
+                <mat-select [(ngModel)]="selectedColumn" (selectionChange)="onSelectionChange()">
+                    <mat-option *ngFor="let col of columnas" [value]="col">
+                        {{col}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="colBuscar" *ngIf="showBuscar">
+                <mat-label>Buscar</mat-label>
+                    <input matInput [(ngModel)]="textFilter" #input>
+            </mat-form-field>
+            <mat-form-field class="subItemFieldDate" *ngIf="showFilterDate">
+                <mat-label>Rango fecha</mat-label>
+                <div style="display:flex;">
+                    <mat-date-range-input [rangePicker]="picker" style="margin-top:5%">
+                        <input matStartDate [(ngModel)]="inicioFecha" style="padding: 0;">
+                        <input placeholder='' matEndDate [(ngModel)]="finFecha" style="padding: 0;">
+                    </mat-date-range-input>
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-date-range-picker #picker></mat-date-range-picker>
+                </div>
+            </mat-form-field>
+            <button mat-button (click)="addFilterColumn()" style="margin-bottom:1%">Filtrar
+                <mat-icon>search</mat-icon>
+            </button>
+            <div style="margin-top:2%; display: flex;margin-bottom:1%">
+                <mat-chip-list aria-label="Fish selection" *ngFor="let chip of listChipFilter">
+                    <mat-chip color="primary" (click)="deleteChip(chip)" [value]="chip">{{chip.search}} <mat-icon>clear
+                        </mat-icon>
+                    </mat-chip>
+                </mat-chip-list>
+            </div>
+            <button mat-button [matMenuTriggerFor]="menu2" style="margin-bottom:1%">Descargar
+                <mat-icon>get_app</mat-icon>
+            </button>
+            <mat-menu #menu2="matMenu">
+                <button mat-menu-item (click)="exporter.exportTable('xls', {fileName: 'ReporteAire'})">XLS</button>
+                <button mat-menu-item (click)="exporter.exportTable('csv', {fileName: 'ReporteAire'})">CSV</button>
+                <button mat-menu-item (click)="exportPDF()">PDF</button>
+            </mat-menu>
+            <app-pdf-creator #pdfGenerator [data]="dataSource" [title]="title" [columns]="['Latitud', 'Longitud', 'Inicio', 'Fin', 'Parametro', 'Unidad', 'Valor', 'Metodologia', 'Frecuencia', 'Equipo', 'Tipo', 'Maximo', 'Obs']"></app-pdf-creator>
+        </div>
+
+        <div class="tablaContainer">
+            <table mat-table matTableExporter [dataSource]="dataSource" class="mat-elevation-z8"
+                #exporter="matTableExporter">
+                <ng-container *ngIf="showEmpresa" matColumnDef="nombrePunto">
+                    <th mat-header-cell *matHeaderCellDef> Punto </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.nombrePunto}} </td>
+                </ng-container>
+                <ng-container *ngIf="showEmpresa" matColumnDef="latitud">
+                    <th mat-header-cell *matHeaderCellDef> Latitud </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.latitud}} </td>
+                </ng-container>
+                <ng-container *ngIf="showEmpresa" matColumnDef="longitud">
+                    <th mat-header-cell *matHeaderCellDef> Longitud </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.longitud}} </td>
+                </ng-container>
+                <ng-container matColumnDef="fechaInicio">
+                    <th mat-header-cell *matHeaderCellDef> Inicio </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.fechaInicio}} </td>
+                </ng-container>
+                <ng-container matColumnDef="fechaFin">
+                    <th mat-header-cell *matHeaderCellDef> Fin </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.fechaFin}} </td>
+                </ng-container>
+                <ng-container matColumnDef="parametro">
+                    <th mat-header-cell *matHeaderCellDef> Parámetro </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.parametro}} </td>
+                </ng-container>
+                <ng-container matColumnDef="unidad">
+                    <th mat-header-cell *matHeaderCellDef> Unidad </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.unidad}} </td>
+                </ng-container>
+                <ng-container matColumnDef="valor">
+                    <th mat-header-cell *matHeaderCellDef> Valor </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{ element.valor !== 0 ? element.valor : '-' }} </td>
+                </ng-container>
+                <ng-container matColumnDef="metodologia">
+                    <th mat-header-cell *matHeaderCellDef> Metodología </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.metodologia}} </td>
+                </ng-container>
+                <ng-container matColumnDef="frecuencia">
+                    <th mat-header-cell *matHeaderCellDef> Frecuencia </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.frecuencia}} </td>
+                </ng-container>
+                <ng-container matColumnDef="equipo">
+                    <th mat-header-cell *matHeaderCellDef> Equipo </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.equipo}} </td>
+                </ng-container>
+                <ng-container matColumnDef="tipoMonitoreo">
+                    <th mat-header-cell *matHeaderCellDef> Tipo</th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.tipoMonitoreo}} </td>
+                </ng-container>
+                <ng-container *ngIf="showEmpresa" matColumnDef="valorMaximo">
+                    <th mat-header-cell *matHeaderCellDef> Valor máximo </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.valorMaximo}} </td>
+                </ng-container>
+                <ng-container *ngIf="showDepartamento" matColumnDef="nombrePlanta">
+                    <th mat-header-cell *matHeaderCellDef> Planta </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.nombre}} </td>
+                </ng-container>
+                <ng-container *ngIf="showDepartamento" matColumnDef="nroEnlace">
+                    <th mat-header-cell *matHeaderCellDef> Nro Enlace </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.nroEnlace}} </td>
+                </ng-container>
+                <ng-container matColumnDef="observaciones">
+                    <th mat-header-cell *matHeaderCellDef> Observación </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.observaciones}} </td>
+                </ng-container>
+                <ng-container matColumnDef="origen">
+                    <th mat-header-cell *matHeaderCellDef> Origen </th>
+                    <td mat-cell *matCellDef="let element" class="cadaCol"> {{element.origen}} </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="fila"></tr>
+            </table>
+            <mat-paginator #paginator [pageSize]="6" [pageSizeOptions]="[2,4,6]">
+            </mat-paginator>
+        </div>
+    </div>
+</div>
