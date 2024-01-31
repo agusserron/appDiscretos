@@ -1,0 +1,96 @@
+<html style="display:flex; height: 100%;">
+
+<body style="width:100%; background-color: lightgrey;height: 100%;">
+    <h1 class="animate__animated animate__backInDown">INGRESO ESTACIONES</h1>
+    <form [formGroup]="stationForm" autocomplete="off">
+        <div class="formulario">
+            <div class="row">
+                <div class="column">
+                    <div class="cadaItem">
+                        <mat-form-field appearance="fill" class="subItemField">
+                            <mat-label>Fecha</mat-label>
+                            <input matInput [matDatepicker]="picker" formControlName="fecha" (click)="openPicker()">
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Nombre estación</mat-label>
+                        <input type="text" placeholder="Buscar" aria-label="Number" matInput
+                            formControlName="identificacion" required [matAutocomplete]="auto"
+                            (click)="clearStationInfo()">
+                        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async | slice:0:5"
+                                [value]="option.identificacion" (focus)="onOptionSelected(option)">
+                                {{option.identificacion}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                    <div class="cadaItem">
+                        <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                            <mat-label>Parametro</mat-label>
+                            <mat-select formControlName="parametro" required>
+                                <mat-option *ngFor="let param of parametrosStation" [value]="param.id">
+                                    {{param.nombre}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="cadaItem">
+                        <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                            <mat-label>Periodo</mat-label>
+                            <mat-select formControlName="tipoPeriodo" required>
+                                <mat-option *ngFor="let tipo of periodosStation" [value]="tipo.id">
+                                    {{tipo.tipo}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="cadaItem">
+                        <mat-form-field appearance="fill" class="subItemField">
+                            <mat-label>Valor</mat-label>
+                            <input type="number" matInput formControlName="valor" required>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="cadaItem">
+                        <mat-form-field appearance="fill" class="subItemField">
+                            <mat-label>Propietario</mat-label>
+                            <input type="text" matInput formControlName="propietario" required>
+                        </mat-form-field>
+                    </div>
+                    <div class="cadaItem">
+                        <mat-form-field appearance="fill" class="subItemField">
+                            <mat-label>Operador</mat-label>
+                            <input type="text" matInput formControlName="operador" required>
+                        </mat-form-field>
+                    </div>
+                    <div class="cadaItem">
+                        <mat-form-field appearance="fill" class="subItemField">
+                            <mat-label>Parámetros</mat-label>
+                            <input type="text" matInput formControlName="parametros" required>
+                        </mat-form-field>
+                    </div>
+                    <div class="cadaItem">
+                        <mat-form-field appearance="fill" class="subItemField">
+                            <mat-label>Departamento</mat-label>
+                            <input type="text" matInput formControlName="departamento" required>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 2%;display: flex;">
+                <div>
+                    <button mat-raised-button color="primary" (click)="onFinish()">Ingresar <mat-icon>done
+                        </mat-icon></button>
+                </div>
+                <div class="alertBox">
+                    <alert></alert>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

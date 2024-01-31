@@ -1,0 +1,28 @@
+<div style="width:100%;">
+  <h1 class="animate__animated animate__backInDown">PLANTAS</h1>
+  <div style="margin-left:1%" *ngIf="buttonShow">
+    <button mat-raised-button color="primary" (click)="showAddPlant()">Agregar <mat-icon>add
+      </mat-icon></button>
+    <div style="margin-top:1%">
+      <mat-form-field>
+        <mat-label>Buscar</mat-label>
+        <div style="display: flex;">
+          <input matInput (keyup)="applyFilter($event)" #input>
+          <mat-icon>search
+          </mat-icon>
+        </div>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div style="display:flex; margin-left:1%;width:100%" *ngIf="showAdd">
+   
+    <div class="row" style="display:flex">
+      <div style="height: 5%;width: 100%;margin-left:2%">
+        <alert></alert>
+      </div>
+    </div>
+
+  </div>
+<app-table-generic *ngIf="showTable" [dataSource]="dataSource" [displayedColumns]="displayedColumns" [customCellLogic]="customCellLogicFunction" [pageSize]="8"></app-table-generic>
+</div>

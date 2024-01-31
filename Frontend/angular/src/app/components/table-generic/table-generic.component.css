@@ -1,0 +1,27 @@
+.tablaContainer {
+    overflow-x: auto;
+    max-height: 500px;
+}
+
+table {
+    width: 100%;
+}
+
+.mat-header-cell {
+    z-index: 1;
+}
+
+.mat-elevation-z8 {
+    width:95%;
+    margin-left: 1%;
+}
+
+tr.fila:hover {
+    background-color: lightgrey;
+}
+
+@media (max-width: 1340px) {
+    .mat-cell{
+        font-size: 12px;
+    }
+}

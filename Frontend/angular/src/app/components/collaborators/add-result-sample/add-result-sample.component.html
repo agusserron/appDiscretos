@@ -1,0 +1,54 @@
+<html style="display:flex; height: 100%;">
+
+<body style="width:100%; background-color: lightgrey;height: 100%;">
+    <h1 class="animate__animated animate__backInDown">INGRESO EXCEL</h1>
+    <form [formGroup]="registerExcelForm" autocomplete="off">
+        <div class="formulario">
+            <div class="row">
+                <div class="column">
+                    <div class="cadaItem">
+                        <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                            <mat-label>Programa</mat-label>
+                            <mat-select formControlName="program" required>
+                                <mat-option *ngFor="let program of programas" [value]="program.id_programa">
+                                    {{program.nombre_programa}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="cadaItem">
+                        <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                            <mat-label>Departamento</mat-label>
+                            <mat-select formControlName="departamento" required>
+                                <mat-option *ngFor="let depto of departamentos" [value]="depto.id_departamento">
+                                    {{depto.dep_nombre}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="cadaItem">
+                        <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                            <mat-label>Matriz</mat-label>
+                            <mat-select formControlName="matriz" required>
+                                <mat-option *ngFor="let matriz of matrices" [value]="matriz.id_matriz">
+                                    {{matriz.nombre}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 2%;display: flex;">
+                <div>
+                    <button mat-raised-button color="primary">Ingresar <mat-icon>done
+                        </mat-icon></button>
+                </div>
+                <div class="alertBox">
+                    <alert></alert>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

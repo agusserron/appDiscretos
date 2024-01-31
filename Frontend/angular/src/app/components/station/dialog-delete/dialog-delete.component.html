@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Eliminar estación</h1>
+<div mat-dialog-content>
+    <p><b>¿Estas seguro de eliminar la siguiente estación?</b></p>
+    <p><b>Identificación: </b>{{dataStation.identificacion}}</p>
+    <p><b>Propietario: </b>{{dataStation.propietario.nombre}}</p>
+    <p><b>Operador: </b>{{dataStation.operador.nombre}}</p>
+    <p><b>Estado: </b>{{!dataStation.estado ? 'Inactiva' : 'Activa'}}</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
+    <button mat-button cdkFocusInitial (click)="deleteStation()">Eliminar <mat-icon>delete</mat-icon></button>
+</div>
+<div class="alertBox-container">
+    <div class="alertBox">
+        <alert></alert>
+    </div>
+</div>

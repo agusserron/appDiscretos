@@ -1,0 +1,54 @@
+.formulario {
+    border: solid 0px;
+    border-radius: 30px;
+    margin: 1%;
+    background-color: white;
+    text-align: left;
+    height: 550px;
+    width: 95%;
+}
+
+.contenedores {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.animate__animated.animate__backInDown {
+    text-align: center;
+    margin-top: 1%
+}
+
+.subItemField {
+    width: 100%;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.column {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.alertBox {
+    width: 25%;
+    margin-left: 1%;
+}
+
+.mat-datepicker-toggle {
+    position: absolute;
+    top: calc(5% - 12px);
+    right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.column {
+    flex: 0 1 350px; 
+}
