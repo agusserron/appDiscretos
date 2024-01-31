@@ -1,6 +1,8 @@
 # SDA-RD
 Sistema de Datos Ambientales- Recepción Discreta
 
+## Produccion (en test) : 172.20.110.33/angular_testing/SRD
+
 Pasos para levantar el ambiente de test: 
 
 ## npm install : para levantar todas las dependencias ##
