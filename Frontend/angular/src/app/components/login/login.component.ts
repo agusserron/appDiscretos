@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit {
     this.aFormGroup = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required],
-      recaptcha: ['', Validators.required]
+     // recaptcha: ['', Validators.required]
     });
   }
 
@@ -69,10 +69,10 @@ export class LoginComponent implements OnInit {
       this.alertService.error("Debe ingresar una contraseña", this.options);
       return false;
     }
-    else if (form.recaptcha == "") {
-      this.alertService.error("Debe seleccionar el captcha", this.options);
-      return false;
-    }
+   // else if (form.recaptcha == "") {
+     // this.alertService.error("Debe seleccionar el captcha", this.options);
+     // return false;
+    //}
     return true;
   }
 
@@ -102,7 +102,7 @@ export class LoginComponent implements OnInit {
           this.checkTimeTokenValid();
           form.password = "";
           form.username = "";
-          this.aFormGroup.value.recaptcha = '';
+         // this.aFormGroup.value.recaptcha = '';
           this.getDataUser();
         },
         error: (err: HttpErrorResponse) => {
@@ -113,9 +113,9 @@ export class LoginComponent implements OnInit {
           }
           form.password = "";
           form.username = "";
-          localStorage.removeItem('_grecaptcha');
-          this.captchaElem.resetCaptcha();
-          this.aFormGroup.value.recaptcha = '';
+          //localStorage.removeItem('_grecaptcha');
+          //this.captchaElem.resetCaptcha();
+          //this.aFormGroup.value.recaptcha = '';
         }
       });
     }
@@ -134,9 +134,9 @@ export class LoginComponent implements OnInit {
             username: '',
             password: ''
           })
-          localStorage.removeItem('_grecaptcha');
-          this.captchaElem.resetCaptcha();
-          this.aFormGroup.value.recaptcha = '';
+          //localStorage.removeItem('_grecaptcha');
+          //this.captchaElem.resetCaptcha();
+          //this.aFormGroup.value.recaptcha = '';
         }
         else this.alertService.error("Error al realizar login");
       }

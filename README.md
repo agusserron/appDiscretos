@@ -1,9 +1,20 @@
 # SDA-RD
 Sistema de Datos Ambientales- Recepción Discreta
 
+## Produccion (en test) : 172.20.110.33/angular_testing/SRD
+
 Pasos para levantar el ambiente de test: 
 
 ## npm install : para levantar todas las dependencias ##
+
+Base : en archivo .env // SRD\Backend\shared\connectionMariaDB
+
+# DATOS_DISCRETOS DB credentials
+DB_HOST = 172.20.110.29
+DB_PORT = 3306
+DB_DATABASE = discretos_test
+DB_USER = user
+DB_PASSWORD = pass
 
 -Revisar conexiones del frontend con el backend (Frontend\angular\src\environments) - sustituir : const baseIP = "http://localhost:3005";
 -Agrega credenciales de BASE DATOS : Backend\aire_service\env;
@@ -37,6 +48,9 @@ Pasos para levantar el ambiente de test:
 3. Usuario de test : 
    -admin
    -Nuevoamb13nt3.2023
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-const baseIP = "http://172.20.110.33:3001";
+const baseIP = "http://localhost:3001";
 const baseRouteStation = `${baseIP}/api/aire/station`;
 const baseRoutePlant = `${baseIP}/api/aire/plants`;
 const baseRouteCompany = `${baseIP}/api/aire/companys`;
