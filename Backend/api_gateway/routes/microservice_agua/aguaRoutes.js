@@ -1,4 +1,4 @@
-const baseIP = "http://172.20.110.33:3002";
+const baseIP = "http://localhost:3002";
 const baseRouteEstaciones = `${baseIP}/api/agua/estaciones`; 
 const baseRouteParametros = `${baseIP}/api/agua/parametros`; 
 const baseRouteProgramas = `${baseIP}/api/agua/programas`; 
