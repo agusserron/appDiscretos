@@ -1,0 +1,230 @@
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:00:35"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:00:36"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:00:36"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:00:39"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:00:42"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:00:46"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:08:53"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:08:53"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:08:53"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:08:54"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:08:57"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:08:58"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:08:58"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:13:24"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:13:24"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:13:24"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:13:25"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:13:28"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:13:29"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:13:29"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:15:17"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:15:17"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:15:17"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:15:19"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:15:21"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:15:23"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:16:46"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:16:46"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:16:46"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:16:47"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:16:50"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:16:50"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:16:51"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:22:09"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:22:09"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:22:09"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:22:10"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:22:14"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:22:15"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:22:15"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:23:56"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:23:56"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:23:56"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:23:58"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:24:01"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:24:02"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:24:02"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:25:20"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:25:20"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:25:20"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:25:21"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:25:24"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:25:25"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:25:53"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:25:53"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:25:53"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:25:54"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:25:59"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:26:00"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:26:00"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:27:27"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:27:27"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:27:27"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:27:44"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:27:46"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:27:47"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:27:48"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:30:21"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:30:21"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:30:21"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:30:22"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:30:24"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:30:25"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:30:26"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:31:05"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:31:05"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:31:05"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:31:07"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:31:10"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:31:11"}
+{"level":"info","message":"POST addAireData/idPlant/31382/username: admin","timestamp":"2024-02-21 11:31:32"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:49:34"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:49:34"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:49:34"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 11:50:11"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 11:50:11"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 11:50:11"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:50:13"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 11:50:15"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 11:50:16"}
+{"level":"info","message":"POST addAireData/idPlant/31382/username: admin","timestamp":"2024-02-21 11:50:36"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:00:03"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:00:03"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:00:03"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:00:23"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:00:24"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:00:25"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:00:25"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:00:25"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:00:27"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:02:23"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2024-02-21 12:02:23"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2024-02-21 12:02:23"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:02:25"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2024-02-21 12:02:25"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2024-02-21 12:02:25"}
+{"level":"info","message":"POST addPlant/nroEnlace/123652361 to database  /username: admin","timestamp":"2024-02-21 12:02:56"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2024-02-21 12:02:57"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:06:17"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:06:19"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:06:52"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:13:32"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:13:32"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:13:32"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:13:34"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:13:37"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:13:37"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 12:13:38"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 12:14:01"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:17:25"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:17:29"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:17:29"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:17:29"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:17:30"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:17:33"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:17:37"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:17:37"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 12:17:38"}
+{"level":"info","message":"GET getAireReport report/idPlant/33010 from database  /username: admin","timestamp":"2024-02-21 12:17:40"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:18:16"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 12:18:19"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:18:19"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-02-21 12:18:20"}
+{"level":"info","message":"GET getAireReport report/idPlant/31382 from database  /username: admin","timestamp":"2024-02-21 12:18:21"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:18:30"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:18:30"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:18:30"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:18:31"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:18:34"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:18:35"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 12:18:35"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:18:54"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:20:06"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:20:07"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:20:07"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:20:08"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:20:11"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 12:20:13"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 12:20:55"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:22:15"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:22:15"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:22:15"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:22:21"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:22:22"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:22:22"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:22:22"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:22:24"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:22:24"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:22:24"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:22:25"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:22:25"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:22:25"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:26:23"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:26:23"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:26:23"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:26:24"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:26:27"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 12:26:28"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 12:26:49"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:29:13"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:29:13"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:29:13"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:29:15"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:29:18"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 12:29:20"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 12:29:46"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 12:49:02"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 12:49:02"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 12:49:02"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:49:14"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 12:49:20"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 12:49:21"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 12:49:52"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 14:30:50"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 14:30:50"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 14:30:50"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:31:14"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:31:17"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:31:19"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 14:31:20"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 14:32:53"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 14:48:58"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 14:48:58"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 14:48:58"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:48:59"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:49:02"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:49:03"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 14:49:04"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 14:49:50"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 14:55:13"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 14:55:13"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 14:55:13"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:55:17"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:55:20"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 14:55:20"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 14:55:21"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 14:56:11"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 15:00:10"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 15:00:10"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 15:00:10"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 15:00:13"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 15:00:18"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 15:00:18"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 15:00:19"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 15:00:53"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 15:01:33"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 15:01:33"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 15:01:33"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 15:01:35"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 15:01:43"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 15:01:43"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 15:01:44"}
+{"level":"info","message":"POST alreadyExist addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 15:02:12"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-02-21 15:06:33"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-02-21 15:06:33"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-02-21 15:06:33"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 15:06:34"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-02-21 15:06:38"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-02-21 15:07:30"}
+{"level":"info","message":"POST addAireData/idPlant/33010/username: admin","timestamp":"2024-02-21 15:07:53"}
