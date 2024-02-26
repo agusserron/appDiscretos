@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { MatStepper } from '@angular/material/stepper';
 import { Router } from '@angular/router';
 import { map, Observable, startWith } from 'rxjs';
@@ -26,12 +26,24 @@ export class AireComponent implements OnInit {
   nroEnlaces: any = [];
   isLinear: boolean = true;
   idPlant: number = 0;
+  idEmpresa: number = 0;
   parametros: any;
   unidades: any;
+  nombresPuntos: any;
+  nombrePunto: string = '';
+  latitud: number = 0;
+  longitud: number = 0;
   frecuencias: Frecuencia[] = frecuencias;
   tiposMonitoreos: Frecuencia[] = tiposMonitoreos;
   metodologias: Metodologia[] = metodologias;
   metodologiaOtro: boolean = false;
+  nombrePuntoSelect: any;
+  selectedPunto: any;
+
+  
+  manualEntryMode = false; 
+  //manualEntryCtrl = new FormControl(''); 
+  //nombresPuntosCtrl = new FormControl('', Validators.required); 
 
   constructor(private _formBuilder: FormBuilder, 
     public alertService: AlertService, 
@@ -108,9 +120,66 @@ export class AireComponent implements OnInit {
       }
     });
   }
+  
+
+  private getIdEmpresa(): void {
+    for (let i = 0; i < this.nameCompanys.length; i++) {
+      if (this.nameCompanys[i].nombre == this.firstFormGroup.value.nombreCtrl) {
+        this.idEmpresa = this.nameCompanys[i].id;
+      }
+    }
+  }
+
+ // AGUS
+  private getNombresPuntos(): void {
+    console.log(this.idEmpresa);
+    this.aireService.getNombresPuntos(this.idEmpresa).subscribe({
+      next: (resp) => {
+        this.nombresPuntos = resp;
+        console.log(this.nombresPuntos)
+      },
+      error: (err) => {
+        this.alertService.clear();
+        this.alertService.error("Servicio sin conexión", this.options);
+        if (err.status == 0) {
+          setTimeout(() => {
+            this.router.navigate(['login']);
+          }, 1400);
+        }
+      }
+    });
+  }
+
+  
+
+  public getLatLongPunto(puntoSelect: string): void {
+    this.aireService.getLatLongPunto(puntoSelect).subscribe({
+      next: (resp) => {
+        console.log(resp);
+        if (resp.length > 0) {
+          this.secondFormGroup.controls['latitudCtrl'].setValue(resp[0].latitud);
+          this.secondFormGroup.controls['longitudCtrl'].setValue(resp[0].longitud);
+        } else {
+          console.error('No se encontraron coordenadas para el punto seleccionado');
+        }
+      },
+      error: (err) => {
+        this.alertService.clear();
+        this.alertService.error("Servicio sin conexión", this.options);
+        if (err.status == 0) {
+          setTimeout(() => {
+            this.router.navigate(['login']);
+          }, 1400);
+        }
+      }
+    });
+  }
 
   private getNroEnlaces(): void {
     let nombreEmpresa = this.firstFormGroup.value.nombreCtrl || '';
+    this.getIdEmpresa();
+    this.getNombresPuntos();
+    console.log(this.idEmpresa);
     this.companyService.getNroEnlaces(nombreEmpresa).subscribe({
       next: (resp) => {
         this.nroEnlaces = resp.nroEnlaces;
@@ -138,6 +207,17 @@ export class AireComponent implements OnInit {
     this.secondFormGroup.value.metodologiaMuestreoCtrl == 'Otro' ? this.metodologiaOtro = true : this.metodologiaOtro = false;
   }
 
+  onSelectionNombresPuntos(): void {
+    if (this.manualEntryMode == false) {
+      this.selectedPunto = this.secondFormGroup.get('nombresPuntosCtrl')?.value || '';
+      this.nombrePuntoSelect = this.selectedPunto.nombrePunto;    
+      this.getLatLongPunto(this.nombrePuntoSelect);       
+    } else {
+      const selectedOption = this.secondFormGroup.get('manualEntryCtrl')?.value || '';     
+      this.nombrePuntoSelect = selectedOption || '';        
+    }
+  }
+
   private _filterNroEnlace(value: string): string[] {
     const filterValue = value;
     return this.nroEnlaces.filter((value: string) => value.startsWith(filterValue));
@@ -157,15 +237,17 @@ export class AireComponent implements OnInit {
     nroEnlaceCtrl: ['', Validators.required],
     nombrePlantCtrl: [''],
     direccionPlantCtrl: [''],
-    departamentoPlantCtrl: ['']
+    departamentoPlantCtrl: [''],
   });
   secondFormGroup = this._formBuilder.group({
-    nombrePunto: ['', Validators.required],
+    //nombrePunto: ['', Validators.required],
     latitudCtrl: ['', [Validators.required, Validators.pattern("[0-9.-]+")]],
     longitudCtrl: ['', [Validators.required, Validators.pattern("[0-9.-]+")]],
     inicioFechaCtrl: ['', Validators.required],
     finFechaCtrl: ['', Validators.required],
     parametroCtrl: [0, Validators.required],
+    nombresPuntosCtrl: ['', Validators.required],
+    manualEntryCtrl: [''],
     unidadCtrl: [0, Validators.required],
     valorCtrl: ['', Validators.required],
     metodologiaMuestreoCtrl: ['', Validators.required],
@@ -176,6 +258,18 @@ export class AireComponent implements OnInit {
     valorMaximoCtrl: ['', Validators.required],
     observacionesCtrl: ['', Validators.pattern("[a-zA-Z0-9\\s.()&/áéíóúÁÉÍÓÚñÑüÜ-]+")]
   });
+
+  toggleManualEntryMode() {
+    this.manualEntryMode = !this.manualEntryMode;
+    
+    if (this.manualEntryMode) {
+      this.secondFormGroup.get('nombresPuntosCtrl')?.disable(); 
+      this.secondFormGroup.get('manualEntryCtrl')?.enable(); 
+    } else {
+      this.secondFormGroup.get('nombresPuntosCtrl')?.enable(); 
+      this.secondFormGroup.get('manualEntryCtrl')?.disable(); 
+    }
+  }
 
 
   options = {
@@ -239,12 +333,14 @@ export class AireComponent implements OnInit {
   }
 
   onFinish(stepper: MatStepper) {
+
     this.alertService.clear();
     let form = this.secondFormGroup.value;
     let metodologia = form.metodologiaMuestreoCtrl == 'Otro' ? form.otraMetodologiaMuestreo : form.metodologiaMuestreoCtrl;
+
     if (this.validateDataAire()) {
       let aireReport = new Aire(
-        form.nombrePunto!,
+        this.nombrePuntoSelect,
         form.latitudCtrl!,
         form.longitudCtrl!,
         form.inicioFechaCtrl!,
@@ -259,8 +355,9 @@ export class AireComponent implements OnInit {
         Number(form.valorMaximoCtrl),
         form.observacionesCtrl!,
         0,
-        this.idPlant
+        this.idPlant   
       )
+      console.log(aireReport);
       this.addAireReport(aireReport, stepper);
     }
   }
@@ -271,7 +368,7 @@ export class AireComponent implements OnInit {
         this.alertService.success(res.message, this.options);
         setTimeout(() => {
           stepper.reset();
-          window.location.reload();
+          window.location.href = "http://localhost:4200/SRD"        
         }, 800);
       },
       error: err => {
@@ -281,6 +378,7 @@ export class AireComponent implements OnInit {
             stepper.reset();
             window.location.reload();
           }, 2400);
+        
         }
         else if (err.status == 0) {
           this.alertService.error("Servicio sin conexión", this.options);
@@ -356,7 +454,7 @@ export class AireComponent implements OnInit {
     let dateSelected = this.secondFormGroup.value.finFechaCtrl?.toString().split(' ') || '';
     let daySelected = parseInt(dateSelected[2]);
     const form = this.secondFormGroup.value;
-    if (!form.nombrePunto) {
+    if (!this.nombrePuntoSelect) {
       return this.showError("nombrePunto", "Debe ingresar un nombre al punto");
     }
     else if (!form.latitudCtrl) {

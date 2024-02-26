@@ -125,6 +125,30 @@ export class AireRepository {
     return data
   }
 
+  // AGUS
+  getNombresPuntos = async (empresaId) => {
+    try {
+      const nombresPuntos = await this.connection.query(
+        `SELECT DISTINCT mca.nombrePunto
+       FROM monitoreo_calidad_aire_iao AS mca
+       JOIN planta AS p ON mca.idPlant = p.id
+       WHERE p.idEmpresa = ?`,
+      [empresaId],
+      );
+    return nombresPuntos;
+    } catch (error) {
+      console.error('Error en getNombresPuntos:', error);
+      throw new Error('Error al obtener los nombres de puntos.');
+    }
+  };
+
+  //AGUS
+  getLatLongPunto = async (nombrePuntoParam) => {
+    const data = await this.connection.query(`select mca.latitud, mca.longitud , mca.nombrePunto from monitoreo_calidad_aire_iao mca where mca.nombrePunto = ? LIMIT 1`, [nombrePuntoParam])
+    return data
+  }
+
+
   getUnitId= async (nombre) => {
     const data = await this.connection.query(`select u.id_unidad from unidad u where u.uni_nombre = ?`, [nombre])
     return data[0].id_unidad

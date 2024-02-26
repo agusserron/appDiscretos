@@ -35,4 +35,13 @@ export class AireService {
     return this.http.get<any>(`${environment.apiAire}/aire/units`);
   }
 
+  getNombresPuntos(empresaId: number): Observable<any> {
+    return this.http.get<any>(`${environment.apiAire}/aire/nombresPuntos/${empresaId}`);
+  }
+ 
+  getLatLongPunto(nombrePunto: string): Observable<any> {
+    const nombrePuntoEncoded = encodeURIComponent(nombrePunto);
+    const params = new HttpParams().set('nombrePunto', nombrePuntoEncoded);
+    return this.http.get<any>(`${environment.apiAire}/aire/latLong`, { params })
+  }
 }

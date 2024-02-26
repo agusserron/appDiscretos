@@ -10,4 +10,10 @@ router.getAsync('/parameters', auth.verifyToken, auth.authRolePermissions([Roles
 router.getAsync('/units', auth.verifyToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), aireController.getUnits)
 router.getAsync('/report/filter/city', auth.verifyToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), aireController.getAireReportByCity)
 
+//AGUS
+router.getAsync('/nombresPuntos/:empresaId', auth.verifyToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), aireController.getNombresPuntos);
+router.getAsync('/latLong', auth.verifyToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), aireController.getLatLongPunto);
+
+
+
 export default router

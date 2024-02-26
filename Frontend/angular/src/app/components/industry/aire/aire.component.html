@@ -58,19 +58,37 @@
             <div class="fila">
               <div class="columna">
                 <div class="cadaItem">
+
                   <mat-form-field appearance="fill" class="subItemField">
                     <mat-label>Nombre punto</mat-label>
-                    <input type="text" matInput formControlName="nombrePunto" required>
+                    <mat-select formControlName="nombresPuntosCtrl" (selectionChange)="onSelectionNombresPuntos()" [disabled]="manualEntryMode" required>
+                      <mat-option *ngFor="let nombrePunto of nombresPuntos" [value]="nombrePunto">
+                        {{nombrePunto.nombrePunto}}
+                      </mat-option>                    
+                      <mat-option (click)="toggleManualEntryMode()" [value]="'manual'">
+                        Ingresar manualmente
+                      </mat-option>
+                    </mat-select>
+                    <input matInput formControlName="manualEntryCtrl" *ngIf="manualEntryMode">
                   </mat-form-field>
+                  <div class="cadaItem">
+                    <mat-form-field appearance="fill" class="subItemField" *ngIf="manualEntryMode">
+                      <mat-label>Nombre nuevo punto</mat-label>
+                      <div style="display:flex">
+                        <input matInput formControlName="manualEntryCtrl" (ngModelChange)="onSelectionNombresPuntos()">
+                      </div>
+                    </mat-form-field>
+                  </div>
+
                 </div>
                 <div style="display:flex">
                   <mat-form-field appearance="fill">
                     <mat-label>Latitud</mat-label>
-                    <input matInput formControlName="latitudCtrl" required>
+                    <input matInput formControlName="latitudCtrl" required >
                   </mat-form-field>
                   <mat-form-field appearance="fill" style="margin-left:1%;">
                     <mat-label>Longitud</mat-label>
-                    <input matInput formControlName="longitudCtrl" required>
+                    <input matInput formControlName="longitudCtrl" required >
                   </mat-form-field>
                 </div>
                 <div class="cadaItem">

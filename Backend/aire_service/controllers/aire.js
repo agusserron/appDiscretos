@@ -113,6 +113,40 @@ const getUnits = async (req, res) => {
   }
 }
 
+//AGUS
+const getNombresPuntos = async (req, res) => {
+  try {
+    const empresaId = req.params.empresaId;
+    const nombres = await aireRepository.getNombresPuntos(empresaId);
+    res.status(200).json(nombres);
+  } catch (e) {
+      logError(`Error getNombresPuntos/${e}/username: ${req.user.username}`);
+      res.status(500).json({ message: "Error, obteniendo los nombres de los puntos." });
+  }
+  finally {
+      release();
+  }
+}
+
+//AGUS
+const getLatLongPunto = async (req, res) => {
+  try {
+    const nombrePunto = req.query.nombrePunto;
+    let nombrePuntoParam = decodeURIComponent(nombrePunto);
+    console.log( "paseee" + nombrePunto);
+    console.log( "paseee" + nombrePuntoParam);
+    const latLong = await aireRepository.getLatLongPunto(nombrePuntoParam);
+    console.log("acaa" + latLong);
+    res.status(200).json(latLong);
+  } catch (e) {
+      logError(`Error getLatLongPunto/${e}/username: ${req.user.username}`);
+      res.status(500).json({ message: "Error, obteniendo las coordenadas del punto." });
+  }
+  finally {
+      release();
+  }
+}
+
 //FALTA VALIDAR O3 Y VER QUE ES MAXIMA DIARIA
 const validateState = async (data) => {
   if (data.parametro == "CO") {
@@ -152,5 +186,7 @@ export default {
   getAireReport,
   getAireReportByCity,
   getParameters,
-  getUnits
+  getUnits,
+  getNombresPuntos,
+  getLatLongPunto
 }

@@ -1,4 +1,4 @@
-const baseIP = "http://172.20.110.33:3000";
+const baseIP = "http://172.28.110.33:3000";
 const baseRouteAuth = `${baseIP}/api/users`;
 
 const authRoutes = [

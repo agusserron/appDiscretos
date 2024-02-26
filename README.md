@@ -2,6 +2,7 @@
 Sistema de Datos Ambientales- Recepción Discreta
 
 ## Produccion (en test) : 172.20.110.33/angular_testing/SRD
+## Produccion http://172.28.0.60/angular-testing/login
 
 Pasos para levantar el ambiente de test: 
 
