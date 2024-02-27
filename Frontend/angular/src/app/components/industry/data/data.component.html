@@ -98,8 +98,8 @@
                 <mat-icon>get_app</mat-icon>
             </button>
             <mat-menu #menu2="matMenu">
-                <button mat-menu-item (click)="exporter.exportTable('xls', {fileName: 'ReporteAire'})">XLS</button>
-                <button mat-menu-item (click)="exporter.exportTable('csv', {fileName: 'ReporteAire'})">CSV</button>
+                <button mat-menu-item (click)="exporter.exportTable('xls', {fileName: 'Reporte Aire - ' + tituloVariable})">XLS</button>
+                <button mat-menu-item (click)="exporter.exportTable('csv', {fileName: 'Reporte Aire - ' + tituloVariable})">CSV</button>
                 <button mat-menu-item (click)="exportPDF()">PDF</button>
             </mat-menu>
             <app-pdf-creator #pdfGenerator [data]="dataSource" [title]="title" [columns]="['Latitud', 'Longitud', 'Inicio', 'Fin', 'Parametro', 'Unidad', 'Valor', 'Metodologia', 'Frecuencia', 'Equipo', 'Tipo', 'Maximo', 'Obs']"></app-pdf-creator>

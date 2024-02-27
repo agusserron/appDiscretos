@@ -61,6 +61,7 @@ export class DataComponent implements OnInit, AfterViewInit {
   showBuscar: boolean = true;
   showFilterDate: boolean = false;
   title: string = '';
+  tituloVariable = '';
 
   dataFormGroup = this._formBuilder.group({
     nombreEmpresa: [''],
@@ -127,6 +128,7 @@ export class DataComponent implements OnInit, AfterViewInit {
 
   private getNroEnlaces(): void {
     let nombreEmpresa = this.dataFormGroup.value.nombreEmpresa || '';
+    this.tituloVariable = this.dataFormGroup.value.nombreEmpresa || '';
     this.companyService.getNroEnlaces(nombreEmpresa).subscribe({
       next: (resp) => {
         this.nroEnlaces = resp.nroEnlaces;

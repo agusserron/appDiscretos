@@ -28,6 +28,7 @@ export class StationConsultantComponent implements OnInit {
   @ViewChild('pdfGenerator', { static: false }) pdfGenerator!: PdfCreatorComponent;
   @ViewChild('picker') picker!: MatDatepicker<any>;
   stationSelected!: Station;
+  tituloVariable = '';
   showTable: boolean = false;
   inicioFecha: any;
   finFecha: any;
@@ -89,6 +90,12 @@ export class StationConsultantComponent implements OnInit {
       departamento: optionSelected.departamento.nombre,
       propietario: optionSelected.propietario.nombre
     })
+   
+  if (optionSelected.identificacion) {
+    this.tituloVariable = optionSelected.identificacion.toUpperCase();
+  } else {
+    this.tituloVariable = 'Nombre de la Empresa';
+  }
   }
 
   clearStationInfo(): void {
@@ -114,6 +121,8 @@ export class StationConsultantComponent implements OnInit {
     const columnData = ['fecha', 'concentracion', 'parametro', 'tipo', 'origen'];
     this.pdfGenerator.exportPDF(columnData, title, 'Reporte estación');
   }
+
+
 
   onFinish(): void {
     this.alertService.clear();
