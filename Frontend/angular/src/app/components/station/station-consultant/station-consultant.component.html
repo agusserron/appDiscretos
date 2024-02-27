@@ -70,8 +70,8 @@
                     <mat-icon>get_app</mat-icon>
                 </button>
                 <mat-menu #menu2="matMenu">
-                    <button mat-menu-item (click)="tableGenericComponent.exportTable('xls','Reporte estación')">XLS</button>
-                    <button mat-menu-item (click)="tableGenericComponent.exportTable('csv','Reporte estación')">CSV</button>
+                    <button mat-menu-item (click)="tableGenericComponent.exportTable('xls','Reporte estación - ' + tituloVariable)">XLS</button>
+                    <button mat-menu-item (click)="tableGenericComponent.exportTable('csv','Reporte estación - ' + tituloVariable)">CSV</button>
                     <button mat-menu-item (click)="exportPDF()">PDF</button>
                 </mat-menu>
                 <app-pdf-creator #pdfGenerator [data]="dataSource" [columns]="['Fecha', 'Concentracion', 'Parametro', 'Tipo', 'Origen']">
