@@ -1,0 +1,9 @@
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-02-28 11:14:03"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-02-28 11:14:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-02-28 11:14:28"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-02-28 11:30:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-02-28 11:30:05"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CLRB03/username: admin","timestamp":"2024-02-28 11:30:24"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-02-28 11:33:26"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-02-28 11:33:29"}
+{"level":"info","message":"POST addStationReport/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2024-02-28 11:33:51"}
