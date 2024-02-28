@@ -132,7 +132,6 @@ export class AireComponent implements OnInit {
 
  // AGUS
   private getNombresPuntos(): void {
-    console.log(this.idEmpresa);
     this.aireService.getNombresPuntos(this.idEmpresa).subscribe({
       next: (resp) => {
         this.nombresPuntos = resp;
