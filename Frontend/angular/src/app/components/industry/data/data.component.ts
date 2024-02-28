@@ -52,7 +52,7 @@ export class DataComponent implements OnInit, AfterViewInit {
   showDepartamento: boolean = false;
   showEmpresa: boolean = true;
   departamentos: Departamento[] = departamentos;
-  columnas: string[] = ['Parametro', 'Tipo', 'Fecha'];
+  columnas: string[] = ['Parametro', 'Tipo', 'Fecha', 'Punto'];
   listChipFilter: Chip[] = [];
   selectedColumn: string = '';
   textFilter: string = '';
@@ -62,6 +62,7 @@ export class DataComponent implements OnInit, AfterViewInit {
   showFilterDate: boolean = false;
   title: string = '';
   tituloVariable = '';
+  nombresPuntos: any = [];
 
   dataFormGroup = this._formBuilder.group({
     nombreEmpresa: [''],
@@ -96,11 +97,14 @@ export class DataComponent implements OnInit, AfterViewInit {
   onSelectionChange(): void {
     if (this.selectedColumn == "Fecha") {
       this.showBuscar = false;
-      this.showFilterDate = true
-    }
-    else {
+      this.showFilterDate = true; 
+    } else if (this.selectedColumn == "Tipo") {
       this.showFilterDate = false;
       this.showBuscar = true;
+    } else if (this.selectedColumn == "Punto") {
+      this.showFilterDate = false;
+      this.showBuscar = true;
+
     }
   }
 
@@ -173,6 +177,57 @@ export class DataComponent implements OnInit, AfterViewInit {
     this.showBuscar = true;
   }
 
+  //Agus 
+  getNombresPuntos(): void {
+    let idCompany: number = 0;
+    for (let i = 0; i < this.nameCompanys.length; i++) {
+      if (this.dataFormGroup.value.nombreEmpresa == this.nameCompanys[i].nombre) {
+        idCompany = this.nameCompanys[i].id;
+        console.log(idCompany);
+      }
+    }
+
+    this.aireService.getNombresPuntos(idCompany).subscribe({
+      next: (resp: any) => {
+        this.nombresPuntos = resp.nombresPuntos;
+    
+      },
+      error: (err) => {
+        this.alertService.clear();
+        if (err.status == 0) {
+          this.alertService.error("Servicio sin conexión", this.options);
+          setTimeout(() => {
+            this.router.navigate(['login']);
+          }, 1400);
+        }
+        else if(err.status == 400) this.alertService.error(err.error.message, this.options);
+        else this.alertService.error("Error obteniendo nombres de puntos", this.options);
+      }
+    })
+  }
+
+  addFilterColumnPunto(): void {
+    this.alertService.clear();
+    if (this.selectedColumn && this.selectedColumn == 'Punto') {
+    if (this.textFilter) {
+      const chip: Chip = {
+        search: this.textFilter,
+        column: this.selectedColumn,
+      };
+      this.listChipFilter.push(chip);
+      var indice = this.columnas.indexOf(this.selectedColumn);
+      if (indice > -1) {
+        this.columnas.splice(indice, 1);
+      }
+      this.applyFilters();
+      this.textFilter = '';
+      this.selectedColumn = '';
+    }
+    else this.alertService.warn("Se debe ingresar texto en el buscador");
+  }
+
+  }
+
   addFilterColumn(): void {
     this.alertService.clear();
     if (this.selectedColumn && this.selectedColumn != 'Fecha') {
@@ -221,7 +276,7 @@ export class DataComponent implements OnInit, AfterViewInit {
 
   filterEmpresa(): void {
     this.listChipFilter = [];
-    this.columnas = ['Parametro', 'Tipo', 'Fecha'];
+    this.columnas = ['Parametro', 'Tipo', 'Fecha', 'Punto'];
     this.listChipFilter = [];
     this.dataFormGroup.reset();
     this.displayedColumns = ['nombrePunto','latitud', 'longitud', 'fechaInicio', 'fechaFin', 'parametro', 'unidad', 'valor', 'metodologia', 'frecuencia', 'equipo', 'tipoMonitoreo', 'valorMaximo', 'observaciones', 'origen'];
@@ -263,6 +318,10 @@ export class DataComponent implements OnInit, AfterViewInit {
           const dataInicioConvertida = moment(data.fechaInicio, 'DD/MM/YYYY').format('YYYY-MM-DD');
           const dataFinConvertida = moment(data.fechaFin, 'DD/MM/YYYY').format('YYYY-MM-DD');
           if (!(dataInicioConvertida >= fechaInicio && dataFinConvertida <= fechaFin)) {
+            return false;
+          }
+        } else if (filterColumn === 'punto') {
+          if (!data.nombrePunto.toLowerCase().includes(filterValue)) {
             return false;
           }
         }
