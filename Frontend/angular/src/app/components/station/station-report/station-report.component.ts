@@ -92,6 +92,7 @@ export class StationReportComponent implements OnInit {
     })
   }
 
+  // NO SE USA
   clearStationInfo(): void {
     this.tipos = [];
     this.parametros = [];
@@ -106,13 +107,19 @@ export class StationReportComponent implements OnInit {
   }
 
   clearAll(): void {
-    this.stationForm.reset();
-    this.clearStationInfo();
-    this.stationForm.controls['identificacion'].setErrors(null);
-    this.stationForm.controls['tipoPeriodo'].setErrors(null);
-    this.stationForm.controls['valor'].setErrors(null);
-    this.stationForm.controls['fecha'].setErrors(null);
-    this.stationForm.controls['parametro'].setErrors(null);
+  // this.stationForm.reset();
+  // this.clearStationInfo();
+  //this.stationForm.controls['identificacion'].setErrors(null);
+  //this.stationForm.controls['tipoPeriodo'].setErrors(null);
+  //this.clearStationInfo();
+  this.stationForm.get('valor')?.setValue(null); 
+  this.stationForm.get('fecha')?.setValue(null); 
+  this.stationForm.get('valor')?.clearValidators(); 
+  this.stationForm.get('fecha')?.clearValidators(); 
+  this.stationForm.get('valor')?.updateValueAndValidity(); 
+  this.stationForm.get('fecha')?.updateValueAndValidity(); 
+
+    //this.stationForm.controls['parametro'].setErrors(null);
   }
  
   private disableInputs(): void {
