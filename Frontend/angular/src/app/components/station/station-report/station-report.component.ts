@@ -7,6 +7,7 @@ import { Station } from 'src/app/models/station/aire.module';
 import { SanitizeService } from 'src/app/services/sanitize/sanitize.service';
 import { StationService } from 'src/app/services/microservice_aire/station/station.service';
 import { AlertService } from '../../alert';
+import { ConstantPool } from '@angular/compiler';
 
 @Component({
   selector: 'app-station-report',
@@ -23,6 +24,7 @@ export class StationReportComponent implements OnInit {
   parametros! : string [];
   parametrosStation : any = [];
   periodosStation : any = [];
+  reporte: any = [];
 
   constructor(public alertService: AlertService,
     private _formBuilder: FormBuilder,
@@ -34,6 +36,7 @@ export class StationReportComponent implements OnInit {
   ngOnInit(): void {
     this.disableInputs();
     this.getStations();
+    
     this.filteredOptions = this.stationForm.controls['identificacion'].valueChanges.pipe(
       startWith(''),
       map((value: any) => this._filter(value || '')),
@@ -65,6 +68,7 @@ export class StationReportComponent implements OnInit {
     this.stationService.getStation().subscribe({
       next: (resp) => {
         this.nameStations = resp;
+        
       },
       error: (err) => {
         this.alertService.clear();
@@ -90,6 +94,8 @@ export class StationReportComponent implements OnInit {
       propietario: optionSelected.propietario.nombre,
       operador: optionSelected.operador.nombre
     })
+    this.getReport();
+   // console.log(this.reporte)
   }
 
   // NO SE USA
@@ -140,12 +146,14 @@ export class StationReportComponent implements OnInit {
 
   onFinish(): void {
     this.alertService.clear();
-    if (this.validateStationReport()) {
+    if (this.validateStationReport() && this.existReport() == false) {
       this.addStationReport();
     }
   }
 
   private addStationReport(): void {
+    this.existReport();
+
     let reportStation = {
       "tipoPeriodo": this.stationForm.value.tipoPeriodo,
       "fecha": this.stationForm.value.fecha,
@@ -153,6 +161,7 @@ export class StationReportComponent implements OnInit {
       "parametro": this.stationForm.value.parametro,
       "station": this.stationSelected
     }
+    console.log(reportStation)
     this.alertService.clear();
     this.stationService.addStationReport(reportStation).subscribe({
       next: (resp) => {
@@ -184,7 +193,49 @@ export class StationReportComponent implements OnInit {
     return this.nameStations.filter((e: any) => e.identificacion === this.stationForm.value.identificacion).length > 0;
   }
 
+
+  //AGUS
+
+  getReport(): void {
+      this.stationService.getStationReports(this.stationSelected.codigo).subscribe({
+        next: (resp: any) => {
+          this.reporte = resp;
+          if (resp.report.length == 0) this.alertService.info("No existen reportes para esta estación", this.options);
+        },
+        error: (err: any) => {
+          this.alertService.clear();
+          this.alertService.error("Servicio sin conexión", this.options);
+          if (err.status == 0) {
+            setTimeout(() => {
+              this.router.navigate(['login']);
+            }, 1400);
+          }
+        }
+      })  
+  }
+
+  existReport(): boolean {
+    console.log(this.reporte)
+    console.log(this.stationForm.value.fecha)
+    console.log(this.stationForm.value.parametro) 
+    console.log(this.stationForm.value.tipoPeriodo)
+
+    for (let i = 0; i < this.reporte.report.length; i++) {
+      if (this.reporte.report[i].fecha == this.stationForm.value.fecha && this.reporte.report[i].parametro == this.stationForm.value.parametro && this.reporte.report[i].tipoPeriodo == this.stationForm.value.tipoPeriodo
+        && this.reporte.report[i].concentracion == this.stationForm.value.valor) {
+        //this.alertService.error("Ya existe un reporte con esa fecha, parametro, tipo de periodo y concentración", this.options);
+        return true;
+      } 
+    }
+      return false; 
+    }
+
+
   private validateStationReport(): boolean {
+    if (this.existReport() == true) {
+      this.alertService.error("Ya existe un reporte con esa fecha, parametro, tipo de periodo y concentración");
+      return false;
+    }
     let form = this.stationForm.value;
     if (form.fecha == "" || !form.fecha) {
       return this.showError('fecha', "Debe ingresar una fecha");
