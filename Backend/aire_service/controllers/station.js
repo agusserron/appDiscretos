@@ -180,8 +180,15 @@ const addStationReport = async (req, res) => {
         if (!periodo) return res.status(404).json({ message: "El periodo no existe" });
         let parameter = await stationAireRepository.getStationParameter(station.id, data.parametro);
         if (!parameter) return res.status(404).json({ message: "El parametro no existe" });
+
         const dateReport = data.fecha.split('T');
         data.fecha = dateReport[0];
+
+        // Verificar si el reporte ya existe
+        const existReport = await stationAireRepository.getStationReportByData(data.fecha, periodo.id, station.id, parameter.id, data.concentracion);
+        if (existReport) {
+            return res.status(400).json({ message: "El reporte ya existe" });
+        }
 
         await stationAireRepository.addStationReport(data, periodo.id, station.id, parameter.id);
         logInfo(`POST addStationReport/codigo/${data.station.codigo}/username: ${req.user.username}`);
@@ -194,6 +201,9 @@ const addStationReport = async (req, res) => {
         release();
     }
 }
+
+
+
 
 const getStationReports = async (req, res) => {
     try {
