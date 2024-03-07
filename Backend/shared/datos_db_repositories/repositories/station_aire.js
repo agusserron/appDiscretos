@@ -123,6 +123,18 @@ export class StationAireRepository {
     )
   }
 
+  //agus
+
+  getStationReportByData = async (fecha, periodoId, stationId, parameterId, concentracion) => {
+    const query = `
+        SELECT *
+        FROM estacion_aire_medicion
+        WHERE fecha = ? AND idPeriodo = ? AND idEstacion = ? AND idParametro = ? AND concentracion = ?
+    `;
+    const result = await this.connection.query(query, [fecha, periodoId, stationId, parameterId, concentracion]);
+    return result[0]; 
+}
+
   existStation = async (codigo) => {
     const data = await this.connection.query(`SELECT count(codigo) as quantity FROM estacion_aire s WHERE s.codigo = ?`, [codigo])
     return data[0].quantity

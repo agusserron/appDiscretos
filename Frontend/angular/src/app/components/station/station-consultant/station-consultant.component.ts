@@ -131,7 +131,7 @@ export class StationConsultantComponent implements OnInit {
       this.stationService.getStationReports(this.stationSelected.codigo).subscribe({
         next: (resp: any) => {
           this.dataSource = new MatTableDataSource(resp.report)
-          this.reportStations = resp;
+          this.reportStations = resp;        
           this.showTable = true;
           if (resp.report.length == 0) this.alertService.info("No existen reportes para esta estación", this.options);
         },
@@ -151,6 +151,9 @@ export class StationConsultantComponent implements OnInit {
   private validateExistNameStation(): boolean {
     return this.nameStations.filter((e: any) => e.identificacion === this.stationForm.value.identificacion).length > 0;
   }
+
+  
+
 
   validateStationReport(): boolean {
     if (this.stationForm.value.identificacion == "" || !this.stationForm.value.identificacion) {
