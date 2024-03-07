@@ -1,3 +1,4 @@
+
 {"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 10:57:57"}
 {"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:01:16"}
 {"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-03-05 11:01:16"}
@@ -159,3 +160,4 @@
 {"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:42:29"}
 {"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:42:33"}
 {"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:42:39"}
+

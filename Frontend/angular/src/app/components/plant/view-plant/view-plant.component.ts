@@ -54,10 +54,30 @@ export class PlantComponent implements OnInit {
     )
   }
 
+/*
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
+*/
+
+/* primeros caracteres */
+applyFilter(event: Event) {
+  const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
+  
+  this.dataSource.filterPredicate = (data: any, filter: string) => {
+    const dataStr = Object.values(data).join(' ').toLowerCase();
+    const words = dataStr.split(' '); // parto los strings en pedazos
+
+    return !filter || words.some(word => word.startsWith(filter)); // miro si alguna palabra empieza con el filtro
+  };
+
+  this.dataSource.filter = filterValue;
+}
+
+
+
+
 
   customCellLogicFunction(element: any, column: any): any {
     if(column == "nroEnlace"){
