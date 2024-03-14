@@ -14,6 +14,7 @@ router.getAsync('/report', auth.dataToken, auth.authRolePermissions([Roles.AIRE,
 router.getAsync('/institutes', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.getInstitutes)
 router.getAsync('/periods', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.getPeriods)
 router.getAsync('/parameters', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.getParameters)
+router.putAsync('/data', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.deleteDataStation)
 
 
 

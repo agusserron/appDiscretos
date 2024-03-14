@@ -6,21 +6,6 @@
     "auditLog": "Logs\\.6a44091311d42b0f75da95c15a42b25efa9296fc-audit.json",
     "files": [
         {
-            "date": 1707231395301,
-            "name": "Logs\\info-2024-02-06.log",
-            "hash": "ed83af385590496d7e58de2deed939912cb4334294becc75968f02193e83eeb9"
-        },
-        {
-            "date": 1707312726291,
-            "name": "Logs\\info-2024-02-07.log",
-            "hash": "952d4df5a9e7919a09fa27b1769802f8693b94158326ef225c58cc5168b4a721"
-        },
-        {
-            "date": 1707390719909,
-            "name": "Logs\\info-2024-02-08.log",
-            "hash": "c420ff43e274b422e033411c864b01731f450bf75e304ff8224e4a6774b1f031"
-        },
-        {
             "date": 1708344135406,
             "name": "Logs\\info-2024-02-19.log",
             "hash": "fadd6f251d6a6bf688c1c57449659ac4f494176cb313b676a408d4d3b8fb3343"
@@ -74,6 +59,36 @@
             "date": 1709730368240,
             "name": "Logs\\info-2024-03-06.log",
             "hash": "bdc55d68ff8e60462c5e3fa681333aeb762ba7aa5b4f7be69005017cad3439c7"
+        },
+        {
+            "date": 1709816834656,
+            "name": "Logs\\info-2024-03-07.log",
+            "hash": "46efad8a85315ddb6b06ace2fb5ec9bf2bcf746b2caa6d37ca74fadc86a60210"
+        },
+        {
+            "date": 1709904947173,
+            "name": "Logs\\info-2024-03-08.log",
+            "hash": "9520c70926568275ee8dc64445771cb05a0bb62fa147cb145253644363059cf6"
+        },
+        {
+            "date": 1710159876173,
+            "name": "Logs\\info-2024-03-11.log",
+            "hash": "1d20ecdcfb1d076bb76eb478a44673dbdd7ec29d1d6564b05df02acce14b2de6"
+        },
+        {
+            "date": 1710244297487,
+            "name": "Logs\\info-2024-03-12.log",
+            "hash": "981ac6401e7a69d47720cb39937ee0fad0364608a001f68598a96a7e84e6eb57"
+        },
+        {
+            "date": 1710331268045,
+            "name": "Logs\\info-2024-03-13.log",
+            "hash": "a152a43d2c23845a30f7cf850e400e0b8d56550114a4a62a3ceee10894d5d270"
+        },
+        {
+            "date": 1710423138237,
+            "name": "Logs\\info-2024-03-14.log",
+            "hash": "3a619d39cca4fe68f8404656363147d843a52d3a46d81ae0c6320513666d2013"
         }
     ],
     "hashType": "sha256"

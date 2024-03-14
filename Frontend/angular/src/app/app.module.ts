@@ -34,6 +34,9 @@ import { AddCompanyComponent } from './components/company/add-company/add-compan
 import { AddPlantComponent } from './components/plant/add-plant/add-plant.component';
 import { IndustryComponent } from './components/industry/home-industry/home-industry.component';
 import { AddResultSampleComponent } from './components/collaborators/add-result-sample/add-result-sample.component';
+import { Dialog } from '@angular/cdk/dialog';
+import { DialogDeletDataComponent } from './components/station/dialog-delet-data/dialog-delet-data.component';
+import { InfoComponent } from './components/station/info/info.component';
 
 
 @NgModule({
@@ -59,7 +62,9 @@ import { AddResultSampleComponent } from './components/collaborators/add-result-
     AddCompanyComponent,
     AddPlantComponent,
     IndustryComponent,
-    AddResultSampleComponent
+    AddResultSampleComponent,
+    DialogDeletDataComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

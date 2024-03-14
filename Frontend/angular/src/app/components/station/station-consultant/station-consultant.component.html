@@ -79,7 +79,7 @@
             </div>
         </div>
         <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [displayedColumns]=displayedColumns
-            [pageSize]="8">
+            [pageSize]="8" [dialogComponents]="[DialogDeletDataComponent,DialogModifyComponent,InfoComponent]" [pageSize]="8"  (dialogClosed)="manageEvent($event)">
         </app-table-generic>
     </div>
 </body>

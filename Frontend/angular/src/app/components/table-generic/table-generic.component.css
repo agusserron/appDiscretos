@@ -25,3 +25,9 @@ tr.fila:hover {
         font-size: 12px;
     }
 }
+
+.fila-desactivada {
+    background-color: #f2f2f2; /* Color de fondo gris claro para filas desactivadas */
+    color: #bdbdbd !important; /* Color de texto gris claro para filas desactivadas */
+    
+  }

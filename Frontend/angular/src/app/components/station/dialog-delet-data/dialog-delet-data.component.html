@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>Eliminar dato</h1>
+<div mat-dialog-content>
+    <p><b>¿Estas seguro de eliminar el siguiente dato?</b></p>
+    <p><b>Fecha: </b>{{dataStation.fecha}}</p>
+    <p><b>Concentracion </b>{{dataStation.concentracion}}</p>
+    <p><b>Parametro: </b>{{dataStation.parametro}}</p>
+    <p><b>Tipo: </b>{{dataStation.tipo}}</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
+    <button mat-button cdkFocusInitial (click)="deleteData()">Eliminar <mat-icon>delete</mat-icon></button>
+</div>
+<div class="alertBox-container">
+    <div class="alertBox">
+        <alert></alert>
+    </div>
+</div>

@@ -124,8 +124,7 @@ export class StationAireRepository {
   }
 
   //agus
-
-  getStationReportByData = async (fecha, periodoId, stationId, parameterId, concentracion) => {
+getStationReportByData = async (fecha, periodoId, stationId, parameterId, concentracion) => {
     const query = `
         SELECT *
         FROM estacion_aire_medicion
@@ -133,6 +132,18 @@ export class StationAireRepository {
     `;
     const result = await this.connection.query(query, [fecha, periodoId, stationId, parameterId, concentracion]);
     return result[0]; 
+}
+
+//agus - campo nuevo : userStatus
+
+deleteDataStation = async (idData, userName) => {
+  const query = `
+      UPDATE estacion_aire_medicion
+      SET userStatus = ?
+      WHERE id = ?
+  `;
+  const result = await this.connection.query(query, [userName, idData]);
+  return result[0];
 }
 
   existStation = async (codigo) => {
@@ -160,7 +171,7 @@ export class StationAireRepository {
     return data[0].quantity > 0
   }
 
-  getStationReport = async (idStation) => {
+  /*getStationReport = async (idStation) => {
     const data = await this.connection.query(`SELECT a.fecha, a.concentracion, a.origen, pm.tipo, p2.nombre_clave as parametro 
     FROM estacion_aire_medicion AS a
     JOIN estacion_aire_periodo AS p ON p.id =  a.idPeriodo
@@ -171,6 +182,20 @@ export class StationAireRepository {
     GROUP BY a.fecha, a.concentracion, a.origen
     ORDER BY a.fecha DESC;`, [idStation])
     return data
+  }*/
+  getStationReport = async (idStation) => {
+    const data = await this.connection.query(`
+    SELECT a.id AS idReporte, a.userStatus, a.fecha, a.concentracion, a.origen, pm.tipo, p2.nombre_clave as parametro 
+    FROM estacion_aire_medicion AS a
+    JOIN estacion_aire_periodo AS p ON p.id =  a.idPeriodo
+    JOIN periodos_muestra pm ON pm.id = p.idPeriodo 
+    JOIN estacion_aire_parametro AS pa ON pa.id = a.idParametro
+    JOIN parametro p2 ON p2.id_parametro = pa.idParametro 
+    WHERE a.idEstacion = ?
+    GROUP BY a.id, a.userStatus, a.fecha, a.concentracion, a.origen
+    ORDER BY a.fecha DESC;
+    `, [idStation]);
+    return data;
   }
 
   getStationPeriodo = async (idStation, periodo) => {

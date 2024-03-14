@@ -167,6 +167,27 @@ const getPeriods = async (req, res) => {
     }
 }
 
+// agus
+const deleteDataStation = async (req, res) => { 
+    try {
+        let idData = req.body.idData;
+        const deleteData = await stationAireRepository.deleteDataStation(idData, req.user.username);
+
+        logInfo(`UPDATE deleteDataStation/idData/${idData}/username: ${req.user.username}`);
+        
+
+        res.status(201).json({ message: "Dato eliminado correctamente" });
+    } catch (e) {
+
+        logError(`Error deleteDataStation/${e}/username: ${req.user.username}`);    
+        res.status(500).json({ message: "Error, eliminando un dato de una estación de aire." });
+    } finally {
+
+        release();
+    }
+}
+
+
 
 const addStationReport = async (req, res) => {
     try {
@@ -184,7 +205,6 @@ const addStationReport = async (req, res) => {
         const dateReport = data.fecha.split('T');
         data.fecha = dateReport[0];
 
-        // Verificar si el reporte ya existe
         const existReport = await stationAireRepository.getStationReportByData(data.fecha, periodo.id, station.id, parameter.id, data.concentracion);
         if (existReport) {
             return res.status(400).json({ message: "El reporte ya existe" });
@@ -333,5 +353,6 @@ export default {
     getStationReports,
     getInstitutes,
     getPeriods,
-    getParameters
+    getParameters, 
+    deleteDataStation
 }
