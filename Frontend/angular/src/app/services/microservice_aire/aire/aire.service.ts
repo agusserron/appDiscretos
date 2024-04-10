@@ -44,4 +44,7 @@ export class AireService {
     const params = new HttpParams().set('nombrePunto', nombrePuntoEncoded);
     return this.http.get<any>(`${environment.apiAire}/aire/latLong`, { params })
   }
+
+  
+
 }

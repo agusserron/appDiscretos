@@ -70,8 +70,8 @@
                     <mat-icon>get_app</mat-icon>
                 </button>
                 <mat-menu #menu2="matMenu">
-                    <button mat-menu-item (click)="tableGenericComponent.exportTable('xls','Reporte estación - ' + tituloVariable)">XLS</button>
-                    <button mat-menu-item (click)="tableGenericComponent.exportTable('csv','Reporte estación - ' + tituloVariable)">CSV</button>
+                    <button mat-menu-item (click)="exportToXLS()">XLS</button>
+                    <button mat-menu-item (click)="exportToCSV()">CSV</button>
                     <button mat-menu-item (click)="exportPDF()">PDF</button>
                 </mat-menu>
                 <app-pdf-creator #pdfGenerator [data]="dataSource" [columns]="['Fecha', 'Concentracion', 'Parametro', 'Tipo', 'Origen']">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [displayedColumns]=displayedColumns
-            [pageSize]="8">
+            [pageSize]="8" [dialogComponents]="[DialogDeletDataComponent,DialogModifyDataComponent,InfoComponent]" [pageSize]="8"  (dialogClosed)="manageEvent($event)">
         </app-table-generic>
     </div>
 </body>

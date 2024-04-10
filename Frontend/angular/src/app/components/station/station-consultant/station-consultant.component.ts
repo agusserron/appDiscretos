@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDatepicker } from '@angular/material/datepicker';
 import { MatTableDataSource } from '@angular/material/table';
@@ -11,6 +11,14 @@ import { StationService } from 'src/app/services/microservice_aire/station/stati
 import { AlertService } from '../../alert';
 import { PdfCreatorComponent } from '../../pdf-creator/pdf-creator.component';
 import { TableGenericComponent } from '../../table-generic/table-generic.component';
+import { DialogModifyComponent } from '../dialog-modify/dialog-modify.component';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogDeletDataComponent } from '../dialog-delet-data/dialog-delet-data.component';
+import { InfoComponent } from '../info/info.component';
+import { DialogDeleteComponent } from '../dialog-delete/dialog-delete.component';
+import * as XLSX from 'xlsx';
+import { saveAs } from 'file-saver';
+import { DialogModifyDataComponent } from 'src/app/dialog-modify-data/dialog-modify-data.component';
 
 @Component({
   selector: 'app-station-consultant',
@@ -23,21 +31,26 @@ export class StationConsultantComponent implements OnInit {
   nameStations: any = [];
   reportStations: any = [];
   dataSource!: MatTableDataSource<any>;
-  displayedColumns: string[] = ['fecha', 'concentracion', 'parametro', 'tipo', 'origen'];
+  displayedColumns: string[] = ['fecha', 'idReporte', 'concentracion', 'parametro', 'tipo', 'origen', 'accion'];
   @ViewChild(TableGenericComponent) tableGenericComponent!: TableGenericComponent;
   @ViewChild('pdfGenerator', { static: false }) pdfGenerator!: PdfCreatorComponent;
+  DialogDeletDataComponent: any = DialogDeletDataComponent;
+  DialogModifyDataComponent: any = DialogModifyDataComponent;
+  DialogModifyComponent: any = DialogModifyComponent;
+  InfoComponent: any = InfoComponent;
   @ViewChild('picker') picker!: MatDatepicker<any>;
   stationSelected!: Station;
   tituloVariable = '';
   showTable: boolean = false;
   inicioFecha: any;
   finFecha: any;
+  @Input() estadoFilas: any[] = [];
 
   constructor(public alertService: AlertService,
     private _formBuilder: FormBuilder,
     private sanitizerService: SanitizeService,
     private stationService: StationService,
-    private router: Router) { }
+    private router: Router, public dialog: MatDialog) { }
 
   stationForm = this._formBuilder.group({
     identificacion: ['', Validators.required],
@@ -118,15 +131,27 @@ export class StationConsultantComponent implements OnInit {
 
   exportPDF(): void {
     let title = 'Reporte estación - ' + this.stationForm.value.identificacion;
-    const columnData = ['fecha', 'concentracion', 'parametro', 'tipo', 'origen'];
-    this.pdfGenerator.exportPDF(columnData, title, 'Reporte estación');
+    const data = this.dataSource.data;
+    const filteredData = data.filter(row => this.esFilaValida(row));
+    const columnData = ['fecha',  'concentracion', 'parametro', 'tipo', 'origen'];
+    this.pdfGenerator.exportPDF(filteredData, columnData, title, 'Reporte estación');
   }
 
 
 
+  manageEvent(data: any): void {
+    if(data != undefined ){
+      this.showTable = false;
+      //this.uploadStations();
+    }
+  }
+
+  
+
   onFinish(): void {
     this.alertService.clear();
     this.showTable = false;
+    this.stationService.station = this.stationForm.value.identificacion ? this.stationForm.value.identificacion : '';
     if (this.validateStationReport()) {
       this.stationService.getStationReports(this.stationSelected.codigo).subscribe({
         next: (resp: any) => {
@@ -193,5 +218,44 @@ export class StationConsultantComponent implements OnInit {
       this.onFinish();
     }
   }
+
+
+  exportToXLS(): void {
+    const data = this.dataSource.data;
+
+    const filteredData = data.filter(row => this.esFilaValida(row));
+  
+    const ws: XLSX.WorkSheet = XLSX.utils.json_to_sheet(filteredData);
+  
+    const wb: XLSX.WorkBook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Datos');
+  
+    XLSX.writeFile(wb, this.tituloVariable + '.xlsx');
+  }
+  esFilaValida(row: any): boolean {
+    return row.userStatus !== undefined && row.userStatus === 'Activo';
+  }
+
+  exportToCSV(): void {
+    const data = this.dataSource.data;
+    const filteredData = data.filter(row => this.esFilaValida(row));
+    const csvData = this.convertToCSV(filteredData);
+    const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8' });
+    saveAs(blob, this.tituloVariable + '.csv');
+  }
+  
+  convertToCSV(data: any[]): string {
+    let csv = '';
+    const headers = Object.keys(data[0]);
+    csv += headers.join(',') + '\n';
+
+    data.forEach(row => {
+      const values = headers.map(header => row[header]);
+      csv += values.join(',') + '\n';
+    });
+  
+    return csv;
+  }
+
 
 }

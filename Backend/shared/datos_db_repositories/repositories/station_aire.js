@@ -124,8 +124,7 @@ export class StationAireRepository {
   }
 
   //agus
-
-  getStationReportByData = async (fecha, periodoId, stationId, parameterId, concentracion) => {
+getStationReportByData = async (fecha, periodoId, stationId, parameterId, concentracion) => {
     const query = `
         SELECT *
         FROM estacion_aire_medicion
@@ -134,6 +133,40 @@ export class StationAireRepository {
     const result = await this.connection.query(query, [fecha, periodoId, stationId, parameterId, concentracion]);
     return result[0]; 
 }
+
+//agus - campo nuevo : userStatus
+
+deleteDataStation = async (idData, userName) => {
+  const query = `
+      UPDATE estacion_aire_medicion
+      SET userStatus = ?
+      WHERE id = ?
+  `;
+  const result = await this.connection.query(query, [userName, idData]);
+  return result[0];
+}
+
+updateDataReport = async (newData, parametroNuevo) => {
+  const query = `
+      UPDATE estacion_aire_medicion
+      SET idParametro = ?, concentracion = ?, idPeriodo = ?
+      WHERE id = ?
+  `;
+  const result = await this.connection.query(query, [parametroNuevo, newData.concentracion, newData.tipoPeriodo, newData.idReporte]);
+  return result[0];
+}
+
+getStationByIdReport = async (idReport) => {
+  const query = `
+      SELECT *
+      FROM estacion_aire_medicion
+      WHERE id = ?
+  `;
+  const result = await this.connection.query(query, [idReport]);
+  return result[0];
+}
+
+//
 
   existStation = async (codigo) => {
     const data = await this.connection.query(`SELECT count(codigo) as quantity FROM estacion_aire s WHERE s.codigo = ?`, [codigo])
@@ -160,7 +193,7 @@ export class StationAireRepository {
     return data[0].quantity > 0
   }
 
-  getStationReport = async (idStation) => {
+  /*getStationReport = async (idStation) => {
     const data = await this.connection.query(`SELECT a.fecha, a.concentracion, a.origen, pm.tipo, p2.nombre_clave as parametro 
     FROM estacion_aire_medicion AS a
     JOIN estacion_aire_periodo AS p ON p.id =  a.idPeriodo
@@ -171,6 +204,20 @@ export class StationAireRepository {
     GROUP BY a.fecha, a.concentracion, a.origen
     ORDER BY a.fecha DESC;`, [idStation])
     return data
+  }*/
+  getStationReport = async (idStation) => {
+    const data = await this.connection.query(`
+    SELECT a.id AS idReporte, a.userStatus, a.fecha, a.concentracion, a.origen, pm.tipo, p2.nombre_clave as parametro 
+    FROM estacion_aire_medicion AS a
+    JOIN estacion_aire_periodo AS p ON p.id =  a.idPeriodo
+    JOIN periodos_muestra pm ON pm.id = p.idPeriodo 
+    JOIN estacion_aire_parametro AS pa ON pa.id = a.idParametro
+    JOIN parametro p2 ON p2.id_parametro = pa.idParametro 
+    WHERE a.idEstacion = ?
+    GROUP BY a.id, a.userStatus, a.fecha, a.concentracion, a.origen
+    ORDER BY a.fecha DESC;
+    `, [idStation]);
+    return data;
   }
 
   getStationPeriodo = async (idStation, periodo) => {
@@ -193,6 +240,16 @@ export class StationAireRepository {
     const data = await this.connection.query(`SELECT s.idParametro FROM estacion_aire_parametro s WHERE s.idEstacion = ?`, [idStation])
     const parameters = data.map((obj) => obj.idParametro);
     return parameters;
+  }
+
+  getParametersIdStation = async (idStation) => {
+    const data = await this.connection.query(`SELECT * FROM estacion_aire_parametro s WHERE s.idEstacion = ?`, [idStation])
+    return data;
+  }
+
+  getPeriodsIdStation = async (idStation) => {
+    const data = await this.connection.query(`SELECT * FROM estacion_aire_periodo s WHERE s.idEstacion = ?`, [idStation])
+    return data;
   }
 
   deletePeriodById = async (idPeriod) => {
@@ -241,6 +298,16 @@ export class StationAireRepository {
 
   getParameters = async () => {
     const data = await this.connection.query(`SELECT * FROM parametro p WHERE p.id_parametro IN (2014, 2015);`)
+    return data;
+  }
+
+  getParametros = async () => {
+    const data = await this.connection.query(`SELECT * FROM parametro p`)
+    return data;
+  }
+
+  getPeriodos = async () => {
+    const data = await this.connection.query(`SELECT * FROM periodos_muestra p`)
     return data;
   }
 

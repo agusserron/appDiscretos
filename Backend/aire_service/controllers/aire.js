@@ -133,10 +133,7 @@ const getLatLongPunto = async (req, res) => {
   try {
     const nombrePunto = req.query.nombrePunto;
     let nombrePuntoParam = decodeURIComponent(nombrePunto);
-    console.log( "paseee" + nombrePunto);
-    console.log( "paseee" + nombrePuntoParam);
     const latLong = await aireRepository.getLatLongPunto(nombrePuntoParam);
-    console.log("acaa" + latLong);
     res.status(200).json(latLong);
   } catch (e) {
       logError(`Error getLatLongPunto/${e}/username: ${req.user.username}`);
@@ -146,6 +143,8 @@ const getLatLongPunto = async (req, res) => {
       release();
   }
 }
+
+
 
 //FALTA VALIDAR O3 Y VER QUE ES MAXIMA DIARIA
 const validateState = async (data) => {
@@ -188,5 +187,5 @@ export default {
   getParameters,
   getUnits,
   getNombresPuntos,
-  getLatLongPunto
+  getLatLongPunto,
 }

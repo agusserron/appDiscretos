@@ -18,8 +18,8 @@ export class PdfCreatorComponent {
 
   constructor(){}
 
-  exportPDF(columnData: any, titlePDF: string, titleFile: string): void {
-    let rows = [];
+  exportPDF(filteredData: any, columnData: any, titlePDF: string, titleFile: string): void {
+    /*let rows = [];
     let listReports = this.data.filteredData;
     rows.push(this.columns);
     listReports.forEach((item: any) => {
@@ -29,7 +29,22 @@ export class PdfCreatorComponent {
       });
   
       rows.push(row);
+    }); */
+
+    let rows = [];
+  
+  // Agregar los nombres de las columnas como la primera fila
+  rows.push(columnData);
+  
+  // Agregar los datos filtrados a las filas
+  filteredData.forEach((item: any) => {
+    let row:any = [];
+    columnData.forEach((column: string) => {
+      row.push(item[column]);
     });
+    rows.push(row);
+  });
+
     let title = titlePDF;
     const pdfDefinition: any = {
       pageSize: 'A4',

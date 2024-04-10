@@ -9,7 +9,10 @@ import { environment } from 'src/environments/environment';
 })
 export class StationService {
 
+  station: string = '';
+
   constructor(private http: HttpClient) { }
+
 
   getStation(): Observable<any> {
     return this.http.get<any>(`${environment.apiAire}/station`);
@@ -27,6 +30,13 @@ export class StationService {
     let parm = new HttpParams()
       .set('codigo', codigo);
     return this.http.delete(`${environment.apiAire}/station`, { params: parm });
+  }
+
+  deleteStationData(idData: number): Observable<any> {
+    const body = {
+      idData: idData,
+    };
+    return this.http.put(`${environment.apiAire}/station/data`, body);
   }
 
   addStationReport(reportStation: any): Observable<any> {
@@ -54,4 +64,18 @@ export class StationService {
   getParameters(): Observable<any> {
     return this.http.get<any>(`${environment.apiAire}/station/parameters`);
   }
+
+  getParametersByStation(idReporte: number): Observable<any> {
+    return this.http.get(`${environment.apiAire}/station/parameters/${idReporte}`);
+  }
+
+  getPeriodsByStation(idReporte: number): Observable<any> {
+    return this.http.get(`${environment.apiAire}/station/periods/${idReporte}`);
+  }
+
+  updateStationReport(data: any): Observable<any> {
+    return this.http.put(`${environment.apiAire}/station/report`, data);
+  }
+
+  
 }

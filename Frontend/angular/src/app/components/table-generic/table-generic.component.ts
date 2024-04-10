@@ -19,6 +19,9 @@ export class TableGenericComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @Input() dialogComponents:any;
   @Output() dialogClosed = new EventEmitter<any>();
+
+  exportedDataSource: any[] = [];
+ 
   
   constructor(public dialog: MatDialog) { }
 
@@ -30,6 +33,10 @@ export class TableGenericComponent implements AfterViewInit {
         this.paginator._intl.itemsPerPageLabel = "Items por página";
       }
     });
+  }
+
+  esFilaDesactivada(row: any): boolean {
+    return row.userStatus !== undefined && row.userStatus !== 'Activo';
   }
 
   editAction(element: any): void {
@@ -54,7 +61,23 @@ export class TableGenericComponent implements AfterViewInit {
     });
   }
 
-  exportTable(type: string, name: string) {
+
+  userDelete(element:any) {
+    const dialogRef = this.dialog.open(this.dialogComponents[2], {
+      data: element,
+      height: '430px',
+      width: '430px',
+    });
+    dialogRef.afterClosed().subscribe((result:any) => {
+      this.dialogClosed.emit(result);
+    });
+  
+  }
+
+ 
+
+
+  /*exportTable(type: string, name: string) {
     if (type === 'xls') {
       this.exporter.exportTable('xlsx', {
         fileName: name,
@@ -66,7 +89,32 @@ export class TableGenericComponent implements AfterViewInit {
         sheet: 'Sheet1',
       });
     }
+  }*/
+
+
+  //////////////// NO LO USO
+  exportTable(type: string, name: string) {
+    if (type === 'xls' || type === 'xlsx' || type === 'csv' || type === 'txt' || type === 'json' || type === 'other') {
+
+  
+      // Realizar la exportación
+      this.exporter.exportTable(type, {
+        fileName: name,
+        sheet: 'Sheet1',
+      });
+
+    } else {
+      console.error('Tipo de exportación no válido');
+    }
   }
+
+
+  esFilaValida(row: any): boolean {
+    return row.userStatus !== undefined && row.userStatus === 'Activo';
+  }
+
+
+
 
 
 }

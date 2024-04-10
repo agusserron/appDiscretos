@@ -1,0 +1,42 @@
+<div class="dialog-box">
+    <h1 mat-dialog-title class="title">Modificar dato</h1>
+    <h2 class="subtitle">Fecha: {{data.fecha}} </h2>
+    <div mat-dialog-content>
+        <form [formGroup]="stationFormGroup" autocomplete="off">
+            <div class="row">
+                <div class="column">
+                    <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                        <mat-label>Concentracion</mat-label>
+                        <input type="text" formControlName="concentracion" matInput required>
+                    </mat-form-field>
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Parámetro</mat-label>
+                        <mat-select formControlName="parametro">
+                            <mat-option *ngFor="let param of parametros" [value]="param">
+                                {{param}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Tipo</mat-label>
+                        <mat-select formControlName="periodo">
+                            <mat-option *ngFor="let period of periodos" [value]="period">
+                                {{period}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
+        <button mat-button cdkFocusInitial (click)="modifyDataReport()">Modificar <mat-icon>edit</mat-icon></button>
+    </div>
+    <div class="alertBox-container">
+        <div class="alertBox">
+            <alert></alert>
+        </div>
+    </div>
+</div>

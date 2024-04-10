@@ -1,0 +1,315 @@
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 08:48:56"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 08:49:00"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 08:49:03"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 08:49:05"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 08:49:05"}
+{"level":"error","message":"Error updateDataStation/ReferenceError: data is not defined/username: admin","timestamp":"2024-04-08 08:49:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 08:56:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 08:56:13"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 08:56:16"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 08:56:17"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 08:56:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 08:57:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 08:57:18"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 08:57:21"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 08:57:23"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 08:57:23"}
+{"level":"error","message":"Error updateDataStation/ReferenceError: data is not defined/username: admin","timestamp":"2024-04-08 08:57:25"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-04-08 08:59:05"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 08:59:05"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-04-08 08:59:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 08:59:06"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 08:59:07"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 08:59:10"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 08:59:12"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 08:59:12"}
+{"level":"error","message":"Error updateDataStation/ReferenceError: data is not defined/username: admin","timestamp":"2024-04-08 08:59:15"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:01:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:01:13"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:01:16"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:01:17"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:01:17"}
+{"level":"error","message":"Error updateDataStation/ReferenceError: data is not defined/username: admin","timestamp":"2024-04-08 09:01:23"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:02:47"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:02:48"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:02:50"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:02:51"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:02:51"}
+{"level":"error","message":"Error updateDataStation/ReferenceError: data is not defined/username: admin","timestamp":"2024-04-08 09:02:55"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:34:25"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:34:26"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:34:29"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:34:30"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:34:30"}
+{"level":"error","message":"Error updateDataStation/ReferenceError: data is not defined/username: admin","timestamp":"2024-04-08 09:34:32"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:36:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:36:02"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:36:08"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:36:14"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-04-08 09:36:30"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:36:31"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-04-08 09:36:31"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-04-08 09:36:34"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-04-08 09:36:36"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:36:36"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-04-08 09:36:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:36:40"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:36:42"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:36:45"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:39:53"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:39:57"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:39:59"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:40:00"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:40:00"}
+{"level":"error","message":"Error updateDataStation/ReferenceError: data is not defined/username: admin","timestamp":"2024-04-08 09:40:02"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:41:42"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:41:43"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:41:46"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:41:47"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:41:47"}
+{"level":"error","message":"Error updateDataStation/ReferenceError: data is not defined/username: admin","timestamp":"2024-04-08 09:41:48"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:45:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:45:01"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:45:04"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:45:04"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:45:04"}
+{"level":"error","message":"Error updateDataReport/Error: schema must be object or boolean/username: admin","timestamp":"2024-04-08 09:45:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:53:32"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:53:33"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:53:34"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:53:36"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:53:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:58:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:58:06"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CLRB03/username: admin","timestamp":"2024-04-08 09:58:09"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:58:10"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:58:10"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:58:57"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:58:57"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:59:27"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 09:59:28"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 09:59:31"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 09:59:32"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 09:59:32"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:00:16"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:00:17"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:00:20"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:00:21"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:00:21"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:00:52"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:00:53"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:00:55"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:00:56"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:00:56"}
+{"level":"error","message":"Error updateDataReport/ReferenceError: newData is not defined/username: admin","timestamp":"2024-04-08 10:00:57"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:02:32"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:02:33"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:02:35"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:02:36"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:02:36"}
+{"level":"error","message":"Error updateDataReport/ReferenceError: newData is not defined/username: admin","timestamp":"2024-04-08 10:02:44"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:04:42"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:04:43"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:04:46"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:04:47"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:04:47"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:05:47"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:05:48"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:05:50"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:05:51"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:05:51"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:07:44"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:07:44"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:07:47"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:07:49"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:07:49"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:09:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:09:37"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:09:39"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:09:41"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:09:41"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:10:57"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:10:58"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:11:01"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:11:04"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:11:04"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:13:04"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:13:05"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:13:08"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:13:11"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:13:11"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:14:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:14:19"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:14:21"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:14:22"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:14:22"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:15:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:15:10"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:15:12"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:15:13"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:15:13"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:16:01"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:16:02"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:16:05"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:16:05"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:16:05"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:17:47"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:17:48"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:17:50"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:17:51"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:17:51"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:18:21"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:18:22"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:18:24"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:18:25"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:18:25"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:24:02"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:24:04"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:24:09"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:24:10"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:24:10"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:25:19"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:25:20"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:25:23"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:25:24"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:25:24"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:27:12"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:27:29"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:27:32"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:27:33"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:27:33"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:28:16"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:28:16"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:31:26"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:31:26"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:32:31"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:32:32"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:32:35"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:32:37"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:32:37"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:37:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:37:19"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:37:21"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:37:23"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:37:23"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:41:33"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:41:36"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:41:39"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:41:40"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:41:40"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:46:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:46:10"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:46:12"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:46:13"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:46:13"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:51:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:51:39"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:51:44"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:51:46"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:51:46"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:55:48"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:55:51"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:55:53"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:55:56"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:55:56"}
+{"level":"info","message":"UPDATE updateDataReport/idData/undefined/username: admin","timestamp":"2024-04-08 10:56:00"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:56:08"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:56:10"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:56:51"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 10:56:52"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:56:54"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 10:56:56"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 10:56:56"}
+{"level":"info","message":"UPDATE updateDataReport/idData/undefined/username: admin","timestamp":"2024-04-08 10:57:02"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:57:06"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:57:08"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 10:57:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:01:10"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:01:10"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:01:14"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:01:15"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:01:15"}
+{"level":"error","message":"Error updateDataReport/SqlError: (conn=738115, no: 1452, SQLState: 23000) Cannot add or update a child row: a foreign key constraint fails (`discretos_test`.`estacion_aire_medicion`, CONSTRAINT `idParametro_FK` FOREIGN KEY (`idParametro`) REFERENCES `estacion_aire_parametro` (`id`))\nsql: \n      UPDATE estacion_aire_medicion\n      SET idParametro = ?, concentracion = ?, idPeriodo = ?\n      WHERE id = ?\n   - parameters:[2015,'5000000',2,11571]/username: admin","timestamp":"2024-04-08 11:01:19"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:08:28"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:08:29"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:08:32"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:22:35"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:22:36"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:22:39"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:22:39"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:22:39"}
+{"level":"error","message":"Error updateDataReport/SqlError: (conn=738346, no: 1452, SQLState: 23000) Cannot add or update a child row: a foreign key constraint fails (`discretos_test`.`estacion_aire_medicion`, CONSTRAINT `idParametro_FK` FOREIGN KEY (`idParametro`) REFERENCES `estacion_aire_parametro` (`id`))\nsql: \n      UPDATE estacion_aire_medicion\n      SET idParametro = ?, concentracion = ?, idPeriodo = ?\n      WHERE id = ?\n   - parameters:[2015,'5000',2,11571]/username: admin","timestamp":"2024-04-08 11:22:43"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:26:35"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:26:36"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:26:39"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:26:40"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:26:40"}
+{"level":"error","message":"Error updateDataReport/SqlError: (conn=738400, no: 1452, SQLState: 23000) Cannot add or update a child row: a foreign key constraint fails (`discretos_test`.`estacion_aire_medicion`, CONSTRAINT `idParametro_FK` FOREIGN KEY (`idParametro`) REFERENCES `estacion_aire_parametro` (`id`))\nsql: \n      UPDATE estacion_aire_medicion\n      SET idParametro = ?, concentracion = ?, idPeriodo = ?\n      WHERE id = ?\n   - parameters:['PM10',50,2,11571]/username: admin","timestamp":"2024-04-08 11:26:41"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:28:27"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:28:28"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:28:30"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:28:31"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:28:31"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11571/username: admin","timestamp":"2024-04-08 11:28:33"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:29:37"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:29:38"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:29:40"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:29:40"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:29:40"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11571/username: admin","timestamp":"2024-04-08 11:29:41"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:30:58"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:30:59"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:31:01"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:31:02"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:31:02"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11571/username: admin","timestamp":"2024-04-08 11:31:03"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:33:01"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:33:02"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2024-04-08 11:33:05"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:33:05"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:33:05"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11564/username: admin","timestamp":"2024-04-08 11:33:06"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:34:55"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:34:56"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:34:58"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:34:59"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:34:59"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11571/username: admin","timestamp":"2024-04-08 11:35:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:41:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:41:01"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:41:04"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:41:05"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:41:05"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:41:09"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:41:09"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11571/username: admin","timestamp":"2024-04-08 11:41:13"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:43:13"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:43:14"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:43:16"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:43:17"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:43:17"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11571/username: admin","timestamp":"2024-04-08 11:43:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:50:25"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:50:26"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:50:28"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:50:29"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:50:29"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11571/username: admin","timestamp":"2024-04-08 11:50:30"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:58:40"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 11:58:41"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 11:58:43"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 11:58:44"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 11:58:44"}
+{"level":"error","message":"Error updateDataReport/ReferenceError: parametroEstacion is not defined/username: admin","timestamp":"2024-04-08 11:58:45"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 12:00:01"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 12:00:02"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2024-04-08 12:00:07"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 12:00:08"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 12:00:08"}
+{"level":"error","message":"Error updateDataReport/ReferenceError: parametroEstacion is not defined/username: admin","timestamp":"2024-04-08 12:00:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 12:05:54"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-04-08 12:05:55"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-04-08 12:05:57"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-04-08 12:05:58"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-04-08 12:05:58"}
+{"level":"info","message":"UPDATE updateDataReport/idData/11571/username: admin","timestamp":"2024-04-08 12:05:59"}

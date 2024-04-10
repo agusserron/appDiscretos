@@ -18,7 +18,7 @@
             </mat-form-field>
         </div>
     </div>
-    <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [customCellLogic]="customCellLogicFunction"
+    <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [customCellLogic]="customCellLogicFunction " 
         [displayedColumns]="displayedColumns"
         [dialogComponents]="[DialogDeleteComponent,DialogModifyComponent]" [pageSize]="8" (dialogClosed)="manageEvent($event)"></app-table-generic>
 </body>
