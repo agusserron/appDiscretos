@@ -443,7 +443,7 @@ export class DataComponent implements OnInit, AfterViewInit {
     if (this.showEmpresa) this.title = 'Reporte calidad - ' + this.dataFormGroup.value.nombreEmpresa;
     else if (this.showDepartamento) this.title = 'Reporte calidad - Departamento: ' + this.dataFormGroup.value.departamentoFilter;
     const columnData = ['latitud', 'longitud', 'fechaInicio', 'fechaFin', 'parametro', 'unidad', 'valor', 'metodologia', 'frecuencia', 'equipo', 'tipoMonitoreo', 'valorMaximo', 'observaciones']
-    this.pdfGenerator.exportPDF(columnData, this.title, 'Reporte calidad');
+    this.pdfGenerator.exportPDF(this.dataSource.data, columnData, this.title, 'Reporte calidad');
   }
 
   options = {

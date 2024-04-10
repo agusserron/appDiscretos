@@ -146,6 +146,28 @@ deleteDataStation = async (idData, userName) => {
   return result[0];
 }
 
+updateDataReport = async (newData, parametroNuevo) => {
+  const query = `
+      UPDATE estacion_aire_medicion
+      SET idParametro = ?, concentracion = ?, idPeriodo = ?
+      WHERE id = ?
+  `;
+  const result = await this.connection.query(query, [parametroNuevo, newData.concentracion, newData.tipoPeriodo, newData.idReporte]);
+  return result[0];
+}
+
+getStationByIdReport = async (idReport) => {
+  const query = `
+      SELECT *
+      FROM estacion_aire_medicion
+      WHERE id = ?
+  `;
+  const result = await this.connection.query(query, [idReport]);
+  return result[0];
+}
+
+//
+
   existStation = async (codigo) => {
     const data = await this.connection.query(`SELECT count(codigo) as quantity FROM estacion_aire s WHERE s.codigo = ?`, [codigo])
     return data[0].quantity
@@ -220,6 +242,16 @@ deleteDataStation = async (idData, userName) => {
     return parameters;
   }
 
+  getParametersIdStation = async (idStation) => {
+    const data = await this.connection.query(`SELECT * FROM estacion_aire_parametro s WHERE s.idEstacion = ?`, [idStation])
+    return data;
+  }
+
+  getPeriodsIdStation = async (idStation) => {
+    const data = await this.connection.query(`SELECT * FROM estacion_aire_periodo s WHERE s.idEstacion = ?`, [idStation])
+    return data;
+  }
+
   deletePeriodById = async (idPeriod) => {
     const data = await this.connection.query(`DELETE FROM estacion_aire_periodo where id = ?`, [idPeriod])
     return data[0]
@@ -266,6 +298,16 @@ deleteDataStation = async (idData, userName) => {
 
   getParameters = async () => {
     const data = await this.connection.query(`SELECT * FROM parametro p WHERE p.id_parametro IN (2014, 2015);`)
+    return data;
+  }
+
+  getParametros = async () => {
+    const data = await this.connection.query(`SELECT * FROM parametro p`)
+    return data;
+  }
+
+  getPeriodos = async () => {
+    const data = await this.connection.query(`SELECT * FROM periodos_muestra p`)
     return data;
   }
 

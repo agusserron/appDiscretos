@@ -142,11 +142,15 @@ export class AireRepository {
     }
   };
 
-  //AGUS
+  
   getLatLongPunto = async (nombrePuntoParam) => {
     const data = await this.connection.query(`select mca.latitud, mca.longitud , mca.nombrePunto from monitoreo_calidad_aire_iao mca where mca.nombrePunto = ? LIMIT 1`, [nombrePuntoParam])
     return data
   }
+
+ 
+
+  //
 
 
   getUnitId= async (nombre) => {

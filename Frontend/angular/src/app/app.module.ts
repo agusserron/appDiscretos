@@ -37,6 +37,8 @@ import { AddResultSampleComponent } from './components/collaborators/add-result-
 import { Dialog } from '@angular/cdk/dialog';
 import { DialogDeletDataComponent } from './components/station/dialog-delet-data/dialog-delet-data.component';
 import { InfoComponent } from './components/station/info/info.component';
+import { DialogModifyDataComponent } from './dialog-modify-data/dialog-modify-data.component';
+
 
 
 @NgModule({
@@ -64,7 +66,9 @@ import { InfoComponent } from './components/station/info/info.component';
     IndustryComponent,
     AddResultSampleComponent,
     DialogDeletDataComponent,
-    InfoComponent
+    InfoComponent, 
+    DialogModifyDataComponent,
+
   ],
   imports: [
     BrowserModule,

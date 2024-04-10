@@ -64,4 +64,18 @@ export class StationService {
   getParameters(): Observable<any> {
     return this.http.get<any>(`${environment.apiAire}/station/parameters`);
   }
+
+  getParametersByStation(idReporte: number): Observable<any> {
+    return this.http.get(`${environment.apiAire}/station/parameters/${idReporte}`);
+  }
+
+  getPeriodsByStation(idReporte: number): Observable<any> {
+    return this.http.get(`${environment.apiAire}/station/periods/${idReporte}`);
+  }
+
+  updateStationReport(data: any): Observable<any> {
+    return this.http.put(`${environment.apiAire}/station/report`, data);
+  }
+
+  
 }

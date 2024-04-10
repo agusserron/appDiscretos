@@ -174,8 +174,6 @@ const deleteDataStation = async (req, res) => {
         const deleteData = await stationAireRepository.deleteDataStation(idData, req.user.username);
 
         logInfo(`UPDATE deleteDataStation/idData/${idData}/username: ${req.user.username}`);
-        
-
         res.status(201).json({ message: "Dato eliminado correctamente" });
     } catch (e) {
 
@@ -188,6 +186,112 @@ const deleteDataStation = async (req, res) => {
 }
 
 
+const getParametersByStation = async (req, res) => {
+
+    try {
+        let idReporte = req.params.idReporte;
+        const station = await stationAireRepository.getStationByIdReport(idReporte);
+        const parameters = await stationAireRepository. getParametersIdStation(station.idEstacion);
+        const totalParameters = await stationAireRepository.getParameters({});
+        let parametros = [];
+
+        parameters.forEach(parametroEstacion => {
+            totalParameters.forEach(parametroTotal => {
+                if (parametroEstacion.idParametro === parametroTotal.id_parametro) {
+                    parametros.push(parametroTotal.nombre_clave);
+                }
+            });
+        });
+        logInfo(`GET getParametersByStation/idReporte/${idReporte}/username: ${req.user.username}`);
+        res.status(200).json({ parametros });
+    } catch (e) {
+        logError(`Error getParametersByStation/${e}/username: ${req.user.username}`);
+
+        res.status(500).json({ message: "Error, obteniendo parametros de una estación." });
+    } finally {
+        release();
+    }
+}
+
+const getPeriodsByStation = async (req, res) => {
+    try {
+        let idReporte = req.params.idReporte;
+        const station = await stationAireRepository.getStationByIdReport(idReporte);
+        const periods = await stationAireRepository.getPeriodsIdStation(station.idEstacion);
+        const totalPeriods = await stationAireRepository.getPeriodos({});
+        let periodos = [];
+
+        periods.forEach(periodoEstacion => {
+            totalPeriods.forEach(periodoTotal => {
+                if (periodoEstacion.idPeriodo === periodoTotal.id) {
+                    periodos.push(periodoTotal.tipo);
+                }
+            }
+            );
+        });
+
+        console.log(periodos);
+        logInfo(`GET getPeriodsByStation/idReporte/${idReporte}/username: ${req.user.username}`);
+        res.status(200).json({ periodos });
+    } catch (e) {
+        logError(`Error getPeriodsByStation/${e}/username: ${req.user.username}`);
+        res.status(500).json({ message: "Error, obteniendo periodos de una estación." });
+    } finally {
+        release();
+    }
+}
+
+
+
+
+
+// update data report 
+const updateDataReport =  async (req, res) => {
+    try {
+        const newData = req.body;
+        let parametroNuevo= 0;
+       
+        const periods = await stationAireRepository.getPeriods({});
+        const parameters = await stationAireRepository.getParameters({});
+
+        const reporte = await stationAireRepository.getStationByIdReport(newData.idReporte);
+
+        const idStation = reporte.idEstacion;
+        const parametrosEstacion = await stationAireRepository.getParametersIdStation(idStation);
+
+        for (const parameter of parameters) {
+            if (parameter.nombre_clave === newData.parametro) {
+                newData.idParametro = parameter.id_parametro;
+            }
+        }
+        for (const period of periods) { 
+            if (period.nombre === newData.tipoPeriodo) {
+                newData.tipoPeriodo = period.id;
+            }
+        }
+        let idParametro = newData.idParametro;	
+
+        
+       for (const parametro of parametrosEstacion) {
+            if (parametro.idParametro == idParametro) {
+                parametroNuevo = parametro.id;
+            }   
+        }
+        
+        await stationAireRepository.updateDataReport(newData, parametroNuevo);
+        logInfo(`UPDATE updateDataReport/idData/${newData.idReporte}/username: ${req.user.username}`);
+        res.status(201).json({ message: "Dato editado correctamente" });
+
+    } catch (e) {
+        logError(`Error updateDataReport/${e}/username: ${req.user.username}`);
+        res.status(500).json({ message: "Error, editando un dato de una estación de aire." });
+    } finally {
+        release();
+    }
+  }
+
+
+  /////////////////
 
 const addStationReport = async (req, res) => {
     try {
@@ -354,5 +458,9 @@ export default {
     getInstitutes,
     getPeriods,
     getParameters, 
-    deleteDataStation
+    deleteDataStation,
+    updateDataReport,
+    getParametersByStation,
+    getPeriodsByStation 
+
 }

@@ -15,7 +15,8 @@ router.getAsync('/institutes', auth.dataToken, auth.authRolePermissions([Roles.A
 router.getAsync('/periods', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.getPeriods)
 router.getAsync('/parameters', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.getParameters)
 router.putAsync('/data', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.deleteDataStation)
-
-
+router.putAsync('/report', auth.verifyToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.updateDataReport);
+router.getAsync('/parameters/:idReporte', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.getParametersByStation)
+router.getAsync('/periods/:idReporte', auth.dataToken, auth.authRolePermissions([Roles.AIRE, Roles.ADMIN]), stationController.getPeriodsByStation)
 
 export default router
