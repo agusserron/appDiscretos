@@ -1,0 +1,163 @@
+
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 10:57:57"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:01:16"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-03-05 11:01:16"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-03-05 11:01:17"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:01:20"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:01:58"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-03-05 11:01:58"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-03-05 11:01:58"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:02:45"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:02:49"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:02:53"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-03-05 11:02:53"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:03:08"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-03-05 11:03:08"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:04:09"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:04:28"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:04:31"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-03-05 11:04:32"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:04:38"}
+{"level":"info","message":"GET getPlant for número enlace: 123652361 /username: admin","timestamp":"2024-03-05 11:04:38"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-03-05 11:04:39"}
+{"level":"info","message":"GET getAireReport report/idPlant/31382 from database  /username: admin","timestamp":"2024-03-05 11:04:42"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:05:32"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:05:35"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:05:42"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:06:04"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-03-05 11:06:04"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-03-05 11:06:05"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:06:05"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:06:11"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:06:15"}
+{"level":"info","message":"GET getNroEnlaces for a company name /username: admin","timestamp":"2024-03-05 11:06:29"}
+{"level":"info","message":"GET getPlant for número enlace: 2019089 /username: admin","timestamp":"2024-03-05 11:06:33"}
+{"level":"info","message":"GET getAireReport report/idPlant/31382 from database  /username: admin","timestamp":"2024-03-05 11:06:40"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:08:54"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:08:55"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:08:58"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:24:50"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:24:51"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:25:10"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:31:28"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:31:30"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:31:31"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:31:36"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:31:36"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:34:41"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:34:41"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:34:46"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:34:46"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-03-05 11:35:56"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:35:56"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-03-05 11:35:56"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 11:35:56"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:35:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:36:01"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:36:05"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:36:11"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:36:12"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:36:17"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:36:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:44:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:44:18"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:44:30"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:44:35"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:44:40"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:46:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:46:19"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:46:28"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:46:33"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:46:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:48:28"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:48:28"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:48:34"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:48:39"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:49:55"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:49:55"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:50:01"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:50:06"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:51:39"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:51:41"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2024-03-05 11:51:52"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:51:53"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:52:04"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:52:37"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:52:37"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:52:42"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:52:49"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:53:53"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:53:54"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:53:58"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:54:03"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:54:09"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:54:49"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:54:50"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:54:57"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:55:00"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:55:06"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:58:11"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:58:37"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 11:58:38"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:58:46"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 11:58:51"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:01:01"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:01:02"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:01:09"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:01:14"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:02:14"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:02:16"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:02:22"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:02:27"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:02:37"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:03:40"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:03:41"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:03:47"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:03:54"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-03-05 12:08:59"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-03-05 12:08:59"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-03-05 12:08:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:09:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:09:01"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:09:05"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:09:16"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:10:06"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 12:10:07"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:10:14"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 12:10:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:26:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:26:22"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:26:23"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:26:29"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:26:39"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:26:44"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:28:14"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:28:15"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2024-03-05 14:28:19"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:28:21"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:28:26"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:30:42"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:30:44"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:30:47"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:30:53"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:32:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:33:00"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:33:05"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:33:11"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:33:55"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:33:58"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:34:02"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:34:07"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:36:24"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:36:27"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:36:31"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:36:36"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:38:24"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:38:25"}
+{"level":"info","message":"GET getReportsStation/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2024-03-05 14:38:28"}
+{"level":"info","message":"POST addStationReport/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2024-03-05 14:38:33"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:42:28"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-03-05 14:42:29"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:42:33"}
+{"level":"info","message":"POST addStationReport/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-03-05 14:42:39"}
+
