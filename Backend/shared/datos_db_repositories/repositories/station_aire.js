@@ -124,13 +124,13 @@ export class StationAireRepository {
   }
 
   //agus
-getStationReportByData = async (fecha, periodoId, stationId, parameterId, concentracion) => {
+getStationReportByData = async (fecha, periodoId, stationId, parameterId, concentracion, activo) => {
     const query = `
         SELECT *
         FROM estacion_aire_medicion
-        WHERE fecha = ? AND idPeriodo = ? AND idEstacion = ? AND idParametro = ? AND concentracion = ?
+        WHERE fecha = ? AND idPeriodo = ? AND idEstacion = ? AND idParametro = ? AND concentracion = ? AND userStatus = ?
     `;
-    const result = await this.connection.query(query, [fecha, periodoId, stationId, parameterId, concentracion]);
+    const result = await this.connection.query(query, [fecha, periodoId, stationId, parameterId, concentracion, activo]);
     return result[0]; 
 }
 

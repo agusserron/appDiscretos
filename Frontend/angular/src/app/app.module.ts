@@ -38,6 +38,7 @@ import { Dialog } from '@angular/cdk/dialog';
 import { DialogDeletDataComponent } from './components/station/dialog-delet-data/dialog-delet-data.component';
 import { InfoComponent } from './components/station/info/info.component';
 import { DialogModifyDataComponent } from './dialog-modify-data/dialog-modify-data.component';
+import { ProgramsComponent } from './components/programs/programs.component';
 
 
 
@@ -68,7 +69,7 @@ import { DialogModifyDataComponent } from './dialog-modify-data/dialog-modify-da
     DialogDeletDataComponent,
     InfoComponent, 
     DialogModifyDataComponent,
-
+    ProgramsComponent
   ],
   imports: [
     BrowserModule,

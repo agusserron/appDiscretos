@@ -309,7 +309,9 @@ const addStationReport = async (req, res) => {
         const dateReport = data.fecha.split('T');
         data.fecha = dateReport[0];
 
-        const existReport = await stationAireRepository.getStationReportByData(data.fecha, periodo.id, station.id, parameter.id, data.concentracion);
+        let activo = "Activo"
+
+        const existReport = await stationAireRepository.getStationReportByData(data.fecha, periodo.id, station.id, parameter.id, data.concentracion, activo);
         if (existReport) {
             return res.status(400).json({ message: "El reporte ya existe" });
         }
