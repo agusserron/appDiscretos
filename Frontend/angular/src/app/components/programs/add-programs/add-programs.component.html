@@ -24,7 +24,7 @@
                    
                   
                         <div class="available-options" style="max-height: 300px; overflow-y: auto;">
-                          <h2>Parametros</h2>
+                          <h2>Parámetros</h2>
                           <mat-form-field>
                             <input matInput placeholder="Buscar opciones" [(ngModel)]="searchTerm"  (input)="onSearchInputChange($event)">
                           </mat-form-field>
@@ -35,7 +35,7 @@
                           </mat-list>
                         </div>
                         <div class="selected-options">
-                          <h2>Parametros seleccionados</h2>
+                          <h2>Parámetros seleccionados</h2>
                           <mat-chip-list>
                             <mat-chip *ngFor="let option of selectedOptions" [removable]="true" (removed)="removeOption(option)">
                               {{ option }}
