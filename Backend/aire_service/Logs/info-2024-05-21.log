@@ -1,1 +1,27 @@
 {"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-05-21 10:30:55"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:18:22"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-05-21 13:18:22"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-05-21 13:18:22"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:18:23"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:18:29"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-05-21 13:18:29"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-05-21 13:18:29"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:18:30"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:18:39"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:51:53"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-05-21 13:51:53"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-05-21 13:51:53"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:51:54"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:59:14"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-05-21 13:59:21"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:59:24"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-05-21 13:59:24"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-05-21 13:59:24"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:59:26"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:59:28"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-05-21 13:59:28"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-05-21 13:59:28"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-05-21 13:59:31"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-05-21 13:59:32"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-05-21 13:59:34"}
+{"level":"info","message":"GET getReportsStation/codigo/I-BA-D-MC-CAVO01/username: admin","timestamp":"2024-05-21 13:59:37"}

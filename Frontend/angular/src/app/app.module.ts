@@ -39,6 +39,7 @@ import { DialogDeletDataComponent } from './components/station/dialog-delet-data
 import { InfoComponent } from './components/station/info/info.component';
 import { DialogModifyDataComponent } from './dialog-modify-data/dialog-modify-data.component';
 import { ProgramsComponent } from './components/programs/programs.component';
+import { AddProgramsComponent } from './components/programs/add-programs/add-programs.component';
 
 
 
@@ -69,7 +70,8 @@ import { ProgramsComponent } from './components/programs/programs.component';
     DialogDeletDataComponent,
     InfoComponent, 
     DialogModifyDataComponent,
-    ProgramsComponent
+    ProgramsComponent,
+    AddProgramsComponent
   ],
   imports: [
     BrowserModule,

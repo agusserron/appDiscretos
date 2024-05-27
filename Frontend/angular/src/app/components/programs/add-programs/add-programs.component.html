@@ -1,0 +1,63 @@
+<div class="dialog-box">
+    <h1 mat-dialog-title>Agregar programa</h1>
+    <div mat-dialog-content>
+        <form [formGroup]="programFormGroup" autocomplete="off">
+            <div class="row">
+                <div class="column">
+                    <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                        <mat-label>Nombre</mat-label>
+                        <input type="text" formControlName="identificacion" matInput required>
+                    </mat-form-field>
+                    <mat-form-field class="subItemField" appearance="fill">
+                        <mat-label>Código</mat-label>
+                        <input type="text" formControlName="codigo" matInput required>
+                    </mat-form-field>
+                    
+                    <mat-checkbox formControlName="visiblePorExternos" style="margin-right:2%" class="subItemField" appearance="fill">
+                        Visible por externos
+                      </mat-checkbox>
+                      <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
+                        <mat-label>Identificación SILAD</mat-label>
+                        <input type="text" formControlName="identificacion" matInput required>
+                    </mat-form-field>
+
+                   
+                  
+                        <div class="available-options" style="max-height: 300px; overflow-y: auto;">
+                          <h2>Parametros</h2>
+                          <mat-form-field>
+                            <input matInput placeholder="Buscar opciones" [(ngModel)]="searchTerm"  (input)="onSearchInputChange($event)">
+                          </mat-form-field>
+                          <mat-list>
+                            <mat-list-item *ngFor="let option of filteredOptions" (click)="selectOption(option)">
+                              {{ option }}
+                            </mat-list-item>
+                          </mat-list>
+                        </div>
+                        <div class="selected-options">
+                          <h2>Parametros seleccionados</h2>
+                          <mat-chip-list>
+                            <mat-chip *ngFor="let option of selectedOptions" [removable]="true" (removed)="removeOption(option)">
+                              {{ option }}
+                              <mat-icon matChipRemove>cancel</mat-icon>
+                            </mat-chip>
+                          </mat-chip-list>
+                 
+                      </div>
+                   
+
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
+        <button mat-button cdkFocusInitial (click)="addProgram()">Agregar <mat-icon>add</mat-icon></button>
+    </div>
+    <div class="alertBox-container">
+        <div class="alertBox">
+            <alert></alert>
+        </div>
+    </div>
+</div>

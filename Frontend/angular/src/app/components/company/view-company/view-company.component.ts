@@ -62,7 +62,7 @@ export class CompanyComponent implements OnInit {
     })
   }
 
-  customCellLogicFunction(element: any, column: any): any {
+  customCellLogicFunction(element: any, column:  any): any {
     if(column == "direccion"){
     return element.direccion !== '' ? element.emp_direccion : '-';
     }

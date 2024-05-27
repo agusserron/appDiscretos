@@ -14,4 +14,7 @@ export class ProgramService {
     return this.http.get<any>(`${environment.apiAgua}/programas`);
   }
 
+  getParams(): Observable<any> {
+    return this.http.get<any>(`${environment.apiAgua}/parametros`);
+  }
 }

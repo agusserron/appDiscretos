@@ -5,6 +5,7 @@ import { AlertService } from '../alert';
 import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { Program } from 'src/app/models/program/program.module';
+import { AddProgramsComponent } from './add-programs/add-programs.component';
 
 @Component({
   selector: 'app-programs',
@@ -19,9 +20,17 @@ export class ProgramsComponent {
     public dialog: MatDialog
     ) { }
 
+    AddProgramsComponent: any = AddProgramsComponent;
     dataSource!: MatTableDataSource<Program>;
-    displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'version'];
+    displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'Acciones'];
     showTable: boolean = false;
+
+    columnTitles: { [key: string]: string } = {
+      nombre_programa: 'Nombre del Programa',
+      codigo_programa: 'Código del Programa',
+      visible_externos: 'Visible a Externos',
+      version: 'Versión'
+    };
   
     ngOnInit(): void {
       this.uploadPrograms();
@@ -39,7 +48,20 @@ export class ProgramsComponent {
       })
     }
 
-    addProgram (): void {}
+
+    addProgram(): void {
+    const dialogRef = this.dialog.open(AddProgramsComponent, {
+      height: '800px',
+      width: '900px',
+    });
+    this.alertService.clear();
+    dialogRef.afterClosed().subscribe(result => {
+      if (result != undefined && result.state) {
+        this.showTable = false;
+        this.uploadPrograms();
+      }
+    });
+  }
 
 
     applyFilter(event: Event) {
@@ -57,10 +79,10 @@ export class ProgramsComponent {
 
     
   customCellLogicFunction(element: any, column: any): any {
-    if(column == "direccion"){
-    return element.direccion !== '' ? element.emp_direccion : '-';
-    }
-    return element[column]
+      if (column === "visible_externos") {
+        return element.visible_externos === 1 ? 'Sí' : 'No';
+      }
+      return element[column];
   }
 
 
