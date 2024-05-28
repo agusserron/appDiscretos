@@ -40,6 +40,7 @@ import { InfoComponent } from './components/station/info/info.component';
 import { DialogModifyDataComponent } from './dialog-modify-data/dialog-modify-data.component';
 import { ProgramsComponent } from './components/programs/programs.component';
 import { AddProgramsComponent } from './components/programs/add-programs/add-programs.component';
+import { AddStationComponent } from './components/programs/add-programs/add-station/add-station.component';
 
 
 
@@ -71,7 +72,8 @@ import { AddProgramsComponent } from './components/programs/add-programs/add-pro
     InfoComponent, 
     DialogModifyDataComponent,
     ProgramsComponent,
-    AddProgramsComponent
+    AddProgramsComponent,
+    AddStationComponent
   ],
   imports: [
     BrowserModule,

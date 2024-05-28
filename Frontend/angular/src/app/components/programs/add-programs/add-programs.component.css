@@ -44,5 +44,51 @@
     border-radius: 10px;
     border: 1px solid black; 
     padding: 10px; 
-    height: 750px;
+    height: 850px;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Ajusta la separación entre los divs */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+  .available-options {
+    max-height: 300px;
+    overflow-y: auto;
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+
+  }
+  .selected-options {
+    /*max-height: 300px;
+    overflow-y: auto;*/
+    width: 45%; /* Ajusta el ancho según tus necesidades */
+    margin-left: 10px; /* Espacio entre los divs, opcional */
+
+  } 
+
+
+  .mat-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Espacio entre la tabla y otros elementos */
+  }
+  
+  /* Estilo para las celdas */
+  .mat-cell, .mat-header-cell {
+    padding: 12px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación del texto */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); /* Borde inferior */
+  }
+  
+  /* Estilo para la fila del encabezado */
+  .mat-header-row {
+    background-color: #f5f5f5; /* Color de fondo del encabezado */
+  }
+  
+  /* Estilo para las filas impares */
+  .mat-row:nth-child(odd) {
+    background-color: #fafafa; /* Color de fondo de las filas impares */
+  }
+
+
+  

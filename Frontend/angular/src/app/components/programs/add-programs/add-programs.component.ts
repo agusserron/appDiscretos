@@ -18,6 +18,19 @@ export class AddProgramsComponent {
   filteredOptions: string[] = [];
   searchTerm: string = '';
 
+  displayedColumns: string[] = ['codigo', 'nombre', 'departamento'];
+  estaciones: any[] = [
+    { codigo: '001', nombre: 'Estación A', departamento: 'Departamento 1' },
+    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
+    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
+    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
+    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
+    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
+    
+    // Más estaciones...
+  ];
+
+
 
   constructor(
     public dialogRef: MatDialogRef<AddProgramsComponent>,
