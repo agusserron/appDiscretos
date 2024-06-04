@@ -1,1 +1,12 @@
-<p>add-station works!</p>
+<div style="width:100%">
+    <h1 class="animate__animated animate__backInDown">Estaciones</h1>
+    <div style="margin-left:1%">
+        <button mat-raised-button color="primary" (click)="addStation()">Agregar <mat-icon>add
+            </mat-icon></button>
+        <div style="margin-top:1%">
+        
+        </div>
+    </div>
+    
+    <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [displayedColumns]="displayedColumns" [dialogComponents]="[ ]"></app-table-generic>
+</div>

@@ -17,18 +17,10 @@ export class AddProgramsComponent {
   selectedOptions: string[] = [];
   filteredOptions: string[] = [];
   searchTerm: string = '';
+  idProgram : number = 0;
 
   displayedColumns: string[] = ['codigo', 'nombre', 'departamento'];
-  estaciones: any[] = [
-    { codigo: '001', nombre: 'Estación A', departamento: 'Departamento 1' },
-    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
-    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
-    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
-    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
-    { codigo: '002', nombre: 'Estación B', departamento: 'Departamento 2' },
-    
-    // Más estaciones...
-  ];
+  estaciones: any;
 
 
 
@@ -44,7 +36,6 @@ export class AddProgramsComponent {
   programFormGroup = this._formBuilder.group({
     nombre: ['', [Validators.required, Validators.pattern("[a-zA-Z0-9\\s.()&/áéíóúÁÉÍÓÚñÑüÜ-]+")]],
     codigo:  ['', [Validators.required]],
-    identificacion:  ['', [Validators.required]],
     visiblePorExternos:  ['', [Validators.required]],
 
     
@@ -68,6 +59,8 @@ export class AddProgramsComponent {
       this.availableOptions.push(parametro.parametro);
     }
   }
+
+
 
 
   selectOption(option: string): void {

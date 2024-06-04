@@ -9,6 +9,18 @@
         ){}
 }
 
+export class Station {
+constructor(
+  public estacion: string,
+  public descripcion: string,
+  public latitud : number,
+  public longitud : number,
+  public id_programa : number,  
+  public id_estacion : number,
+){}
+
+}
+
 
 
 

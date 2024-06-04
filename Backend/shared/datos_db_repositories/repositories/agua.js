@@ -105,6 +105,17 @@ export class AguaRepository {
       return data;
     }
 
+    getEstacionesPrograma = async (programId) => {
+      const query = `
+      SELECT 
+      e.*
+      FROM estacion e
+      WHERE e.id_programa = ?
+      `;    
+      const data = await this.connection.query(query, [programId]);
+      return data;
+    }
+
     getTipoPuntoEstacion = async () => {
       const data = await this.connection.query(`select * from tipo_punto_estacion`);
       return data;

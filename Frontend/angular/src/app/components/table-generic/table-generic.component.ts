@@ -1,8 +1,9 @@
-import { AfterViewInit, Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ContentChild, EventEmitter, Input, Output, TemplateRef, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatTableExporterDirective } from 'mat-table-exporter';
 import { MatDialog } from '@angular/material/dialog';
+import { AddStationComponent } from '../programs/add-programs/add-station/add-station.component';
 
 @Component({
   selector: 'app-table-generic',
@@ -19,8 +20,11 @@ export class TableGenericComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @Input() dialogComponents:any;
   @Output() dialogClosed = new EventEmitter<any>();
+ 
+
 
   exportedDataSource: any[] = [];
+  alertService: any;
  
   
   constructor(public dialog: MatDialog) { }
@@ -61,6 +65,20 @@ export class TableGenericComponent implements AfterViewInit {
     });
   }
 
+  verEstaciones(element: any): void {
+    const dialogRef = this.dialog.open(AddStationComponent, {
+      height: '900px',
+      width: '1000px',
+      data: { element } // Pasando datos al componente
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+      if (result != undefined && result.state) {
+        // Acción después de cerrar el diálogo si es necesario
+      }
+    });
+  }
+
 
   userDelete(element:any) {
     const dialogRef = this.dialog.open(this.dialogComponents[2], {
@@ -73,6 +91,8 @@ export class TableGenericComponent implements AfterViewInit {
     });
   
   }
+
+  
 
  
 

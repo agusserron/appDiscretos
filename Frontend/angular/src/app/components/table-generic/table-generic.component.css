@@ -31,3 +31,14 @@ tr.fila:hover {
     color: #bdbdbd !important; /* Color de texto gris claro para filas desactivadas */
     
   }
+
+  .custom-button {
+    background-color: #00bcd4; 
+    color: rgba(2, 41, 100, 0.966);
+    border-radius: 10px; 
+    text-transform: none; 
+  }
+  
+  .custom-button:hover {
+    background-color: #00acc1; 
+  }

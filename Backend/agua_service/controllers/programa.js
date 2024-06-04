@@ -22,7 +22,7 @@ const getProgramas = async (req,res) => {
 }
 
 const getProgramasParametros = async (req,res) => {
-    try {
+    try {        
         const programasParametros = await aguaRepository.getProgramasParametros({});
         logInfo(`GET getProgramasParametros from database`);
         res.status(200).json(programasParametros);
@@ -34,7 +34,25 @@ const getProgramasParametros = async (req,res) => {
     }
 }
 
+const getEstacionesPrograma = async (req,res) => {
+    try {
+        let idPrograma = req.params.programId;
+        const estacionesPrograma = await aguaRepository.getEstacionesPrograma(idPrograma); // Pasar solo el valor de idPrograma
+        console.log(estacionesPrograma);
+        logInfo(`GET getEstacionesPrograma from database`);
+        res.status(200).json(estacionesPrograma);
+    } catch (e) {
+        logError(`Error getEstacionesPrograma/${e}`);
+        res.status(500).json({ message: "Error, obteniendo los programas estaciones." });
+    } finally {
+        release();
+    }
+}
+
+
+
 export default {
     getProgramas,
-    getProgramasParametros
+    getProgramasParametros,
+    getEstacionesPrograma
 }

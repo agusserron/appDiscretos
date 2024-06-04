@@ -6,6 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { Program } from 'src/app/models/program/program.module';
 import { AddProgramsComponent } from './add-programs/add-programs.component';
+import { AddStationComponent } from './add-programs/add-station/add-station.component';
 
 @Component({
   selector: 'app-programs',
@@ -14,24 +15,26 @@ import { AddProgramsComponent } from './add-programs/add-programs.component';
 })
 export class ProgramsComponent {
 
+  stations : any;
+  idProgram : any;
+  
   constructor(private _formBuilder: FormBuilder, 
     private alertService: AlertService, 
     private programService: ProgramService, 
     public dialog: MatDialog
-    ) { }
+    ) {
+      
+     }
 
     AddProgramsComponent: any = AddProgramsComponent;
+    AddStationComponent : any = AddStationComponent;
     dataSource!: MatTableDataSource<Program>;
-    displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'Acciones'];
-    showTable: boolean = false;
 
-    columnTitles: { [key: string]: string } = {
-      nombre_programa: 'Nombre del Programa',
-      codigo_programa: 'Código del Programa',
-      visible_externos: 'Visible a Externos',
-      version: 'Versión'
-    };
-  
+    displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'estaciones', 'accion'];
+   
+    showTable: boolean = false;
+    
+
     ngOnInit(): void {
       this.uploadPrograms();
     }
@@ -40,13 +43,27 @@ export class ProgramsComponent {
       this.programService.getPrograms().subscribe({
         next: (resp) => {
           this.dataSource = new MatTableDataSource(resp);
-          this.showTable = true;
+          this.showTable = true;        
         },
         error: (err) => {
           this.alertService.error("Error obteniendo los programas ")
         }
       })
     }
+
+    /*setProgramStation () {
+      const dialogRef = this.dialog.open(AddStationComponent, {
+        height: '900px',
+        width: '1000px',
+      });
+      this.alertService.clear();
+      dialogRef.afterClosed().subscribe(result => {
+        if (result != undefined && result.state) {
+          this.showTable = false;
+          this.uploadPrograms();
+        }
+      });
+    }*/
 
 
     addProgram(): void {
@@ -69,9 +86,9 @@ export class ProgramsComponent {
       
       this.dataSource.filterPredicate = (data: Program, filter: string) => {
         const dataStr = Object.values(data).join(' ').toLowerCase();
-        const words = dataStr.split(' '); // parto los strings en pedazos
+        const words = dataStr.split(' '); 
     
-        return !filter || words.some(word => word.startsWith(filter)); // miro si alguna palabra empieza con el filtro
+        return !filter || words.some(word => word.startsWith(filter)); 
       };
     
       this.dataSource.filter = filterValue;
@@ -82,6 +99,7 @@ export class ProgramsComponent {
       if (column === "visible_externos") {
         return element.visible_externos === 1 ? 'Sí' : 'No';
       }
+
       return element[column];
   }
 

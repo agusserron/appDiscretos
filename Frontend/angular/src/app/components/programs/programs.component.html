@@ -14,6 +14,7 @@
             </mat-form-field>
         </div>
     </div>
-    <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [displayedColumns]="displayedColumns" [customCellLogic]="customCellLogicFunction" [dialogComponents]="[AddProgramsComponent]"></app-table-generic>
+    
+    <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [displayedColumns]="displayedColumns" [customCellLogic]="customCellLogicFunction" [dialogComponents]="[AddProgramsComponent,AddStationComponent ]"></app-table-generic>
 </div>
 
