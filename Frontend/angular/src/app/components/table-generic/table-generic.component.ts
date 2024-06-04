@@ -67,7 +67,7 @@ export class TableGenericComponent implements AfterViewInit {
 
   verEstaciones(element: any): void {
     const dialogRef = this.dialog.open(AddStationComponent, {
-      height: '900px',
+      height: '800px',
       width: '1000px',
       data: { element } // Pasando datos al componente
     });

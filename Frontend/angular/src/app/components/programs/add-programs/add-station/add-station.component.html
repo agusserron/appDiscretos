@@ -7,6 +7,13 @@
         
         </div>
     </div>
-    
     <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [displayedColumns]="displayedColumns" [dialogComponents]="[ ]"></app-table-generic>
+    <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
+  </div>
+    <div class="alertBox-container">
+        <div class="alertBox">
+            <alert></alert>
+    </div>
+
 </div>

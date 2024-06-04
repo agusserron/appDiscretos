@@ -37,6 +37,10 @@ export class AddStationComponent {
   showTable: boolean = false;
 
 
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+  
   setProgramStation () {
     this.idProgram = this.data.element.id_programa;
     this.programService.getProgramStation(this.idProgram).subscribe({
