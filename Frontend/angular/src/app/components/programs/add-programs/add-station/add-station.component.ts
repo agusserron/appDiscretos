@@ -12,8 +12,10 @@ import { Station } from 'src/app/models/program/program.module';
   templateUrl: './add-station.component.html',
   styleUrls: ['./add-station.component.css']
 })
-export class AddStationComponent {
 
+
+
+export class AddStationComponent {
 
 
   constructor(
@@ -24,17 +26,37 @@ export class AddStationComponent {
     private programService: ProgramService
   ) {
   
-    console.log('Received data:', data);
-    console.log ('programa:  ' + data.element.id_programa)
+    this.departamentos = {
+      1: 'ARTIGAS',
+      2: 'CANELONES',
+      3: 'CERRO LARGO',
+      4: 'COLONIA',
+      5: 'DURAZNO',
+      6: 'FLORES',
+      7: 'FLORIDA',
+      8: 'LAVALLEJA',
+      9: 'MALDONADO',
+      10: 'MONTEVIDEO',
+      11: 'PAYSANDÚ',
+      12: 'RÍO NEGRO',
+      13: 'RIVERA',
+      14: 'ROCHA',
+      15: 'SALTO',
+      16: 'SAN JOSÉ',
+      17: 'SORIANO',
+      18: 'TACUAREMBÓ',
+      19: 'TREINTA Y TRES'
+    };
     this.idProgram = data.element.id_programa;  
     this.setProgramStation();
   }
 
   dataSource!: MatTableDataSource<Station>;
-  displayedColumns: string[] = ['estacion', 'descripcion'];
+  displayedColumns: string[] = ['estacion', 'descripcion', 'id_departamento'];
   stations : any;
   idProgram : any;
   showTable: boolean = false;
+  departamentos: { [key: number]: string };
 
 
   onNoClick(): void {
@@ -56,7 +78,13 @@ export class AddStationComponent {
     });
   }
 
- 
+
+  customCellLogicFunction = (element: any, column: any) => {
+    if (column === "id_departamento") {
+      return this.departamentos[element.id_departamento] || element.id_departamento;
+    }
+    return element[column];
+  }
 
   addStation(){}
 

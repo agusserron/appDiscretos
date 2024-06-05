@@ -69,12 +69,12 @@ export class TableGenericComponent implements AfterViewInit {
     const dialogRef = this.dialog.open(AddStationComponent, {
       height: '800px',
       width: '1000px',
-      data: { element } // Pasando datos al componente
+      data: { element } 
     });
   
     dialogRef.afterClosed().subscribe(result => {
       if (result != undefined && result.state) {
-        // Acción después de cerrar el diálogo si es necesario
+     
       }
     });
   }
@@ -91,10 +91,6 @@ export class TableGenericComponent implements AfterViewInit {
     });
   
   }
-
-  
-
- 
 
 
   /*exportTable(type: string, name: string) {

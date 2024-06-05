@@ -37,8 +37,6 @@ export class AddProgramsComponent {
     nombre: ['', [Validators.required, Validators.pattern("[a-zA-Z0-9\\s.()&/áéíóúÁÉÍÓÚñÑüÜ-]+")]],
     codigo:  ['', [Validators.required]],
     visiblePorExternos:  ['', [Validators.required]],
-
-    
   });
 
 
