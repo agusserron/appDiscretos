@@ -32,6 +32,16 @@ export class ProgramsComponent {
 
     displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'estaciones', 'accion'];
    
+   
+    columnHeaders: { [key: string]: string } = {
+      nombre_programa: 'Programa',
+      codigo_programa: 'Código',
+      visible_externos: 'Visible a Externos',
+      version: 'Versión',
+      estaciones: 'Estaciones',
+      accion: 'Acciones'
+    };
+
     showTable: boolean = false;
     
 

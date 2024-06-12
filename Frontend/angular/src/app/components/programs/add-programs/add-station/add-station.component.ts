@@ -59,6 +59,13 @@ export class AddStationComponent {
   departamentos: { [key: number]: string };
 
 
+  columnHeaders: { [key: string]: string } = {
+    estacion: 'Estación',
+    descripcion: 'Descripción',
+    id_departamento: 'Departamento',
+  };
+
+
   onNoClick(): void {
     this.dialogRef.close();
   }

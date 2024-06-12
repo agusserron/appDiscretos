@@ -19,7 +19,9 @@ export class TableGenericComponent implements AfterViewInit {
   @ViewChild(MatTableExporterDirective) exporter!: MatTableExporterDirective;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @Input() dialogComponents:any;
+  @Input() columnHeaders: { [key: string]: string } = {};
   @Output() dialogClosed = new EventEmitter<any>();
+ 
  
 
 
