@@ -6,11 +6,12 @@
   <title>Login</title>
 </head>
 <body class="text-center">
-  <div class="container">
-    <img style="display:flex" src="../../../angular-testing/assets/img/logo.png" alt="" width="" height="">
+  <div class="logo-container d-flex justify-content-center">
+    <img style="display:flex" src="../../../assets/img/logo.png" alt="logo" width="" height="">
   </div>
   <main class="form-signin w-100 m-auto">
-    <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
+    <div class="system-name">SRD</div>
+    <div class="login-title">Iniciar sesión</div>
     <form [formGroup]="aFormGroup">
       <div class="form-floating">
         <input type="text" class="form-control" formControlName="username" id="floatingInput" placeholder="Usuario"
@@ -32,7 +33,7 @@
     <div class="w-100" style="height:50px">
       <alert></alert>
     </div>
-    <p class="mt-5 mb-3 text-muted">&copy; Información Ambiental - 2022</p>
+    <p class="mt-5 mb-3 text-muted">&copy; Información Ambiental - 2024</p>
   </main>
 
 </body>
