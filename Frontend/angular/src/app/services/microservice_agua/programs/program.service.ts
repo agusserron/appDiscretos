@@ -21,5 +21,14 @@ export class ProgramService {
   getProgramStation(programId: number): Observable<any> {
     return this.http.get<any>(`${environment.apiAgua}/programas/${programId}`);
   }
+
+  //inactiva
+  deleteProgram(idPrograma: string): Observable<any> {
+    let parm = new HttpParams()
+      .set('id_programa', idPrograma);
+    return this.http.delete(`${environment.apiAgua}/programas/data`, { params: parm });
+  }
+
+
 }
 

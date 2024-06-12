@@ -3,10 +3,12 @@ import env from "dotenv"
 import { logInfo, logError } from "../../shared/logger/logger.js"
 import sanitizer from "../../shared/sanitizer_middleware/sanitizer.js";
 import { getConnection } from '../../shared/connectionMariaDB/connection.js';
+import { ProgramRepository } from "../../shared/datos_db_repositories/repositories/program_agua.js";
 env.config();
 
 const { connection, release } = await getConnection();
 const aguaRepository = new AguaRepository(connection)
+const programRepository = new ProgramRepository(connection)
 
 const getProgramas = async (req,res) => {
     try {
@@ -49,10 +51,29 @@ const getEstacionesPrograma = async (req,res) => {
     }
 }
 
+const deleteProgram = async (req, res) => { 
+    try {
+        let idProgram = req.body.id_programa;
+        const deleteData = await stationAireRepository.deleteProgram(idProgram);
+
+        logInfo(`UPDATE deleteDataStation/idProgram/${idProgram}`);
+        res.status(201).json({ message: "Programa inactivado correctamente" });
+    } catch (e) {
+
+        logError(`Error deleteProgram/${e}/`);    
+        res.status(500).json({ message: "Error, inactivando un programa de agua." });
+    } finally {
+
+        release();
+    }
+}
+
+
 
 
 export default {
     getProgramas,
     getProgramasParametros,
-    getEstacionesPrograma
+    getEstacionesPrograma,
+    deleteProgram
 }

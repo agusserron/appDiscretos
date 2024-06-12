@@ -167,7 +167,7 @@ const getPeriods = async (req, res) => {
     }
 }
 
-// agus
+
 const deleteDataStation = async (req, res) => { 
     try {
         let idData = req.body.idData;

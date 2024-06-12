@@ -6,5 +6,6 @@ const router = Router()
 router.getAsync('', porgramaController.getProgramas);
 router.getAsync('/parametros', porgramaController.getProgramasParametros);
 router.getAsync('/:programId', porgramaController.getEstacionesPrograma); 
+router.putAsync('/data', porgramaController.deleteProgram)
 
 export default router

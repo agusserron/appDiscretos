@@ -7,6 +7,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Program } from 'src/app/models/program/program.module';
 import { AddProgramsComponent } from './add-programs/add-programs.component';
 import { AddStationComponent } from './add-programs/add-station/add-station.component';
+import { DialogDeletProgramComponent } from './dialog-delet-program/dialog-delet-program.component';
 
 @Component({
   selector: 'app-programs',
@@ -28,9 +29,10 @@ export class ProgramsComponent {
 
     AddProgramsComponent: any = AddProgramsComponent;
     AddStationComponent : any = AddStationComponent;
+    DialogDeletProgramComponent : any = DialogDeletProgramComponent;
     dataSource!: MatTableDataSource<Program>;
 
-    displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'estaciones', 'accion'];
+    displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'estado', 'estaciones', 'accion'];
    
    
     columnHeaders: { [key: string]: string } = {
@@ -39,7 +41,8 @@ export class ProgramsComponent {
       visible_externos: 'Visible a Externos',
       version: 'Versión',
       estaciones: 'Estaciones',
-      accion: 'Acciones'
+      accion: 'Acciones',
+      estado: 'Estado'
     };
 
     showTable: boolean = false;
@@ -80,6 +83,20 @@ export class ProgramsComponent {
     const dialogRef = this.dialog.open(AddProgramsComponent, {
       height: '900px',
       width: '1000px',
+    });
+    this.alertService.clear();
+    dialogRef.afterClosed().subscribe(result => {
+      if (result != undefined && result.state) {
+        this.showTable = false;
+        this.uploadPrograms();
+      }
+    });
+  }
+
+  deleteProgram(): void {
+    const dialogRef = this.dialog.open(DialogDeletProgramComponent, {
+      height: '600px',
+      width: '900px',
     });
     this.alertService.clear();
     dialogRef.afterClosed().subscribe(result => {

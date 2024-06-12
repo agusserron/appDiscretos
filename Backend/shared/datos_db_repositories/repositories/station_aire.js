@@ -123,7 +123,7 @@ export class StationAireRepository {
     )
   }
 
-  //agus
+  
 getStationReportByData = async (fecha, periodoId, stationId, parameterId, concentracion, activo) => {
     const query = `
         SELECT *
@@ -134,7 +134,6 @@ getStationReportByData = async (fecha, periodoId, stationId, parameterId, concen
     return result[0]; 
 }
 
-//agus - campo nuevo : userStatus
 
 deleteDataStation = async (idData, userName) => {
   const query = `
@@ -166,7 +165,7 @@ getStationByIdReport = async (idReport) => {
   return result[0];
 }
 
-//
+
 
   existStation = async (codigo) => {
     const data = await this.connection.query(`SELECT count(codigo) as quantity FROM estacion_aire s WHERE s.codigo = ?`, [codigo])
