@@ -13,12 +13,16 @@
                     'font-size': '.75rem',
                     'text-align': 'center',
                     'padding': '0.25rem 0.4rem',
+                    'display': 'inline-block',
+                    'min-width': '80px',
                     'border-radius': '6px'}"><span style="color: #fff;">{{ customCellLogic ? customCellLogic(element, column) : element[column] }}</span></p>
             </ng-container>
             <ng-container *ngIf="column === 'estaciones';">
+              <div class="custom-button-container">
               <button mat-icon-button class="custom-button" (click)="verEstaciones(element)">
                   Ver
               </button>
+              </div>
           </ng-container>
       
           <ng-template #sinEstado>

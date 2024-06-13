@@ -23,10 +23,10 @@ export class ProgramService {
   }
 
   //inactiva
-  deleteProgram(idPrograma: string): Observable<any> {
-    let parm = new HttpParams()
-      .set('id_programa', idPrograma);
-    return this.http.delete(`${environment.apiAgua}/programas/data`, { params: parm });
+
+  updateProgramStatus(idPrograma: string): Observable<any> {
+    const body = { id_programa: idPrograma };
+    return this.http.put(`${environment.apiAgua}/programas/data`, body);
   }
 
 

@@ -26,3 +26,12 @@
 {"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-06-12 13:15:02"}
 {"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-06-12 13:23:33"}
 {"level":"info","message":"GET getProgramas from database","timestamp":"2024-06-12 13:28:55"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-06-12 13:53:34"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-06-12 13:53:38"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-06-12 14:01:53"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-06-12 14:01:55"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-06-12 14:04:14"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-06-12 14:04:15"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-06-12 14:05:02"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-06-12 14:05:04"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-06-12 14:05:09"}

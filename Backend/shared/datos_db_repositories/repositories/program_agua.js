@@ -4,13 +4,13 @@ export class ProgramRepository {
     }
     
     //inactiva
-    deleteProgram = async (codigo) => {
+    inactiveProgram = async (idProgram) => {
         const query = `
             UPDATE programa
-            SET estado = ?
+            SET estado = 0
             WHERE id_programa = ?
         `;
-        const result = await this.connection.query(query, ['Inactivo']);
+        const result = await this.connection.query(query, [idProgram]);
         return result[0];
       }
 

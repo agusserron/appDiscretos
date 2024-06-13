@@ -1,0 +1,75 @@
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 09:09:52"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 09:09:54"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2024-06-13 09:09:54"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2024-06-13 09:09:54"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 09:09:55"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 09:09:56"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-06-13 09:09:56"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 09:09:57"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 09:10:38"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 09:12:23"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 09:12:56"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 09:12:56"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-06-13 09:12:56"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 09:12:58"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 09:13:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 09:13:01"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 09:13:03"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-06-13 09:13:03"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 09:13:03"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 09:13:04"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 09:14:51"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-06-13 09:14:51"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 09:14:51"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 09:14:52"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 09:49:36"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 10:44:05"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 10:44:06"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2024-06-13 10:44:06"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2024-06-13 10:44:06"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 10:44:11"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 10:44:11"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-06-13 10:44:11"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 10:44:11"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 10:51:54"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 10:51:56"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-VI-D-MC-SODO01/username: admin","timestamp":"2024-06-13 10:52:02"}
+{"level":"error","message":"DELETE ExistReportStation deleteStationAire/codigo/I-BA-D-MC-CONP01/username: admin","timestamp":"2024-06-13 10:52:12"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2024-06-13 10:52:19"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2024-06-13 10:52:19"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-06-13 10:52:19"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 10:52:19"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2024-06-13 10:52:24"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2024-06-13 10:52:24"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-06-13 10:52:24"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 10:52:24"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2024-06-13 10:52:27"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-06-13 10:52:27"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2024-06-13 10:52:27"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 10:52:27"}
+{"level":"error","message":"Error updateStationAire/SqlError: (conn=1753528, no: 1142, SQLState: 42000) TRIGGER command denied to user 'jmbarreneche'@'172.28.111.%' for table 'estacion_aire'\nsql: UPDATE estacion_aire\n      SET identificacion = ?,\n        estado     = ?,\n        id_departamento = ?,\n        id_propietario     = ?,\n        id_operador     = ? \n      WHERE\n       codigo    = ?\n        - parameters:['Dolores',true,17,1,1,'I-VI-D-MC-SOD...]/username: admin","timestamp":"2024-06-13 10:52:31"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 10:52:59"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2024-06-13 10:53:08"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2024-06-13 10:53:08"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-06-13 10:53:08"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 10:53:08"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 10:53:17"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 10:53:18"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 11:00:49"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 11:00:50"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 11:00:50"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-06-13 11:00:50"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 11:00:51"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 11:00:56"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-06-13 11:00:59"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 11:00:59"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-06-13 11:00:59"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 11:01:00"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 11:01:02"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 11:01:03"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-06-13 11:01:05"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2024-06-13 11:01:06"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2024-06-13 11:01:06"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-06-13 11:01:06"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-06-13 11:01:06"}
+{"level":"error","message":"Error updateStationAire/SqlError: (conn=1753528, no: 1142, SQLState: 42000) TRIGGER command denied to user 'jmbarreneche'@'172.28.111.%' for table 'estacion_aire'\nsql: UPDATE estacion_aire\n      SET identificacion = ?,\n        estado     = ?,\n        id_departamento = ?,\n        id_propietario     = ?,\n        id_operador     = ? \n      WHERE\n       codigo    = ?\n        - parameters:['Villa Olmos2222',true,3,1,1,'I-BA-D...]/username: admin","timestamp":"2024-06-13 11:01:10"}

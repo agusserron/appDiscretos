@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ContentChild, EventEmitter, Input, Output, TemplateRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ContentChild, EventEmitter, Input, Output, SimpleChanges, TemplateRef, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatTableExporterDirective } from 'mat-table-exporter';
@@ -32,13 +32,26 @@ export class TableGenericComponent implements AfterViewInit {
   constructor(public dialog: MatDialog) { }
 
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+    if (this.dataSource && this.paginator) {
+      this.dataSource.paginator = this.paginator;
+      this.setupPaginator();
+    }
+  }
+
+  setupPaginator(): void {
     setTimeout(() => {
-      if (this.paginator) {
-        this.paginator.pageSize = this.pageSize;
-        this.paginator._intl.itemsPerPageLabel = "Items por página";
-      }
+      this.paginator.pageSize = this.pageSize;
+      this.paginator._intl.itemsPerPageLabel = "Items por página";
     });
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['dataSource'] && !changes['dataSource'].firstChange) {
+      if (this.paginator) {
+        this.dataSource.paginator = this.paginator;
+        this.setupPaginator();
+      }
+    }
   }
 
   esFilaDesactivada(row: any): boolean {
@@ -130,6 +143,8 @@ export class TableGenericComponent implements AfterViewInit {
   esFilaValida(row: any): boolean {
     return row.userStatus !== undefined && row.userStatus === 'Activo';
   }
+
+
 
 
 

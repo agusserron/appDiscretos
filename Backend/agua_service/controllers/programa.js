@@ -39,8 +39,7 @@ const getProgramasParametros = async (req,res) => {
 const getEstacionesPrograma = async (req,res) => {
     try {
         let idPrograma = req.params.programId;
-        const estacionesPrograma = await aguaRepository.getEstacionesPrograma(idPrograma); // Pasar solo el valor de idPrograma
-        console.log(estacionesPrograma);
+        const estacionesPrograma = await aguaRepository.getEstacionesPrograma(idPrograma); 
         logInfo(`GET getEstacionesPrograma from database`);
         res.status(200).json(estacionesPrograma);
     } catch (e) {
@@ -51,12 +50,12 @@ const getEstacionesPrograma = async (req,res) => {
     }
 }
 
-const deleteProgram = async (req, res) => { 
+const updateProgramStatus = async (req, res) => { 
     try {
         let idProgram = req.body.id_programa;
-        const deleteData = await stationAireRepository.deleteProgram(idProgram);
+        const deleteData = await programRepository.inactiveProgram(idProgram);
 
-        logInfo(`UPDATE deleteDataStation/idProgram/${idProgram}`);
+        logInfo(`UPDATE updateProgramStatus/idProgram/${idProgram}`);
         res.status(201).json({ message: "Programa inactivado correctamente" });
     } catch (e) {
 
@@ -75,5 +74,5 @@ export default {
     getProgramas,
     getProgramasParametros,
     getEstacionesPrograma,
-    deleteProgram
+    updateProgramStatus
 }

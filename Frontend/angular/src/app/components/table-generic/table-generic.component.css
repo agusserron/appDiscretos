@@ -34,9 +34,17 @@ tr.fila:hover {
 
   .custom-button {
     background-color: #00bcd4; 
-    color: rgba(2, 41, 100, 0.966);
-    border-radius: 10px; 
+    color: rgba(255, 255, 255, 0.966);
+    border-radius: 6px; 
     text-transform: none; 
+    text-align: center
+
+  }
+
+  .custom-button-container {
+    display: center;
+    justify-content: center;
+    align-items: center;
   }
   
   .custom-button:hover {

@@ -18,7 +18,7 @@ export class DialogDeletProgramComponent {
     private programService: ProgramService,
     public alertService: AlertService
   ){
-    this.data = this.data;
+    this.data = this.dataProgram;
   }
 
   onNoClick(): void {
@@ -28,7 +28,7 @@ export class DialogDeletProgramComponent {
   deleteData() : void {
  
     this.alertService.clear();
-    this.programService.deleteProgram(this.data.codigo).subscribe({
+    this.programService.updateProgramStatus(this.data.id_programa).subscribe({
       next:(res:any) => {
         this.alertService.success(res.message);
         setTimeout(()=> {

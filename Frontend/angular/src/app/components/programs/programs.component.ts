@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, SimpleChanges } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ProgramService } from 'src/app/services/microservice_agua/programs/program.service';
 import { AlertService } from '../alert';
@@ -31,6 +31,7 @@ export class ProgramsComponent {
     AddStationComponent : any = AddStationComponent;
     DialogDeletProgramComponent : any = DialogDeletProgramComponent;
     dataSource!: MatTableDataSource<Program>;
+    
 
     displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'estado', 'estaciones', 'accion'];
    
@@ -52,6 +53,13 @@ export class ProgramsComponent {
       this.uploadPrograms();
     }
 
+    ngOnChanges(changes: SimpleChanges): void {
+      if (changes['dataSource'] && !changes['dataSource'].isFirstChange()) {
+        this.uploadPrograms();
+        console.log('Se detectaron cambios en dataSource:', changes['dataSource']);
+      }
+    }
+
     uploadPrograms(): void {
       this.programService.getPrograms().subscribe({
         next: (resp) => {
@@ -64,39 +72,10 @@ export class ProgramsComponent {
       })
     }
 
-    /*setProgramStation () {
-      const dialogRef = this.dialog.open(AddStationComponent, {
-        height: '900px',
-        width: '1000px',
-      });
-      this.alertService.clear();
-      dialogRef.afterClosed().subscribe(result => {
-        if (result != undefined && result.state) {
-          this.showTable = false;
-          this.uploadPrograms();
-        }
-      });
-    }*/
-
-
     addProgram(): void {
     const dialogRef = this.dialog.open(AddProgramsComponent, {
       height: '900px',
       width: '1000px',
-    });
-    this.alertService.clear();
-    dialogRef.afterClosed().subscribe(result => {
-      if (result != undefined && result.state) {
-        this.showTable = false;
-        this.uploadPrograms();
-      }
-    });
-  }
-
-  deleteProgram(): void {
-    const dialogRef = this.dialog.open(DialogDeletProgramComponent, {
-      height: '600px',
-      width: '900px',
     });
     this.alertService.clear();
     dialogRef.afterClosed().subscribe(result => {
@@ -126,9 +105,27 @@ export class ProgramsComponent {
       if (column === "visible_externos") {
         return element.visible_externos === 1 ? 'Sí' : 'No';
       }
+      else if(column === "estado") {
+        return element.estado === 1 ? 'Activo' : 'Inactivo';
+      }
 
       return element[column];
   }
 
+  manageEvent(data: any): void {
+    if(data != undefined ){
+      this.showTable = false;
+      this.uploadPrograms()
+    }
+
+  }
+
+  handleDialogClosed(result: any): void {
+    if (result != undefined && result.state) {
+      this.uploadPrograms();
+    }
+  }
+
+ 
 
 }
