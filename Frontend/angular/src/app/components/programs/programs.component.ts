@@ -32,7 +32,6 @@ export class ProgramsComponent {
     DialogDeletProgramComponent : any = DialogDeletProgramComponent;
     dataSource!: MatTableDataSource<Program>;
     
-
     displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'estado', 'estaciones', 'accion'];
    
    
