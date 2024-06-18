@@ -44,25 +44,22 @@
     border-radius: 10px;
     border: 1px solid black; 
     padding: 10px; 
-    height: 850px;
+    height: 950px;
 }
 
-.container {
+  .container {
     display: flex;
-    justify-content: space-between; /* Ajusta la separación entre los divs */
-    align-items: flex-start; /* Alinea los elementos al inicio */
+    justify-content: space-between;
+    align-items: flex-start; 
   }
   .available-options {
     max-height: 300px;
     overflow-y: auto;
-    width: 50%; /* Ajusta el ancho según tus necesidades */
-
+    width: 50%; 
   }
-  .selected-options {
-    /*max-height: 300px;
-    overflow-y: auto;*/
-    width: 45%; /* Ajusta el ancho según tus necesidades */
-    margin-left: 10px; /* Espacio entre los divs, opcional */
+  .selected-options {   
+    width: 100%; 
+    margin-left: 10px; 
 
   } 
 
@@ -70,25 +67,73 @@
   .mat-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px; /* Espacio entre la tabla y otros elementos */
+    margin-bottom: 20px; 
   }
   
-  /* Estilo para las celdas */
+
   .mat-cell, .mat-header-cell {
-    padding: 12px; /* Espaciado interno de las celdas */
-    text-align: left; /* Alineación del texto */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12); /* Borde inferior */
+    padding: 12px; 
+    text-align: left; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); 
   }
   
-  /* Estilo para la fila del encabezado */
+
   .mat-header-row {
-    background-color: #f5f5f5; /* Color de fondo del encabezado */
+    background-color: #f5f5f5; 
   }
   
-  /* Estilo para las filas impares */
+  
   .mat-row:nth-child(odd) {
-    background-color: #fafafa; /* Color de fondo de las filas impares */
+    background-color: #fafafa; 
   }
+
+ 
+.scrollable-list {
+  max-height: 400px; /* Ajusta esta altura según tus necesidades */
+  overflow-y: auto; /* Permite el desplazamiento vertical */
+  border: 1px solid #ccc; /* Opcional: para visualizar mejor el contenedor */
+  padding: 10px; /* Opcional: para un mejor diseño */
+}
+.parameters-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameters-column, .selected-options {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.parameters-column:last-child {
+  margin-right: 0;
+}
+
+.scrollable-list {
+  max-height: 300px; /* Ajusta esta altura según tus necesidades */
+  overflow-y: auto; /* Permite el desplazamiento vertical */
+  border: 1px solid #ccc; /* Opcional: para visualizar mejor el contenedor */
+  padding: 10px; /* Opcional: para un mejor diseño */
+}
+
+.parameters-column h2, .selected-options h2 {
+  font-size: 1.5rem; /* Ajusta el tamaño del texto según tus necesidades */
+  margin-bottom: 10px;
+}
+
+.parameters-column mat-form-field, .selected-options mat-form-field {
+  width: 100%;
+  margin-bottom: 10px; /* Asegura que los campos de formulario tengan un margen inferior */
+}
+
+.parameters-column .scrollable-list, .selected-options .scrollable-list {
+  margin-top: 10px; /* Ajusta el margen superior para alinear mejor las listas */
+}
+
+.parameters-column mat-form-field:last-of-type {
+  margin-bottom: 20px; /* Asegura un mayor margen inferior después del campo de búsqueda */
+}
+  
+ 
 
 
   
