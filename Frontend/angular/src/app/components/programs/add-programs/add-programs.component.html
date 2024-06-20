@@ -20,8 +20,9 @@
           <div class="parameters-container">
             <div class="parameters-column">
               <h2>Parámetros</h2>
-              <mat-form-field>
-                <mat-select placeholder="Seleccionar grupo" [(value)]="selectedGroup" (selectionChange)="onGroupChange($event)">
+              <div class="scrollable-list">
+              <mat-form-field >
+                <mat-select placeholder="Seleccionar grupo" [(value)]="selectedGroup" (selectionChange)="onGroupChange($event)" style="cursor: pointer;">               
                   <mat-option *ngFor="let group of groups" [value]="group.name">
                     {{ group.name }}
                   </mat-option>
@@ -30,12 +31,16 @@
               <mat-form-field>
                 <input matInput placeholder="Buscar parámetros" [(ngModel)]="searchTerm" (input)="onSearchInputChange($event)">
               </mat-form-field>
-              <mat-list class="scrollable-list">
-                <mat-list-item *ngFor="let group of filteredOptions" (click)="selectOption(group.parametro)">
+              <mat-list>
+                <mat-list-item *ngIf="selectedGroup" (click)="selectAllOptionsInGroup()" [ngClass]="{ 'bold-text': selectedGroup === 'Todos los' }"style="cursor: pointer;">
+                  <span>Todos los {{ selectedGroup }}</span>
+                </mat-list-item>
+                <mat-list-item *ngFor="let group of filteredOptions" (click)="selectOption(group.parametro)" [class.greyed-out]="isSelected(group.parametro)" style="cursor: pointer;">
                   {{ group.parametro }}
                 </mat-list-item>
               </mat-list>
             </div>
+          </div>
           
             <div class="selected-options">
               <h2>Parámetros seleccionados</h2>
@@ -50,7 +55,7 @@
             </div>
           </div>
 
-          <h2>Agregar estaciones</h2>
+          <h2 class="section-title">Agregar estaciones</h2>
           <table mat-table [dataSource]="estaciones" class="mat-elevation-z8">
             <ng-container matColumnDef="codigo">
               <th mat-header-cell *matHeaderCellDef> Código </th>

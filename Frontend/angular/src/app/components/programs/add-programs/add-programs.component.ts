@@ -8,7 +8,7 @@ interface Parametro {
   id_parametro: number;
   parametro: string;
   id_grupo: number;
-  // Agrega otros campos si es necesario
+
 }
 
 interface Parametro {
@@ -203,6 +203,21 @@ export class AddProgramsComponent {
   getGroupColor(option: string): string {
     const group = this.groups.find(group => group.parameters.some(param => param.parametro === option));
     return group ? group.color : 'transparent';
+  }
+
+  selectAllOptionsInGroup(): void {
+    const group = this.groups.find(group => group.name === this.selectedGroup);
+    if (group) {
+      group.parameters.forEach(param => {
+        if (!this.selectedOptions.some(selected => selected.option === param.parametro)) {
+          this.selectedOptions.push({ option: param.parametro, color: group.color });
+        }
+      });
+    }
+  }
+
+  isSelected(parametro: string): boolean {
+    return this.selectedOptions.some(selected => selected.option === parametro);
   }
 
   addProgram() { }

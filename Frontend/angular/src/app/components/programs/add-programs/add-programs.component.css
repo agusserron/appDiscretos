@@ -21,6 +21,11 @@
     align-items: center;
 }
 
+.section-title {
+  margin-top: 30px; 
+  margin-bottom: 15px; 
+}
+
 .example-additional-selection {
     opacity: 0.75;
     font-size: 0.75em;
@@ -28,6 +33,14 @@
 
 .mat-dialog-title{
     text-align: center;
+}
+
+.greyed-out {
+  color: #999; /* Puedes ajustar el color gris según tus preferencias */
+}
+
+.bold-text {
+  font-weight: bold !important;
 }
 
 .mat-dialog-actions{
@@ -87,13 +100,7 @@
     background-color: #fafafa; 
   }
 
- 
-.scrollable-list {
-  max-height: 400px; /* Ajusta esta altura según tus necesidades */
-  overflow-y: auto; /* Permite el desplazamiento vertical */
-  border: 1px solid #ccc; /* Opcional: para visualizar mejor el contenedor */
-  padding: 10px; /* Opcional: para un mejor diseño */
-}
+
 .parameters-container {
   display: flex;
   justify-content: space-between;
@@ -109,28 +116,31 @@
 }
 
 .scrollable-list {
-  max-height: 300px; /* Ajusta esta altura según tus necesidades */
-  overflow-y: auto; /* Permite el desplazamiento vertical */
-  border: 1px solid #ccc; /* Opcional: para visualizar mejor el contenedor */
-  padding: 10px; /* Opcional: para un mejor diseño */
+  max-height: 300px; 
+  overflow-y: auto; 
+  padding: 10px; 
+  position: sticky; 
+  top: 10px; 
+  background-color: white; 
+  z-index: 10;
 }
 
 .parameters-column h2, .selected-options h2 {
-  font-size: 1.5rem; /* Ajusta el tamaño del texto según tus necesidades */
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .parameters-column mat-form-field, .selected-options mat-form-field {
   width: 100%;
-  margin-bottom: 10px; /* Asegura que los campos de formulario tengan un margen inferior */
+  margin-bottom: 10px; 
 }
 
 .parameters-column .scrollable-list, .selected-options .scrollable-list {
-  margin-top: 10px; /* Ajusta el margen superior para alinear mejor las listas */
+  margin-top: 10px; 
 }
 
 .parameters-column mat-form-field:last-of-type {
-  margin-bottom: 20px; /* Asegura un mayor margen inferior después del campo de búsqueda */
+  margin-bottom: 20px; 
 }
   
  
