@@ -3,7 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatTableExporterDirective } from 'mat-table-exporter';
 import { MatDialog } from '@angular/material/dialog';
-import { AddStationComponent } from '../programs/add-programs/add-station/add-station.component';
+import { AddStationComponent } from '../programs/add-station/add-station.component';
 
 @Component({
   selector: 'app-table-generic',

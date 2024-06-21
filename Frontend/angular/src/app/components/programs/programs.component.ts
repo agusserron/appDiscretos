@@ -6,7 +6,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { Program } from 'src/app/models/program/program.module';
 import { AddProgramsComponent } from './add-programs/add-programs.component';
-import { AddStationComponent } from './add-programs/add-station/add-station.component';
+import { AddStationComponent } from './add-station/add-station.component';
 import { DialogDeletProgramComponent } from './dialog-delet-program/dialog-delet-program.component';
 
 @Component({

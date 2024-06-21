@@ -2,7 +2,7 @@ import { Component, Inject } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { AlertService } from 'src/app/components/alert/alert.service';
-import { AddProgramsComponent } from '../add-programs.component';
+import { AddProgramsComponent } from '../add-programs/add-programs.component';
 import { ProgramService } from 'src/app/services/microservice_agua/programs/program.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { Station } from 'src/app/models/program/program.module';

@@ -1,0 +1,68 @@
+.column {
+    float: left;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subItemField {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.alertBox {
+    margin-top: 2%;
+    margin-left:1%;
+    width: 30%;
+    height: 30%;
+    align-items: center;
+}
+
+.mat-hint {
+    font-size: medium;
+}
+
+.section-title {
+  margin-top: 30px; 
+  margin-bottom: 15px; 
+}
+
+.example-additional-selection {
+    opacity: 0.75;
+    font-size: 0.75em;
+}
+
+.mat-dialog-title{
+    text-align: center;
+    padding: 10px;
+}
+
+
+.mat-dialog-actions{
+    justify-content: center;
+}
+
+.centered-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; 
+    margin-top: 20px;
+}
+
+
+.dialog-box {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid rgb(120, 134, 255); 
+    height: 650px;
+}
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}

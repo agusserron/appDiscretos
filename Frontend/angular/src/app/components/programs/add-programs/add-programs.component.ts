@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { ProgramService } from 'src/app/services/microservice_agua/programs/program.service';
 import { AlertService } from '../../alert/alert.service';
 import { FormBuilder, Validators } from '@angular/forms';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { CreateStationAguaComponent } from './create-station-agua/create-station-agua.component';
 
 interface Parametro {
   id_parametro: number;
@@ -47,12 +48,15 @@ export class AddProgramsComponent {
 
   constructor(
     public dialogRef: MatDialogRef<AddProgramsComponent>,
+    public dialog: MatDialog,
     private _formBuilder: FormBuilder,
     public alertService: AlertService,
     private programService: ProgramService
   ) {
     this.setAllItems();
   }
+
+  AddStation : any = CreateStationAguaComponent;
 
   programFormGroup = this._formBuilder.group({
     nombre: ['', [Validators.required, Validators.pattern("[a-zA-Z0-9\\s.()&/áéíóúÁÉÍÓÚñÑüÜ-]+")]],
@@ -97,8 +101,6 @@ export class AddProgramsComponent {
       }
     })
   }
-
-
 
 
   groupParamsByGroup(params: Parametro[]): { [key: string]: Parametro[] } {
@@ -219,6 +221,20 @@ export class AddProgramsComponent {
   isSelected(parametro: string): boolean {
     return this.selectedOptions.some(selected => selected.option === parametro);
   }
+
+
+  openDialogAddStation() {
+  const dialogRef = this.dialog.open(CreateStationAguaComponent, {
+    width: '800px',
+    height: '700px',
+    data: {} 
+  });
+
+  dialogRef.afterClosed().subscribe(result => {
+    console.log('El diálogo se cerró');
+    
+  });
+}
 
   addProgram() { }
 }

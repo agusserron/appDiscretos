@@ -56,6 +56,9 @@
           </div>
 
           <h2 class="section-title">Agregar estaciones</h2>
+          <div class="centered-button">
+          <button mat-raised-button color="primary" (click)="openDialogAddStation()">Agregar Estación</button>
+          </div>
           <table mat-table [dataSource]="estaciones" class="mat-elevation-z8">
             <ng-container matColumnDef="codigo">
               <th mat-header-cell *matHeaderCellDef> Código </th>

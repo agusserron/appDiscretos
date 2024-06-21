@@ -40,9 +40,10 @@ import { InfoComponent } from './components/station/info/info.component';
 import { DialogModifyDataComponent } from './dialog-modify-data/dialog-modify-data.component';
 import { ProgramsComponent } from './components/programs/programs.component';
 import { AddProgramsComponent } from './components/programs/add-programs/add-programs.component';
-import { AddStationComponent } from './components/programs/add-programs/add-station/add-station.component';
+import { AddStationComponent } from './components/programs/add-station/add-station.component';
 import { DialogDeletProgramComponent } from './components/programs/dialog-delet-program/dialog-delet-program.component';
 import { StationAguaComponent } from './components/station-agua/station-agua.component';
+import { CreateStationAguaComponent } from './components/programs/add-programs/create-station-agua/create-station-agua.component';
 
 
 @NgModule({
@@ -76,7 +77,8 @@ import { StationAguaComponent } from './components/station-agua/station-agua.com
     AddProgramsComponent,
     AddStationComponent,
     DialogDeletProgramComponent,
-    StationAguaComponent
+    StationAguaComponent,
+    CreateStationAguaComponent
   ],
   imports: [
     BrowserModule,

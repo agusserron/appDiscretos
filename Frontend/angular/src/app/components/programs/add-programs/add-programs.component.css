@@ -36,7 +36,7 @@
 }
 
 .greyed-out {
-  color: #999; /* Puedes ajustar el color gris según tus preferencias */
+  color: #999; 
 }
 
 .bold-text {
@@ -51,6 +51,14 @@
     display: flex;
     justify-content: center;
 }
+
+.centered-button {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px; 
+  margin-top: 20px;
+}
+
 
 .dialog-box {
     overflow: hidden;
