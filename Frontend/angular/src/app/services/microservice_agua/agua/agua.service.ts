@@ -13,5 +13,8 @@ export class AguaService {
   getMatrices(): Observable<any> {
     return this.http.get<any>(`${environment.apiAgua}/matrices`);
   }
+  getDepartamentos(): Observable<any> {
+    return this.http.get<any>(`${environment.apiAgua}/departamentos`);
+  }
 
 }

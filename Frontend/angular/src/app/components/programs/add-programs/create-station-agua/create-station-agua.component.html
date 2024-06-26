@@ -15,19 +15,19 @@
                     <mat-form-field class="subItemField" appearance="fill">
                         <mat-label>Tipo punto</mat-label>
                         <mat-select formControlName="punto" required>
-                            <mat-option *ngFor="let opcion of opciones" [value]="opcion.valor">{{ opcion.nombre }}</mat-option>
+                            <mat-option *ngFor="let tipoPunto of tipoPunto" [value]="tipoPunto.tip_pun_est_descripcion">{{ tipoPunto.tip_pun_est_descripcion }}</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field class="subItemField" appearance="fill">
                         <mat-label>Matriz</mat-label>
                         <mat-select formControlName="matriz" required>
-                            <mat-option *ngFor="let opcion of opciones" [value]="opcion.valor">{{ opcion.nombre }}</mat-option>
+                            <mat-option *ngFor="let matrices of matrices" [value]="matrices.nombre">{{ matrices.nombre }}</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field class="subItemField" appearance="fill">
                         <mat-label>Departamento</mat-label>
                         <mat-select formControlName="departamento" required>
-                            <mat-option *ngFor="let opcion of opciones" [value]="opcion.valor">{{ opcion.nombre }}</mat-option>
+                            <mat-option *ngFor="let departamentos of departamentos" [value]="departamentos.dep_nombre">{{departamentos.dep_nombre }}</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field class="subItemField" appearance="fill">

@@ -14,4 +14,10 @@ export class StationAguaService {
     return this.http.get<any>(`${environment.apiAgua}/estaciones`);
   }
 
+  getTypePoint(): Observable<any> {
+    return this.http.get<any>(`${environment.apiAgua}/estaciones/tipoPunto`);
+  }
+
+
+
 }
