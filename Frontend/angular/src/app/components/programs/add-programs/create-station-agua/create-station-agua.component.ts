@@ -27,6 +27,7 @@ export class CreateStationAguaComponent {
   tipoPunto: any[] = [];
   matrices: any[] = [];
   departamentos: any[] = [];
+  subCuenca: any;
 
   programFormGroup = this._formBuilder.group({
     codigo: ['', Validators.required],
@@ -90,9 +91,24 @@ export class CreateStationAguaComponent {
 
   }
 
+  setSubcuenca () {
+    const latitud = this.programFormGroup.get('latitud')?.value;
+    const longitud = this.programFormGroup.get('longitud')?.value;
+
+    this.stationAguaService.getSubcuenca(latitud, longitud)
+      .subscribe({
+        next: (res) => {
+          this.subCuenca = res;
+          console.log('Subcuenca obtenida:', this.subCuenca);
+        },
+        error: (err) => {
+          console.error('Error al obtener la subcuenca:', err);
+        }
+      });
+  }
+
   obtenerOpciones() {}
 
-  setSubcuenca() {}
 
 
 
