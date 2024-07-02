@@ -36,8 +36,12 @@ const getTipoPuntoEstacion = async (req,res) => {
 
 
 const getSubcuenca = async (req, res) => {
-    const { lat, long } = req.query; // Asumiendo que latitud y longitud vienen como parámetros de la consulta
-
+    const { lat, long } = req.query; 
+    console.log(lat)
+    console.log(long)
+    if (!lat || !long) {
+        return res.status(400).json({ message: "Latitud y longitud son requeridas." });
+    }
     try {
         const subcuenca = await aguaRepository.getSubcuencaByLatLong(lat, long);
         logInfo(`GET subcuenca by LatLong from database`);

@@ -38,7 +38,8 @@ export class CreateStationAguaComponent {
     orden: ['', Validators.required],
     ingresoInterno: [false],
     latitud: ['', Validators.required],
-    longitud: ['', Validators.required]
+    longitud: ['', Validators.required],
+    subcuenca: ['', Validators.required],
   });
 
   ngOnInit(): void {
@@ -94,12 +95,20 @@ export class CreateStationAguaComponent {
   setSubcuenca () {
     const latitud = this.programFormGroup.get('latitud')?.value;
     const longitud = this.programFormGroup.get('longitud')?.value;
+    console.log(latitud)
+    console.log(longitud)
 
     this.stationAguaService.getSubcuenca(latitud, longitud)
       .subscribe({
         next: (res) => {
           this.subCuenca = res;
           console.log('Subcuenca obtenida:', this.subCuenca);
+
+            this.programFormGroup.patchValue({
+              subcuenca: this.subCuenca.sub_cue_nombre // Ajusta esto al nombre real de la propiedad en tu resultado
+            });
+          
+          
         },
         error: (err) => {
           console.error('Error al obtener la subcuenca:', err);

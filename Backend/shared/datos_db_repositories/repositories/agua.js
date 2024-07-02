@@ -120,18 +120,16 @@ export class AguaRepository {
       const data = await this.connection.query(`select * from tipo_punto_estacion`);
       return data;
     }
-
+    
     getSubcuencaByLatLong = async (lat, long) => {
       const query = `
-          SELECT subcuenca 
-          FROM sub_cuenca 
-          WHERE ST_Contains(geom, POINT(?, ?))
+        SELECT *
+        FROM sub_cuenca 
+        WHERE ST_Contains(the_geom, ST_GeomFromText('POINT(${long} ${lat})', 4326))
       `;
-      const [rows] = await this.connection.query(query, [lat, long]);
+      const [rows] = await this.connection.query(query);
       return rows;
-  };
-
-
+    };
 
     getProgramasParametros = async () => {
       const data = await this.connection.query(`select * from programa_parametro`);

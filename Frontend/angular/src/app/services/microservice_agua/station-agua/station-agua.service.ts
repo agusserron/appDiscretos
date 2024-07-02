@@ -23,7 +23,7 @@ export class StationAguaService {
       .set('lat', lat.toString())
       .set('long', long.toString());
 
-    return this.http.get<any>(`${environment.apiAgua}/subcuenca`, { params })
+    return this.http.get<any>(`${environment.apiAgua}/estaciones/subcuenca`, { params })
   }
 
 
