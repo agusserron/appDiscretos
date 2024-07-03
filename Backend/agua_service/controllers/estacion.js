@@ -34,7 +34,26 @@ const getTipoPuntoEstacion = async (req,res) => {
     }
 }
 
+
+const getSubcuenca = async (req, res) => {
+    const { lat, long } = req.query; 
+    console.log(lat)
+    console.log(long)
+    if (!lat || !long) {
+        return res.status(400).json({ message: "Latitud y longitud son requeridas." });
+    }
+    try {
+        const subcuenca = await aguaRepository.getSubcuencaByLatLong(lat, long);
+        logInfo(`GET subcuenca by LatLong from database`);
+        res.status(200).json(subcuenca);
+    } catch (e) {
+        logError(`Error getSubcuencaByLatLong/${e}`);
+        res.status(500).json({ message: "Error obteniendo la subcuenca por latitud y longitud." });
+    }
+};
+
 export default {
     getEstaciones,
     getTipoPuntoEstacion,
+    getSubcuenca,
 }

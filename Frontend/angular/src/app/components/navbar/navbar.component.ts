@@ -86,6 +86,28 @@ export class NavbarComponent implements OnInit {
       external: false
     },
     {
+      displayName: 'AGUA',
+      iconName: '#agua',
+      children: [
+        {
+          displayName: 'PROGRAMAS',
+          iconName: '#data',
+          route: '/SRD/programs',
+          external: false,
+          roles: []
+        },
+        {
+          displayName: 'ESTACIONES',
+          iconName: '#plant',
+          route: '/SRD/station-agua',
+          external: false,
+          roles: []
+        }
+      ],
+      roles: ['SRD-ADMIN'],
+      external: false
+    },
+    {
       displayName: 'SHINY',
       iconName: '#graph',
       externalUrl: 'http://dinama-shiny:3838/sia_apps',

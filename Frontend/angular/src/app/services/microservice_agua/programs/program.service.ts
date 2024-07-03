@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
@@ -14,4 +14,21 @@ export class ProgramService {
     return this.http.get<any>(`${environment.apiAgua}/programas`);
   }
 
+  getParams(): Observable<any> {
+    return this.http.get<any>(`${environment.apiAgua}/parametros`);
+  }
+
+  getProgramStation(programId: number): Observable<any> {
+    return this.http.get<any>(`${environment.apiAgua}/programas/${programId}`);
+  }
+
+  //inactiva
+
+  updateProgramStatus(idPrograma: string): Observable<any> {
+    const body = { id_programa: idPrograma };
+    return this.http.put(`${environment.apiAgua}/programas/data`, body);
+  }
+
+
 }
+

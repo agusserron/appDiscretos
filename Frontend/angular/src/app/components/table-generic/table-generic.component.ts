@@ -1,8 +1,9 @@
-import { AfterViewInit, Component, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ContentChild, EventEmitter, Input, Output, SimpleChanges, TemplateRef, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatTableExporterDirective } from 'mat-table-exporter';
 import { MatDialog } from '@angular/material/dialog';
+import { AddStationComponent } from '../programs/add-station/add-station.component';
 
 @Component({
   selector: 'app-table-generic',
@@ -18,21 +19,39 @@ export class TableGenericComponent implements AfterViewInit {
   @ViewChild(MatTableExporterDirective) exporter!: MatTableExporterDirective;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @Input() dialogComponents:any;
+  @Input() columnHeaders: { [key: string]: string } = {};
   @Output() dialogClosed = new EventEmitter<any>();
+ 
+ 
+
 
   exportedDataSource: any[] = [];
+  alertService: any;
  
   
   constructor(public dialog: MatDialog) { }
 
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+    if (this.dataSource && this.paginator) {
+      this.dataSource.paginator = this.paginator;
+      this.setupPaginator();
+    }
+  }
+
+  setupPaginator(): void {
     setTimeout(() => {
-      if (this.paginator) {
-        this.paginator.pageSize = this.pageSize;
-        this.paginator._intl.itemsPerPageLabel = "Items por página";
-      }
+      this.paginator.pageSize = this.pageSize;
+      this.paginator._intl.itemsPerPageLabel = "Items por página";
     });
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['dataSource'] && !changes['dataSource'].firstChange) {
+      if (this.paginator) {
+        this.dataSource.paginator = this.paginator;
+        this.setupPaginator();
+      }
+    }
   }
 
   esFilaDesactivada(row: any): boolean {
@@ -61,6 +80,20 @@ export class TableGenericComponent implements AfterViewInit {
     });
   }
 
+  verEstaciones(element: any): void {
+    const dialogRef = this.dialog.open(AddStationComponent, {
+      height: '800px',
+      width: '1000px',
+      data: { element } 
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+      if (result != undefined && result.state) {
+     
+      }
+    });
+  }
+
 
   userDelete(element:any) {
     const dialogRef = this.dialog.open(this.dialogComponents[2], {
@@ -73,8 +106,6 @@ export class TableGenericComponent implements AfterViewInit {
     });
   
   }
-
- 
 
 
   /*exportTable(type: string, name: string) {
@@ -112,6 +143,8 @@ export class TableGenericComponent implements AfterViewInit {
   esFilaValida(row: any): boolean {
     return row.userStatus !== undefined && row.userStatus === 'Activo';
   }
+
+
 
 
 

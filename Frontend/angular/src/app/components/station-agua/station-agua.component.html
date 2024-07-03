@@ -1,0 +1,18 @@
+<div style="width:100%">
+    <h1 class="animate__animated animate__backInDown">ESTACIONES</h1>
+    <div style="margin-left:1%">
+        <div style="margin-top:1%">
+            <mat-form-field>
+                <mat-label>Buscar</mat-label>
+                <div style="display: flex;">
+                    <input matInput (keyup)="applyFilter($event)" #input>
+                    <mat-icon>search
+                    </mat-icon>
+                </div>
+            </mat-form-field>
+        </div>
+    </div>
+    
+    <app-table-generic *ngIf="showTable" [dataSource]="dataSource"   [displayedColumns]="displayedColumns"  [dialogComponents]="[]" ></app-table-generic>
+</div>
+

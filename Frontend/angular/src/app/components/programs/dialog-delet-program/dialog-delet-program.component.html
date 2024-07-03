@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Inactivar programa</h1>
+<div mat-dialog-content>
+    <p><b>¿Está seguro de que desea inactivar el siguiente programa?</b></p>
+    <p><b>Nombre: </b>{{data.nombre_programa}}</p>
+    <p><b>Código: </b>{{data.codigo_programa}}</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
+    <button mat-button cdkFocusInitial (click)="deleteData()">Inactivar <mat-icon>delete</mat-icon></button>
+</div>
+<div class="alertBox-container">
+    <div class="alertBox">
+        <alert></alert>
+    </div>
+</div>

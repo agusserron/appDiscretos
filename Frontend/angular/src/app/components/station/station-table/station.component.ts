@@ -61,12 +61,6 @@ export class StationComponent implements OnInit {
     keepAfterRouteChange: false
   };
 
- /* 
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-  }
-*/
 
 /* primeros caracteres */
 /* averiguar porque no busca en el original (o este) en otra cosa que no sea la columna de identificacion */

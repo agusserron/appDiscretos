@@ -10,6 +10,9 @@ import { PlantComponent } from './components/plant/view-plant/view-plant.compone
 import { AuthGuard } from './guards/auth.guard';
 import { IndustryComponent } from './components/industry/home-industry/home-industry.component';
 import { AddResultSampleComponent } from './components/collaborators/add-result-sample/add-result-sample.component';
+import { ProgramsComponent } from './components/programs/programs.component';
+import { StationAguaComponent } from './components/station-agua/station-agua.component';
+
 
 export const routes: any = [
   {path: 'login', component: LoginComponent},
@@ -20,7 +23,11 @@ export const routes: any = [
     {path: 'plant', component: PlantComponent},
     {path: 'data', component: DataComponent},
     {path: 'station', component: HomeStationComponent},
-    {path: 'collaborators', component: AddResultSampleComponent}
+    {path: 'collaborators', component: AddResultSampleComponent},
+    {path: 'programs', component:  ProgramsComponent},
+    {path: 'station-agua', component: StationAguaComponent}
+    
+    
   ]},
   {path: '**', redirectTo: '/login', pathMatch: 'full'},
 ];
