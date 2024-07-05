@@ -12,6 +12,7 @@ import { IndustryComponent } from './components/industry/home-industry/home-indu
 import { AddResultSampleComponent } from './components/collaborators/add-result-sample/add-result-sample.component';
 import { ProgramsComponent } from './components/programs/programs.component';
 import { StationAguaComponent } from './components/station-agua/station-agua.component';
+import { ParametrosAguaComponent } from './components/parametros-agua/parametros-agua.component';
 
 
 export const routes: any = [
@@ -25,6 +26,7 @@ export const routes: any = [
     {path: 'station', component: HomeStationComponent},
     {path: 'collaborators', component: AddResultSampleComponent},
     {path: 'programs', component:  ProgramsComponent},
+    {path: 'parametros-agua', component:  ParametrosAguaComponent}, 
     {path: 'station-agua', component: StationAguaComponent}
     
     
