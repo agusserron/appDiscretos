@@ -26,5 +26,11 @@ export class StationAguaService {
     return this.http.get<any>(`${environment.apiAgua}/estaciones/subcuenca`, { params })
   }
 
+  getCuencaById(idCuenca: number): Observable<any> {
+    return this.http.get(`${environment.apiAgua}/estaciones/cuenca`, {
+      params: { nroCuenca: idCuenca.toString() }
+    });
+  }
+
 
 }

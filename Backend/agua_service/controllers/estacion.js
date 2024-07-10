@@ -52,8 +52,24 @@ const getSubcuenca = async (req, res) => {
     }
 };
 
+const getCuencaId = async (req,res) => {
+    let nroCuenca = req.query.nroCuenca;
+    try {
+        const cuenca = await aguaRepository.getCuencaId(nroCuenca);
+        logInfo(`GET getCuencaId from database`);
+        res.status(200).json(cuenca);
+    } catch (e) {
+        logError(`Error getCuencaId/${e}`);
+        res.status(500).json({ message: "Error, obteniendo la cuenca." });
+    } finally {
+        release();
+    }
+}
+
+
 export default {
     getEstaciones,
     getTipoPuntoEstacion,
     getSubcuenca,
+    getCuencaId
 }

@@ -1,6 +1,8 @@
+import { CurrencyPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
+import { switchMap } from 'rxjs';
 import { AlertService } from 'src/app/components/alert';
 import { AguaService } from 'src/app/services/microservice_agua/agua/agua.service';
 import { StationAguaService } from 'src/app/services/microservice_agua/station-agua/station-agua.service';
@@ -40,6 +42,7 @@ export class CreateStationAguaComponent {
     latitud: ['', Validators.required],
     longitud: ['', Validators.required],
     subcuenca: ['', Validators.required],
+    cuenca: ['', Validators.required],
   });
 
   ngOnInit(): void {
@@ -92,29 +95,28 @@ export class CreateStationAguaComponent {
 
   }
 
-  setSubcuenca () {
+  setSubcuenca() {
     const latitud = this.programFormGroup.get('latitud')?.value;
     const longitud = this.programFormGroup.get('longitud')?.value;
-    console.log(latitud)
-    console.log(longitud)
-
-    this.stationAguaService.getSubcuenca(latitud, longitud)
-      .subscribe({
-        next: (res) => {
-          this.subCuenca = res;
-          console.log('Subcuenca obtenida:', this.subCuenca);
-
-            this.programFormGroup.patchValue({
-              subcuenca: this.subCuenca.sub_cue_nombre // Ajusta esto al nombre real de la propiedad en tu resultado
-            });
-          
-          
-        },
-        error: (err) => {
-          console.error('Error al obtener la subcuenca:', err);
-        }
-      });
+  
+    this.stationAguaService.getSubcuenca(latitud, longitud).pipe(
+      switchMap((res) => {
+        this.subCuenca = res;
+        return this.stationAguaService.getCuencaById(this.subCuenca.sub_cue_cuenca_id);       
+      })
+    ).subscribe({
+      next: (cuencaNombre) => {  
+        this.programFormGroup.patchValue({
+          subcuenca: this.subCuenca.sub_cue_nombre, 
+          cuenca: cuencaNombre[0].cue_nombre
+        });
+      },
+      error: (err) => {
+        console.error('Error al obtener la información:', err);
+      }
+    });
   }
+
 
   obtenerOpciones() {}
 

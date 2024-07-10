@@ -100,6 +100,8 @@ export class AguaRepository {
       return data;
     }
 
+    
+
     getEstaciones = async () => {
       const data = await this.connection.query(`select * from estacion`);
       return data;
@@ -130,6 +132,17 @@ export class AguaRepository {
       const [rows] = await this.connection.query(query);
       return rows;
     };
+
+
+    getCuencaId = async (nroCuenca) => {
+      const query = `
+      SELECT c.*
+      FROM cuenca c
+      WHERE c.id = ?
+      `;    
+      const data = await this.connection.query(query, [nroCuenca]);
+      return data;
+    }
 
     getProgramasParametros = async () => {
       const data = await this.connection.query(`select * from programa_parametro`);

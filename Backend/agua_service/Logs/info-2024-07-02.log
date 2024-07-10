@@ -27,3 +27,15 @@
 {"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-07-02 12:16:07"}
 {"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 12:16:25"}
 {"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 12:18:20"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-07-02 13:53:46"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-07-02 13:53:47"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-07-02 13:53:49"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-07-02 13:53:49"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-07-02 13:53:49"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 13:54:02"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 13:55:18"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 13:55:26"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 13:55:29"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 13:55:32"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 13:55:34"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-07-02 13:56:40"}
