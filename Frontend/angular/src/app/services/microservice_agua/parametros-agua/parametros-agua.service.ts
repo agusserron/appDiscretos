@@ -14,7 +14,9 @@ export class ParametrosAguaService {
     return this.http.get<any>(`${environment.apiAgua}/parametros/parametros-agua`);
   }
 
-
+  getMatrices(): Observable<any> {
+    return this.http.get<any>(`${environment.apiAgua}/matrices`);
+  }
 
 
 }

@@ -15,3 +15,6 @@
 {"level":"info","message":"levanto los parametros de agua","timestamp":"2024-07-05 11:08:44"}
 {"level":"info","message":"GET getProgramas from database","timestamp":"2024-07-05 11:10:35"}
 {"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-07-05 11:13:03"}
+{"level":"info","message":"levanto los parametros de agua","timestamp":"2024-07-05 11:16:11"}
+{"level":"info","message":"levanto los parametros de agua","timestamp":"2024-07-05 11:38:34"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-07-05 12:36:32"}
