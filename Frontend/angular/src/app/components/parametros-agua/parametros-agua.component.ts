@@ -4,6 +4,10 @@ import { MatPaginator } from '@angular/material/paginator';
 import { ParametrosAgua } from 'src/app/models/parametros-agua/parametros-agua.module';
 import { ParametrosAguaService } from 'src/app/services/microservice_agua/parametros-agua/parametros-agua.service';
 import { AlertService } from '../alert';
+import * as pdfMake from "pdfmake/build/pdfmake";
+import * as pdfFonts from 'pdfmake/build/vfs_fonts';
+import { PdfCreatorComponent } from '../pdf-creator/pdf-creator.component';
+(<any>pdfMake).vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
   selector: 'app-parametros-agua',
@@ -16,6 +20,7 @@ export class ParametrosAguaComponent {
   showTable: boolean = false;
   displayedColumns: string[] = ['param_nombre', 'param_nomclave', 'param_enum', 'matriz_detalle'];
   columnFilters: { [key: string]: string } = {}; // Filtros para cada columna
+  title: string = '';
 
   columnHeaders: { [key: string]: string } = {
     param_nombre: 'Nombre',
@@ -25,10 +30,14 @@ export class ParametrosAguaComponent {
   };
 
   matrices: any = [];
-
+  selectedEnum: string = '';  // predeterminado
+  
   getColumnHeader(column: string): string {
     return this.columnHeaders[column] || column;
   }
+
+  @ViewChild('pdfGenerator', { static: false }) pdfGenerator!: PdfCreatorComponent;
+ 
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -41,12 +50,33 @@ export class ParametrosAguaComponent {
     this.uploadParametros();
     this.getMatrices();
   }
-/*
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
-    this.dataSource.filter = filterValue;
-  }
-*/
+
+
+//hack para que me mapee los titulos 
+transformData() {
+  const columnData = ['param_nombre', 'param_nomclave', 'param_enum', 'matriz_detalle'];
+  const customTitles = columnData.map(column => this.getColumnHeader(column));
+  
+  // Transform the data to use the custom headers
+  const transformedData = this.dataSource.data.map(row => {
+    const transformedRow: { [key: string]: any } = {};
+    columnData.forEach(column => {
+      const customHeader = this.getColumnHeader(column);
+      transformedRow[customHeader] = row[column as keyof ParametrosAgua];
+    });
+    return transformedRow;
+  });
+
+  return { columnData: customTitles, transformedData };
+}
+
+
+exportPDF(): void {
+  const { columnData, transformedData } = this.transformData();
+  this.pdfGenerator.exportPDF(transformedData, columnData, 'Parametros', 'Parametros');
+}
+
+
   applyColumnFilter(column: string, event: Event) {
     const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
     this.columnFilters[column] = filterValue;

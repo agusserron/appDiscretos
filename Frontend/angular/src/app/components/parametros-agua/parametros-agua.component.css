@@ -48,3 +48,7 @@ input::-webkit-inner-spin-button {
     margin-top:0.5%;
     margin-left:1%;
 }
+
+.full-width-table {
+    width: 100%;
+  }
