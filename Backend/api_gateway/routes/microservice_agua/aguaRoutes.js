@@ -4,6 +4,7 @@ const baseRouteParametros = `${baseIP}/api/agua/parametros`;
 const baseRouteProgramas = `${baseIP}/api/agua/programas`; 
 const baseRouteRangos = `${baseIP}/api/agua/rangos`;
 const baseRouteAgua = `${baseIP}/api/agua`;
+const baseRouteParametrosAgua = `${baseIP}/api/agua/parametros-agua`; 
 
 const aguaRoutes = [
     {
@@ -25,6 +26,17 @@ const aguaRoutes = [
             logLevel: 'silent',
             pathRewrite: {
                 [`^/gateway/microservice_agua/parametros`]: '',
+            }
+        },
+    },
+    {
+        url: '/gateway/microservice_agua/parametros-agua',
+        proxy: {
+            target: baseRouteParametrosAgua,
+            changeOrigin: true,
+            logLevel: 'silent',
+            pathRewrite: {
+                [`^/gateway/microservice_agua/parametros-agua`]: '',
             }
         },
     },

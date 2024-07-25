@@ -60,11 +60,25 @@ const getGruposParametros = async (req,res) => {
     }
 }
 
+const getParamMatrices = async (req,res) => {
+    try {
+        const parametrosAgua = await aguaRepository.getParametrosAgua({});
+        logInfo(`levanto los parametros de agua`);
+        res.status(200).json(parametrosAgua);
+    } catch (e) {
+        logError(`Error getParametrosAgua/${e}`);
+        res.status(500).json({ message: "No estoy pudiendo levantar los parametros de agua" });
+    } finally {
+        release();
+    }
+}
+
 export default {
     getParametros,
     getParametrosUnidades,
     getCodigosSiladParametros,
-    getGruposParametros
+    getGruposParametros,
+    getParamMatrices
 }
 
 

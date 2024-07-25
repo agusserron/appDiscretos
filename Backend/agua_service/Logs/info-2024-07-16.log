@@ -1,0 +1,4 @@
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-07-16 09:40:26"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-07-16 09:40:29"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-07-16 13:37:20"}
+{"level":"info","message":"levanto los parametros de agua","timestamp":"2024-07-16 13:37:21"}
