@@ -3,6 +3,8 @@ import env from "dotenv"
 import { logInfo, logError } from "../../shared/logger/logger.js"
 import sanitizer from "../../shared/sanitizer_middleware/sanitizer.js";
 import { getConnection } from '../../shared/connectionMariaDB/connection.js';
+import validator from "../../shared/validatorJSON/validateJson.js";
+import schemas from "../../shared/validatorJSON/schemas/estacionAguaSchema.js";
 env.config();
 
 const { connection, release } = await getConnection();
@@ -20,6 +22,27 @@ const getEstaciones = async (req,res) => {
         release();
     }
 }
+
+const existeEstacion = async (req, res) => {
+ 
+    const { codigo, nombre } = req.query;
+
+    console.log('Código:', codigo);
+    console.log('Nombre:', nombre);
+    if (!codigo && !nombre) {
+      return res.status(400).json({ message: "Código o nombre son requeridos." });
+    } 
+    try { 
+      const exists = await aguaRepository.existeEstacion(codigo, nombre);
+      console.log(exists)
+      res.status(200).json({ exists });
+    } catch (e) {
+
+      logError(`Error existeEstacion/${e}`);
+      res.status(500).json({ message: "Error verificando la existencia de la estación." });
+    }
+  };
+
 
 const getTipoPuntoEstacion = async (req,res) => {
     try {
@@ -66,10 +89,46 @@ const getCuencaId = async (req,res) => {
     }
 }
 
+const addEstacionAgua = async (req, res) => {
+  let data = req.body;
+  try {
+
+      if (sanitizer.containsXSS(data)) {
+          return res.status(400).json({ message: "Error en sintaxis" });
+      }
+      if (!validator.validateJson(data, schemas.aguaEstacionSchema)) {
+          return res.status(400).json({ message: "Error en sintaxis" });
+      }
+
+      const { codigo, nombre } = data;
+      if (!codigo || !nombre) {
+          return res.status(400).json({ message: "Código y nombre son requeridos para la verificación." });
+      }
+      
+      const exists = await aguaRepository.existeEstacion(codigo, nombre);
+      if (exists) {
+          return res.status(400).json({ message: "La estación ya existe." });
+      }
+
+      await aguaRepository.addStationAgua(data);
+      logInfo(`POST addEstacionAgua`);
+      res.status(201).json({ message: "Estación de agua agregada correctamente" });
+
+  } catch (e) {
+      console.error('Error en addEstacionAgua:', e); 
+      logError(`Error addEstacionAgua`);
+      res.status(500).json({ message: "Error al agregar la estación de agua." });
+  } finally {
+      release(); 
+  }
+};
+
 
 export default {
     getEstaciones,
     getTipoPuntoEstacion,
     getSubcuenca,
-    getCuencaId
+    getCuencaId,
+    existeEstacion,
+    addEstacionAgua
 }

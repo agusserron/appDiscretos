@@ -4,6 +4,8 @@ import { logInfo, logError } from "../../shared/logger/logger.js"
 import sanitizer from "../../shared/sanitizer_middleware/sanitizer.js";
 import { getConnection } from '../../shared/connectionMariaDB/connection.js';
 import { ProgramRepository } from "../../shared/datos_db_repositories/repositories/program_agua.js";
+import validator from "../../shared/validatorJSON/validateJson.js";
+import schemas from "../../shared/validatorJSON/schemas/programaSchema.js";
 env.config();
 
 const { connection, release } = await getConnection();
@@ -68,11 +70,51 @@ const updateProgramStatus = async (req, res) => {
 }
 
 
+const addProgram = async (req, res) => {
+    let data = req.body;
+    let parametros = data.parametros;
+    let visibleExternos; 
+    let estado = 1;   
+    try {
+    
+        if (sanitizer.containsXSS(data)) {
+            return res.status(400).json({ message: "Error en sintaxis" });
+        }
+        
+        if (!validator.validateJson(data, schemas.programaSchema)) {
+            return res.status(400).json({ message: "Error en sintaxis" });
+        }      
+        visibleExternos = data.visible ? 1 : 0;
+
+        const { nombre, codigo } = data;
+
+        const codigoExists = await programRepository.countByCodigo(codigo);
+        const nombreExists = await programRepository.countByNombre(nombre);
+
+        if (codigoExists || nombreExists ) {
+            return res.status(409).json({
+                message: "El programa con el mismo código o nombre ya existe",
+            });
+        }
+
+        const newProgram = await programRepository.addProgram({ data, visibleExternos, estado, parametros});
+
+        logInfo(`POST addProgram/nombre/${nombre}/codigo/${codigo}`);
+        res.status(201).json(newProgram);
+    } catch (e) {
+
+        logError(`Error addProgram/${e}/`);
+        res.status(500).json({ message: "Error al agregar el programa" });
+    } finally {
+        release();
+    }
+};
 
 
 export default {
     getProgramas,
     getProgramasParametros,
     getEstacionesPrograma,
-    updateProgramStatus
+    updateProgramStatus,
+    addProgram
 }

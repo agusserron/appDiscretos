@@ -118,6 +118,86 @@ export class AguaRepository {
       return data;
     }
 
+    existeEstacion = async (codigo, nombre) => {
+
+      let query = `
+      SELECT COUNT(*) AS count
+      FROM estacion
+      WHERE 1 = 1
+  `;
+
+  const params = [];
+
+  if (codigo) {
+      query += ` AND estacion = ?`;
+      params.push(codigo);
+  }
+
+  if (nombre) {
+      query += ` AND descripcion = ?`;
+      params.push(nombre);
+  }
+
+  if (codigo && nombre) {
+      query = `
+          SELECT COUNT(*) AS count
+          FROM estacion
+          WHERE estacion = ? OR descripcion = ?
+      `;
+      params.push(nombre);
+  }
+
+  console.log('Consulta SQL:', query);
+  console.log('Parámetros:', params);
+
+  try {
+      const [result] = await this.connection.query(query, params);
+      console.log('Resultado de la consulta:', result);
+
+      const count = result[0]?.count || 0;
+      return count > 0;
+  } catch (error) {
+      console.error('Error en consulta de existencia:', error);
+      throw error; 
+  }
+  
+  };
+
+  addStationAgua = async ({ data }) => {
+      await this.connection.execute(
+        `INSERT INTO estacion
+         SET codigo = ?,
+             nombre = ?,
+             latitud = ?,
+             longitud = ?,
+             id_programa = ?,
+             version = ?,
+             id_tipo_punto = ?,
+             id_departamento = ?,
+             id_sub_cuenca = ?,
+             orden_ingreso = ?,
+             ingreso_interno = ?,
+             id_matriz = ?`,
+        [
+            data.codigo,
+            data.nombre,
+            data.latitud,
+            data.longitud,
+            data.idPrograma,          
+            data.version,            
+            data.id_tipo_punto,     
+            data.id_departamento,
+            data.id_sub_cuenca,
+            data.orden_ingreso,     
+            data.ingreso_interno,    
+            data.id_matriz
+        ]
+    );
+}
+
+
+
+
     getTipoPuntoEstacion = async () => {
       const data = await this.connection.query(`select * from tipo_punto_estacion`);
       return data;

@@ -1,0 +1,45 @@
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:04:53"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:04:54"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:04:54"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:04:54"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:04:54"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:05:19"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:06:46"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:06:46"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:06:46"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:06:46"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:06:55"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:11:32"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:11:45"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:14:50"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:14:51"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:14:51"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:14:51"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:14:51"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:14:58"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:17:14"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:17:14"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:17:14"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:17:14"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:17:21"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:18:26"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:18:26"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:18:26"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:18:26"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:18:26"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:18:34"}
+{"level":"error","message":"Error addProgram/ReferenceError: Cannot access 'codigo' before initialization/","timestamp":"2024-08-12 09:18:34"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:19:53"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:19:53"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:19:53"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:19:53"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:19:53"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:20:00"}
+{"level":"error","message":"Error addProgram/TypeError: Cannot read properties of undefined (reading 'count')/","timestamp":"2024-08-12 09:20:00"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:22:21"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:22:22"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:22:22"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:22:22"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:22:22"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:22:25"}
+{"level":"error","message":"Error addProgram/TypeError: Cannot read properties of undefined (reading 'count')/","timestamp":"2024-08-12 09:22:25"}

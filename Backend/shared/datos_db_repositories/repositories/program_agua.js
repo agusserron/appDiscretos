@@ -14,4 +14,69 @@ export class ProgramRepository {
         return result[0];
       }
 
+      countByCodigo = async (codigo) => {
+        
+        const query = `
+          SELECT * 
+          FROM programa
+          WHERE codigo_programa = ?
+        `;
+           
+        const result = await this.connection.execute(query, [codigo]);     
+        return result[0];  
+      };
+    
+    
+      countByNombre = async (nombre) => {
+    
+        const query = `
+          SELECT * 
+          FROM programa
+          WHERE nombre_programa = ?
+        `;
+        
+        const result = await this.connection.execute(query, [nombre]);     
+        return result[0]; 
+      };
+    
+     
+      addProgram = async ({ data, visibleExternos, version = 0, id_programa_silad =0, estado, parametros}) => {
+        await this.connection.beginTransaction();
+        const result  = await this.connection.execute(
+         `INSERT INTO programa 
+          SET  nombre_programa = ?,
+            codigo_programa = ?, 
+            visible_externos = ?, 
+            version = ?, 
+            id_programa_silad = ?,
+            estado = ?
+          `,
+         [
+          data.nombre,
+          data.codigo,
+          visibleExternos,
+          version, 
+          id_programa_silad, 
+          estado,
+          'INGRESADO'
+        ]
+      );
+
+      const programaId = result.insertId;
+      if (Array.isArray(parametros)) {
+          for (let index = 0; index < parametros.length; index++) {
+              await this.connection.execute(
+                  `INSERT INTO programa_parametro
+                   SET id_programa = ?,
+                       id_parametro = ?`,
+                  [
+                      programaId,
+                      parametros[index].id_parametro  
+                  ]
+              );
+          }
+      }
+    await this.connection.commit();
+    }
+
 }

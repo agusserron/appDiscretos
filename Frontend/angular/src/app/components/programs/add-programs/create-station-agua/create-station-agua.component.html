@@ -1,7 +1,7 @@
 <div class="dialog-box">
     <h1 mat-dialog-title>Agregar estación</h1>
     <div mat-dialog-content>
-        <form [formGroup]="programFormGroup" autocomplete="off">
+        <form [formGroup]="stationFormGroup" autocomplete="off">
             <div class="row">
                 <div class="column">
                     <mat-form-field class="subItemField" appearance="fill">
@@ -15,19 +15,19 @@
                     <mat-form-field class="subItemField" appearance="fill">
                         <mat-label>Tipo punto</mat-label>
                         <mat-select formControlName="punto" required>
-                            <mat-option *ngFor="let tipoPunto of tipoPunto" [value]="tipoPunto.tip_pun_est_descripcion">{{ tipoPunto.tip_pun_est_descripcion }}</mat-option>
+                            <mat-option *ngFor="let tipoPunto of tipoPunto" [value]="tipoPunto.id_tipo_punto">{{ tipoPunto.tip_pun_est_descripcion }}</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field class="subItemField" appearance="fill">
                         <mat-label>Matriz</mat-label>
                         <mat-select formControlName="matriz" required>
-                            <mat-option *ngFor="let matrices of matrices" [value]="matrices.nombre">{{ matrices.nombre }}</mat-option>
+                            <mat-option *ngFor="let matrices of matrices" [value]="matrices.id_matriz">{{ matrices.nombre }}</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field class="subItemField" appearance="fill">
                         <mat-label>Departamento</mat-label>
                         <mat-select formControlName="departamento" required>
-                            <mat-option *ngFor="let departamentos of departamentos" [value]="departamentos.dep_nombre">{{departamentos.dep_nombre }}</mat-option>
+                            <mat-option *ngFor="let departamentos of departamentos" [value]="departamentos.id_departamento">{{departamentos.dep_nombre }}</mat-option>
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field class="subItemField" appearance="fill">
@@ -62,9 +62,10 @@
                     </mat-form-field>
                 </div>
             </div>
+        </form>
             <div mat-dialog-actions>
                 <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
-                <button mat-button cdkFocusInitial (click)="addStation()">Agregar <mat-icon>add</mat-icon></button>
+                <button mat-button cdkFocusInitial (click)="addStationAgua()">Agregar <mat-icon>add</mat-icon></button>
             </div>
             
             <div class="alertBox-container">
@@ -72,6 +73,6 @@
                     <alert></alert>
                 </div>
             </div>
-        </form>
+     
     </div>
 </div>
