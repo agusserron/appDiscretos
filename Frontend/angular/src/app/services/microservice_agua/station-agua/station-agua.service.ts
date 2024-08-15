@@ -40,8 +40,8 @@ export class StationAguaService {
     return this.http.get(`${environment.apiAgua}/estaciones/existeEstacion`, { params });
   }
 
-  addStationAgua(agua: any): Observable<any> {
-    return this.http.post(`${environment.apiAgua}/estaciones/estacionAgua`, agua );
+  addStationAgua(station: StationAgua): Observable<any> {
+    return this.http.post(`${environment.apiAgua}/estaciones/estacionAgua`, station );
   }
 
 

@@ -96,11 +96,10 @@ const addProgram = async (req, res) => {
                 message: "El programa con el mismo código o nombre ya existe",
             });
         }
-
-        const newProgram = await programRepository.addProgram({ data, visibleExternos, estado, parametros});
+        const programId = await programRepository.addProgram({ data, visibleExternos, estado, parametros });
 
         logInfo(`POST addProgram/nombre/${nombre}/codigo/${codigo}`);
-        res.status(201).json(newProgram);
+        res.status(201).json({id: programId.toString(), message: "Programa creado exitosamente" });
     } catch (e) {
 
         logError(`Error addProgram/${e}/`);

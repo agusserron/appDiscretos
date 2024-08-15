@@ -43,7 +43,6 @@ import { AddProgramsComponent } from './components/programs/add-programs/add-pro
 import { AddStationComponent } from './components/programs/add-station/add-station.component';
 import { DialogDeletProgramComponent } from './components/programs/dialog-delet-program/dialog-delet-program.component';
 import { StationAguaComponent } from './components/station-agua/station-agua.component';
-import { CreateStationAguaComponent } from './components/programs/add-programs/create-station-agua/create-station-agua.component';
 
 
 @NgModule({
@@ -78,7 +77,6 @@ import { CreateStationAguaComponent } from './components/programs/add-programs/c
     AddStationComponent,
     DialogDeletProgramComponent,
     StationAguaComponent,
-    CreateStationAguaComponent
   ],
   imports: [
     BrowserModule,

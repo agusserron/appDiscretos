@@ -43,3 +43,237 @@
 {"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:22:22"}
 {"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:22:25"}
 {"level":"error","message":"Error addProgram/TypeError: Cannot read properties of undefined (reading 'count')/","timestamp":"2024-08-12 09:22:25"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:23:19"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:23:20"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:23:20"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:23:20"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:23:20"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:23:23"}
+{"level":"info","message":"POST addProgram/nombre/DGFDFGDFG/codigo/DGFDFGDG","timestamp":"2024-08-12 09:23:23"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:23:33"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:25:24"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:25:25"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:25:25"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:25:25"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:25:25"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-12 09:25:33"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:32:50"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:32:51"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:32:51"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:32:51"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:32:51"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:35:23"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:35:23"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:35:23"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:35:23"}
+{"level":"info","message":"POST addProgram/nombre/TTTTTTT/codigo/TTTTTTT","timestamp":"2024-08-12 09:35:31"}
+{"level":"info","message":"POST addProgram/nombre/TTTTTTT88/codigo/TTTTTTT88","timestamp":"2024-08-12 09:35:45"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:37:44"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:37:44"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:37:44"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:37:44"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:55:27"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:55:28"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:55:28"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:55:28"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:55:28"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 09:58:08"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 09:58:09"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 09:58:09"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 09:58:09"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 09:58:09"}
+{"level":"info","message":"POST addProgram/nombre/JJJJJJ/codigo/JJJJJJ","timestamp":"2024-08-12 09:58:51"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-12 09:59:36"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-12 09:59:36"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:02:09"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:02:10"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:02:10"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:02:10"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:02:10"}
+{"level":"info","message":"POST addProgram/nombre/sssssssssss/codigo/sssssssss","timestamp":"2024-08-12 11:02:31"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:06:35"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:06:37"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:06:37"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:06:37"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:06:37"}
+{"level":"info","message":"POST addProgram/nombre/gggggggggggggggg/codigo/gggggggggg","timestamp":"2024-08-12 11:06:46"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-12 11:07:06"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-12 11:07:06"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:08:22"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:08:24"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:08:24"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:08:24"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:08:24"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:10:13"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:10:13"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:10:14"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:10:14"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:10:14"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:10:59"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:11:01"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:11:01"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:11:01"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:11:01"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:11:38"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:11:39"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:11:39"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:11:39"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:11:39"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:12:21"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:12:22"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:12:23"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:12:23"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:12:23"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-08-12 11:13:12"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:13:15"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:13:16"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:13:16"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:13:16"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:13:16"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:13:51"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:13:52"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:13:52"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:13:52"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:13:52"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:15:07"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:15:08"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:15:08"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:15:08"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:15:08"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:15:29"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:15:29"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:15:29"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:15:29"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:17:11"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:17:12"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:17:12"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:17:12"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:17:12"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:19:21"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:19:22"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:19:22"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:19:22"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:19:22"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:19:43"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:19:44"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:19:44"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:19:44"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:19:44"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:20:00"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:20:01"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:20:01"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:20:01"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:20:01"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:20:26"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:20:26"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:20:27"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:20:27"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:20:27"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:21:09"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:21:10"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:21:10"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:21:10"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:21:10"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:22:40"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:22:41"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:22:41"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:22:41"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:22:41"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:24:33"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:24:34"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:24:34"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:24:34"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:24:34"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:25:06"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:25:06"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:25:06"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:25:06"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:25:06"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-08-12 11:26:54"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:26:55"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:26:56"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:26:56"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:26:56"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:26:56"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:28:20"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:28:21"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:28:21"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:28:21"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:28:21"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:29:45"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:29:46"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:29:46"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:29:46"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:29:46"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:31:09"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:31:11"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:31:11"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:31:11"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:31:11"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:32:04"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:32:05"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:32:05"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:32:05"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:32:05"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:33:54"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:33:55"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:33:55"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:33:55"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:33:55"}
+{"level":"info","message":"POST addProgram/nombre/gdf/codigo/g","timestamp":"2024-08-12 11:34:55"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-12 11:35:25"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-12 11:35:25"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:52:12"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:52:12"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:52:12"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:52:12"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:52:12"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-12 11:52:35"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-12 11:52:35"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:53:14"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:53:15"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:53:15"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:53:15"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:53:15"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-12 11:53:33"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-12 11:53:33"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 11:55:20"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 11:55:22"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 11:55:22"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 11:55:22"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 11:55:22"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 13:32:07"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 13:32:08"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 13:32:08"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 13:32:08"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 13:32:08"}
+{"level":"error","message":"Error addProgram/ReferenceError: result is not defined/","timestamp":"2024-08-12 13:32:18"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 13:34:23"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 13:34:24"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 13:34:24"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 13:34:24"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 13:34:24"}
+{"level":"info","message":"POST addProgram/nombre/uuuuuuuuuu/codigo/uuuuuuuuuuuu","timestamp":"2024-08-12 13:35:45"}
+{"level":"error","message":"Error addProgram/TypeError: Do not know how to serialize a BigInt/","timestamp":"2024-08-12 13:35:45"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 13:37:05"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 13:37:06"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 13:37:06"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 13:37:06"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 13:37:06"}
+{"level":"info","message":"POST addProgram/nombre/yyyyyy/codigo/yyyyyyy","timestamp":"2024-08-12 13:37:10"}
+{"level":"error","message":"Error addProgram/TypeError: Do not know how to serialize a BigInt/","timestamp":"2024-08-12 13:37:10"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 13:39:20"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 13:39:21"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 13:39:21"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 13:39:21"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 13:39:21"}
+{"level":"info","message":"POST addProgram/nombre/aaaaaaaaaaaaaaaa/codigo/aaaaaaaaaaaaaaaaaaa","timestamp":"2024-08-12 13:39:25"}
+{"level":"error","message":"Error addProgram/TypeError: Do not know how to serialize a BigInt/","timestamp":"2024-08-12 13:39:25"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-12 13:41:52"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-12 13:41:54"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-12 13:41:54"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-12 13:41:54"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-12 13:41:54"}
+{"level":"info","message":"POST addProgram/nombre/wwwww/codigo/wwwwwwww","timestamp":"2024-08-12 13:41:58"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-12 13:42:32"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-12 13:42:32"}

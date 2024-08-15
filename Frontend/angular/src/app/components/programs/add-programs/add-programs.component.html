@@ -27,7 +27,6 @@
           <hr class="separator">
         </div>
           <div class="parameters-container">
-            <!-- Contenedor para los parámetros y los seleccionados -->
             <div class="parameters-column">
               <h2>Parámetros</h2>
               <div class="scrollable-list">
@@ -86,6 +85,7 @@
               <form [formGroup]="stationFormGroup" autocomplete="off">
                   <div class="row">
                       <div class="column">
+                        <div class="flex-container">
                           <mat-form-field class="subItemField" appearance="fill">
                               <mat-label>Código</mat-label>
                               <input type="text" formControlName="codigo" matInput required>
@@ -109,56 +109,55 @@
                           <mat-form-field class="subItemField" appearance="fill">
                               <mat-label>Departamento</mat-label>
                               <mat-select formControlName="departamento" required>
-                                  <mat-option *ngFor="let departamentos of departamentos" [value]="departamentos.id_departamento">{{departamentos.dep_nombre }}</mat-option>
+                                  <mat-option *ngFor="let departamento of departamentos" [value]="departamento.id_departamento">{{departamento.dep_nombre }}</mat-option>
                               </mat-select>
                           </mat-form-field>
-                          <mat-form-field class="subItemField" appearance="fill">
-                              <mat-label>Orden de ingreso</mat-label>
-                              <input type="text" formControlName="orden" matInput required>
-                          </mat-form-field>
                           <mat-checkbox formControlName="ingresoInterno" style="margin-bottom: 30px;" class="subItemField">
-                              Ingreso Preferente Interno
+                              Ingreso Preferente Interno 
                           </mat-checkbox>
                       </div>
-                      <div class="column">
-                          <mat-form-field class="subItemField" appearance="fill">
+                      <div class="separator-container">
+                        <hr class="separator">
+                      </div>
+
+                          <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
                               <mat-label>Latitud</mat-label>
-                              <input type="text" formControlName="latitud" matInput required>
+                              <input type="number" formControlName="latitud" matInput required>
                               <mat-hint>Ej: -34.905501</mat-hint>
                           </mat-form-field>
-                          <mat-form-field class="subItemField" appearance="fill">
+                          <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
                               <mat-label>Longitud</mat-label>
-                              <input type="text" formControlName="longitud" matInput required>
+                              <input type="number" formControlName="longitud" matInput required>
                               <mat-hint>Ej: -56.185114</mat-hint>
                           </mat-form-field>
-                          <div class="centered-button2">
-                              <button type="button" class="btn btn-info" (click)="setSubcuenca()">Buscar Subcuenca</button>
-                          </div>
-                          <mat-form-field class="subItemField" appearance="fill">
+                          <div class="button-and-alert-container"> 
+                              <button type="button" class="btn btn-info" (click)="setSubcuenca()">Buscar Subcuenca</button>                          
+                            </div>
+                          <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
                               <mat-label>Cuenca</mat-label>
                               <input type="text" formControlName="cuenca" matInput>
                           </mat-form-field>
-                          <mat-form-field class="subItemField" appearance="fill">
+                          <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
                               <mat-label>Subcuenca</mat-label>
                               <input type="text" formControlName="subcuenca" matInput>
                           </mat-form-field>
                       </div>
                   </div>
+          
               </form>
-                  <div mat-dialog-actions>
-                      <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
-                      <button mat-button cdkFocusInitial (click)="addStationAgua()">Agregar <mat-icon>add</mat-icon></button>
-                  </div>
-                  
+              <div class="button-and-alert-container">    
+                      <button type="button" class="btn btn-info" (click)="addStationAgua()">Agregar</button>
+                               
                   <div class="alertBox-container">
                       <div class="alertBox">
                           <alert></alert>
                       </div>
                   </div>
+                </div>
            
           </div>
           <button mat-raised-button matStepperPrevious color="primary" style="margin-right: 10px;">Volver</button>
-          <button mat-raised-button matStepperNext color="primary">Continuar</button>
+          <button mat-raised-button matStepperNext color="primary">Agregar nueva estación</button>
         </form>
       </mat-step>
       

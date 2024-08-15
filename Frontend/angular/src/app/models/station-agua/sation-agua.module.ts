@@ -2,16 +2,15 @@ export class StationAgua {
   constructor(
       public codigo: string,           
       public nombre: string,           
-      public latitud: string,           
-      public longitud: string,          
+      public latitud: number,           
+      public longitud: number,          
       public idPrograma: number,        
       public version: number,           
-      public idTipoPunto: number,       
-      public idDepartamento: number,    
-      public idSubCuenca: number,       
-      public ordenIngreso: number,      
-      public ingresoInterno: number,    
-      public idMatriz: number           
+      public id_tipo_punto: number,       
+      public id_departamento: number,    
+      public id_sub_cuenca: number,          
+      public ingreso_interno: number,    
+      public id_matriz: number           
   ) {}
 }
 

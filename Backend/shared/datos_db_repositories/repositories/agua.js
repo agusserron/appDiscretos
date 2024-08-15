@@ -163,13 +163,14 @@ export class AguaRepository {
   
   };
 
-  addStationAgua = async ({ data }) => {
+  addStationAgua = async ( data ) => {
       await this.connection.execute(
         `INSERT INTO estacion
-         SET codigo = ?,
-             nombre = ?,
+         SET estacion = ?,
+             descripcion = ?,
              latitud = ?,
              longitud = ?,
+             gid = ?,
              id_programa = ?,
              version = ?,
              id_tipo_punto = ?,
@@ -177,20 +178,23 @@ export class AguaRepository {
              id_sub_cuenca = ?,
              orden_ingreso = ?,
              ingreso_interno = ?,
-             id_matriz = ?`,
+             id_matriz = ?,
+             estacion_activa = ?`,
         [
             data.codigo,
             data.nombre,
             data.latitud,
             data.longitud,
+            0,
             data.idPrograma,          
             data.version,            
             data.id_tipo_punto,     
             data.id_departamento,
             data.id_sub_cuenca,
-            data.orden_ingreso,     
+            0,    
             data.ingreso_interno,    
-            data.id_matriz
+            data.id_matriz,
+            1
         ]
     );
 }

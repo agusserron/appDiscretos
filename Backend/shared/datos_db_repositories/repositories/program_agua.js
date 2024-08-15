@@ -77,6 +77,7 @@ export class ProgramRepository {
           }
       }
     await this.connection.commit();
+    return programaId;
     }
 
 }

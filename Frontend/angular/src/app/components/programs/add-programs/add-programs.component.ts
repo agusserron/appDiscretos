@@ -3,12 +3,17 @@ import { ProgramService } from 'src/app/services/microservice_agua/programs/prog
 import { AlertService } from '../../alert/alert.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { CreateStationAguaComponent } from './create-station-agua/create-station-agua.component';
 import { StationAguaService } from 'src/app/services/microservice_agua/station-agua/station-agua.service';
 import { StationAgua } from 'src/app/models/station-agua/sation-agua.module';
 import { from, switchMap } from 'rxjs';
 import { AguaService } from 'src/app/services/microservice_agua/agua/agua.service';
 import { Program } from 'src/app/models/program/program.module';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input'; // También necesitas MatInputModule para los inputs
+
+
 
 interface Parametro {
   id_parametro: number;
@@ -70,7 +75,7 @@ export class AddProgramsComponent {
   existeEstacion: Boolean = false;
   estacion!: StationAgua;
 
-  AddStation : any = CreateStationAguaComponent;
+ 
  
 
   stationFormGroup = this._formBuilder.group({
@@ -79,10 +84,9 @@ export class AddProgramsComponent {
     punto: [null, Validators.required],
     matriz: [null, Validators.required],
     departamento: [null, Validators.required],
-    orden: ['', Validators.required],
     ingresoInterno: [false],
-    latitud: ['', Validators.required],
-    longitud: ['', Validators.required],
+    latitud: [null, Validators.required],
+    longitud: [null, Validators.required],
     subcuenca: ['', Validators.required],
     cuenca: ['', Validators.required],
   });
@@ -97,6 +101,7 @@ export class AddProgramsComponent {
     private programService: ProgramService,
     private stationAguaService: StationAguaService,
     private aguaService: AguaService,
+    
   ) {
     this.setAllItems();
     this.firstFormGroup = this._formBuilder.group({
@@ -242,20 +247,13 @@ export class AddProgramsComponent {
     this.filteredOptions = group ? group.parameters : [];
   }
 
-  /*selectOption(option: string): void {
-    const group = this.groups.find(group => group.name === this.selectedGroup);
-    if (group && !this.selectedOptions.some(selected => selected.option === option)) {
-      this.selectedOptions.push({ option, color: group.color, id_parametro: parameters.id_parametro  });
-    }
-  }*/
+
 
   selectOption(option: string): void {
     const group = this.groups.find(group => group.name === this.selectedGroup);
     if (group) {
-      // Encuentra el parámetro en el grupo seleccionado
       const param = group.parameters.find(p => p.parametro === option);
       if (param && !this.selectedOptions.some(selected => selected.option === option)) {
-        // Agrega la opción seleccionada a selectedOptions
         this.selectedOptions.push({ 
           option: param.parametro, 
           color: group.color, 
@@ -274,16 +272,7 @@ export class AddProgramsComponent {
     return group ? group.color : 'transparent';
   }
 
- /* selectAllOptionsInGroup(): void {
-    const group = this.groups.find(group => group.name === this.selectedGroup);
-    if (group) {
-      group.parameters.forEach(param => {
-        if (!this.selectedOptions.some(selected => selected.option === param.parametro)) {
-          this.selectedOptions.push({ option: param.parametro, color: group.color, option: param.id_parametro });
-        }
-      });
-    }
-  }*/
+
 
   selectAllOptionsInGroup(): void {
     const group = this.groups.find(group => group.name === this.selectedGroup);
@@ -305,18 +294,6 @@ export class AddProgramsComponent {
   }
 
 
-  openDialogAddStation() {
-  const dialogRef = this.dialog.open(CreateStationAguaComponent, {
-    width: '800px',
-    height: '500px',
-    data: {} 
-  });
-
-  dialogRef.afterClosed().subscribe(result => {
-    console.log('El diálogo se cerró');
-    
-  });
-}
 
 validateProgram(): boolean {
   this.alertService.clear();
@@ -351,6 +328,7 @@ validateAndAddProgram(): void {
 
   this.programService.addProgram(programa).subscribe({
     next: (resp) => {
+      this.idProgram = resp.id;
       this.alertService.success("Programa agregado exitosamente", this.options);
     },
     error: (err) => {
@@ -362,18 +340,6 @@ validateAndAddProgram(): void {
       } else if (err.status === 409) {
         this.alertService.error(err.error.message, this.options);
       }
-    }
-  });
-}
-
-
-addProgram(program: any): void {
-  this.programService.addProgram(program).subscribe({
-    next: (response) => {
-      this.alertService.success("Programa creado", this.options);
-    },
-    error: (err) => {
-      this.alertService.error("Error al agregar el programa", this.options);
     }
   });
 }
@@ -399,16 +365,13 @@ validateStation(): boolean {
   else if (!this.stationFormGroup.value.matriz) {
     return this.showError('matriz', "Debe seleccionar una matriz");
   }
-  else if (this.stationFormGroup.value.departamento) {
+  else if (!this.stationFormGroup.value.departamento) {
     return this.showError('departamento', "Debe seleccionar un departamento");
   }
-  else if (this.stationFormGroup.value.orden == "" || !this.stationFormGroup.value.orden) {
-    return this.showError('orden', "Debe ingresar un orden");
-  }
-  else if (this.stationFormGroup.value.latitud == "" || !this.stationFormGroup.value.latitud) {
+  else if (!this.stationFormGroup.value.latitud) {
     return this.showError('latitud', "Debe ingresar una latitud");
   }
-  else if (this.stationFormGroup.value.longitud == "" || !this.stationFormGroup.value.longitud) {
+  else if (!this.stationFormGroup.value.longitud) {
     return this.showError('longitud', "Debe ingresar una longitud");
   }
   else if (this.stationFormGroup.value.subcuenca == "" || !this.stationFormGroup.value.subcuenca) {
@@ -436,23 +399,29 @@ showError(controlName: string, errorMessage: string): boolean {
 }
 
 
-async addStationAgua(): Promise<void> {
+addStationAgua(): void {
   const form = this.stationFormGroup.value;
+
+  const latitud = this.stationFormGroup.get('latitud')?.value;
+  const longitud = this.stationFormGroup.get('longitud')?.value;
+
+  const latitudNumber = latitud !== null && latitud !== undefined ? parseFloat(latitud) : NaN;
+  const longitudNumber = longitud !== null && longitud !== undefined ? parseFloat(longitud) : NaN;
+ 
   const newStation = new StationAgua(
     form.codigo!,
     form.nombre!,
-    form.latitud!,
-    form.longitud!,
-    this.idProgrma,
+    Number(latitudNumber),   
+    Number(longitudNumber), 
+    Number(this.idProgram),
     0,
     Number(form.punto!),
     Number(form.departamento!),
     this.subCuenca.sub_cue_cuenca_id,
-    Number(form.orden!),
-    Number(form.ingresoInterno!),
+    form.ingresoInterno == true ? 1 : 0,
     Number(form.matriz!),
   );
-
+  console.log("estacion "+ newStation)
   try {
 
     if (this.validateStation()) {

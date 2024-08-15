@@ -59,14 +59,13 @@ const getTipoPuntoEstacion = async (req,res) => {
 
 
 const getSubcuenca = async (req, res) => {
-    const { lat, long } = req.query; 
-    console.log(lat)
-    console.log(long)
-    if (!lat || !long) {
+    const data = req.query; 
+
+    if (!data.lat || !data.long) {
         return res.status(400).json({ message: "Latitud y longitud son requeridas." });
     }
     try {
-        const subcuenca = await aguaRepository.getSubcuencaByLatLong(lat, long);
+        const subcuenca = await aguaRepository.getSubcuencaByLatLong(data.lat, data.long);
         logInfo(`GET subcuenca by LatLong from database`);
         res.status(200).json(subcuenca);
     } catch (e) {
@@ -91,21 +90,24 @@ const getCuencaId = async (req,res) => {
 
 const addEstacionAgua = async (req, res) => {
   let data = req.body;
+  console.log("unoooo" + JSON.stringify(data, null, 2));
   try {
 
       if (sanitizer.containsXSS(data)) {
-          return res.status(400).json({ message: "Error en sintaxis" });
+          return res.status(400).json({ message: "Error en sintaxisXXS" });
       }
       if (!validator.validateJson(data, schemas.aguaEstacionSchema)) {
-          return res.status(400).json({ message: "Error en sintaxis" });
+          return res.status(400).json({ message: "Error en sintaxisJSON" });
       }
 
-      const { codigo, nombre } = data;
-      if (!codigo || !nombre) {
+
+      console.log("dooos" + data)
+      if (!data.codigo || !data.nombre) {
           return res.status(400).json({ message: "Código y nombre son requeridos para la verificación." });
       }
       
-      const exists = await aguaRepository.existeEstacion(codigo, nombre);
+      const exists = await aguaRepository.existeEstacion(data.codigo, data.nombre);
+      console.log("existe" + exists)
       if (exists) {
           return res.status(400).json({ message: "La estación ya existe." });
       }
