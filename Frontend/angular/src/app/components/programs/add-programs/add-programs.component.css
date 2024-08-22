@@ -190,6 +190,23 @@ input::-webkit-inner-spin-button {
   min-height: 550px;
 }
 
+.dialog-container {
+  position: relative; 
+  padding: 10px;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+}
+
+::ng-deep .mat-button-focus-overlay {
+  display: none !important; 
+}
 
 .button-container {
   display: flex;

@@ -89,7 +89,7 @@ export class TableGenericComponent implements AfterViewInit {
   
     dialogRef.afterClosed().subscribe(result => {
       if (result != undefined && result.state) {
-     
+        this.dialogClosed.emit(result);
       }
     });
   }

@@ -1,19 +1,16 @@
-<div style="width:100%">
-    <h1 class="animate__animated animate__backInDown">Estaciones</h1>
+<div class="dialog-container">
+    <button type="button" mat-raised-button class="close-button" (click)="closeDialog()">
+        <mat-icon>close</mat-icon>
+    </button>
+    <h1>Estaciones</h1>
     <div style="margin-left:1%">
-        <button mat-raised-button color="primary" (click)="addStation()">Agregar <mat-icon>add
-            </mat-icon></button>
-        <div style="margin-top:1%">
-        
-        </div>
+        <button mat-raised-button color="primary" (click)="addStation()">Agregar <mat-icon>add</mat-icon></button>
+        <div style="margin-top:1%"></div>
     </div>
     <app-table-generic *ngIf="showTable" [dataSource]="dataSource" [columnHeaders]="columnHeaders" [displayedColumns]="displayedColumns" [customCellLogic]="customCellLogicFunction" [dialogComponents]="[ ]"></app-table-generic>
-    <div mat-dialog-actions>
-        <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
-  </div>
     <div class="alertBox-container">
         <div class="alertBox">
             <alert></alert>
+        </div>
     </div>
-
 </div>

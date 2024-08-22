@@ -125,7 +125,6 @@ export class StationReportComponent implements OnInit {
   this.stationForm.get('valor')?.updateValueAndValidity(); 
   this.stationForm.get('fecha')?.updateValueAndValidity(); 
 
-    //this.stationForm.controls['parametro'].setErrors(null);
   }
  
   private disableInputs(): void {

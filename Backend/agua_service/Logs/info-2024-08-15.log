@@ -65,3 +65,42 @@
 {"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-15 13:28:00"}
 {"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-15 13:28:00"}
 {"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-15 13:28:08"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-15 13:31:29"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-15 13:31:32"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-15 13:31:32"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-15 13:31:32"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-15 13:31:32"}
+{"level":"info","message":"POST addProgram/nombre/v/codigo/v","timestamp":"2024-08-15 13:31:36"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-15 13:31:51"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-15 13:31:51"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-15 13:31:52"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-15 13:31:53"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-08-15 13:34:34"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-15 13:34:48"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-15 13:34:51"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-15 13:35:03"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-15 13:36:08"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-15 13:36:21"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-15 13:36:21"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-15 13:36:21"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-15 13:36:21"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-15 13:37:13"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-15 13:37:14"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-15 13:37:14"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-15 13:37:14"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-15 13:37:14"}
+{"level":"info","message":"POST addProgram/nombre/GFHF/codigo/FGHFGH","timestamp":"2024-08-15 13:37:19"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-15 13:47:55"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-15 13:47:56"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-15 13:47:56"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-15 13:47:56"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-15 13:47:56"}
+{"level":"info","message":"POST addProgram/nombre/ddddddd/codigo/dddddd","timestamp":"2024-08-15 13:48:00"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-15 13:48:30"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-15 13:48:30"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-15 13:48:30"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-15 13:48:30"}
+{"level":"info","message":"POST addProgram/nombre/fff/codigo/fff","timestamp":"2024-08-15 13:48:36"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-15 13:48:56"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-15 13:48:56"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-15 13:48:58"}

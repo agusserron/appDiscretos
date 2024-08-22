@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { ProgramService } from 'src/app/services/microservice_agua/programs/program.service';
 import { AlertService } from '../../alert/alert.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -12,6 +12,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input'; // También necesitas MatInputModule para los inputs
+import { MatStepper } from '@angular/material/stepper';
 
 
 
@@ -38,6 +39,10 @@ interface Parametro {
 
 export class AddProgramsComponent {
 
+  @ViewChild(MatStepper) stepper!: MatStepper;
+
+  canContinue: boolean = false;
+
   isLinear: boolean = true;
 
   parametros: any;
@@ -57,7 +62,7 @@ export class AddProgramsComponent {
   selectedOptions: { option: string, color: string, id_parametro: number}[] = [];
 
   firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
+
 
 
   //ESTACIONES
@@ -77,22 +82,6 @@ export class AddProgramsComponent {
 
  
  
-
-  stationFormGroup = this._formBuilder.group({
-    codigo: ['', Validators.required],
-    nombre: ['', Validators.required],
-    punto: [null, Validators.required],
-    matriz: [null, Validators.required],
-    departamento: [null, Validators.required],
-    ingresoInterno: [false],
-    latitud: [null, Validators.required],
-    longitud: [null, Validators.required],
-    subcuenca: ['', Validators.required],
-    cuenca: ['', Validators.required],
-  });
-
-  
-
   constructor(
     public dialogRef: MatDialogRef<AddProgramsComponent>,
     public dialog: MatDialog,
@@ -110,11 +99,22 @@ export class AddProgramsComponent {
       visiblePorExternos: [''],
       parametros: this._formBuilder.array([])      
     });
-    this.secondFormGroup = this._formBuilder.group({
-      
-    });
+    
     
   }
+
+  stationFormGroup = this._formBuilder.group({
+    codigo: ['', Validators.required],
+    nombre: ['', Validators.required],
+    punto: [null, Validators.required],
+    matriz: [null, Validators.required],
+    departamento: [null, Validators.required],
+    ingresoInterno: [false],
+    latitud: ['', Validators.required],
+    longitud: ['', Validators.required],
+    subcuenca: ['', Validators.required],
+    cuenca: ['', Validators.required],
+  });
 
   
   ngOnInit() {
@@ -123,8 +123,14 @@ export class AddProgramsComponent {
     this.getDepartamentos();
   }
 
-  onNoClick(): void {
-    this.dialogRef.close();
+  goToAddStation() {
+    if (this.stepper) {
+      this.stepper.selectedIndex = 1; 
+    }
+  }
+
+  closeDialog(): void {
+    this.dialogRef.close({ state: true });
   }
 
   setAllItems() {
@@ -174,6 +180,8 @@ export class AddProgramsComponent {
 
     return grouped;
   }
+
+  
 
   getGroupName(groupId: number): string {
     switch (groupId) {
@@ -330,6 +338,7 @@ validateAndAddProgram(): void {
     next: (resp) => {
       this.idProgram = resp.id;
       this.alertService.success("Programa agregado exitosamente", this.options);
+      this.canContinue = true; 
     },
     error: (err) => {
       if (err.status === 0) {
@@ -344,6 +353,9 @@ validateAndAddProgram(): void {
   });
 }
 
+clearAlert() {
+this.alertService.clear()
+}
 
 
 
@@ -391,15 +403,15 @@ options = {
 
 showError(controlName: string, errorMessage: string): boolean {
   this.alertService.error(errorMessage, this.options);
-  const control = this.stationFormGroup.controls[controlName as keyof typeof this.stationFormGroup.controls];
-  if (control) {
-    control.markAsTouched();
-  }
   return false;
 }
 
 
 addStationAgua(): void {
+  this.alertService.clear();
+  if (!this.validateStation()) {
+    return;
+  }
   const form = this.stationFormGroup.value;
 
   const latitud = this.stationFormGroup.get('latitud')?.value;
@@ -421,33 +433,43 @@ addStationAgua(): void {
     form.ingresoInterno == true ? 1 : 0,
     Number(form.matriz!),
   );
-  console.log("estacion "+ newStation)
   try {
-
-    if (this.validateStation()) {
       this.stationAguaService.addStationAgua(newStation).subscribe({
         next: (res) => {
           this.alertService.success(res.message);
+          if (this.stepper) {
+            this.stepper.selectedIndex = 2;
+          }
           setTimeout(() => {
-            this.dialogRef.close({ state: true });
           }, 1000);
         },
         error: (err) => {
           this.alertService.error(err.error.message);
         }
       });
-    }
   } catch (error) {
     console.error('Error en existStation:', error);
     this.alertService.error('Error al verificar la existencia de la estación.');
   }
 }
 
+addMoreStations() {
+  this.stationFormGroup.reset();
+  setTimeout(() => {
+    Object.keys(this.stationFormGroup.controls).forEach(controlName => {
+      const control = this.stationFormGroup.get(controlName);
+      control?.markAsPristine();
+      control?.markAsUntouched();
+    });
+
+    this.stepper.selectedIndex = 1;
+  }); 
+}
+
 getTipoPunto() {
   this.stationAguaService.getTypePoint().subscribe({
     next: (res) => {
       this.tipoPunto = res;
-
     },
     error: (err) => {
       this.alertService.error(err.error.message);
@@ -487,6 +509,10 @@ setSubcuenca() {
 
   this.stationAguaService.getSubcuenca(latitud, longitud).pipe(
     switchMap((res) => {
+      if (!res || !res.sub_cue_cuenca_id) {
+        this.alertService.clear();
+        this.alertService.error("Subcuenca no encontrada", this.options);
+      }
       this.subCuenca = res;
       return this.stationAguaService.getCuencaById(this.subCuenca.sub_cue_cuenca_id);
     })

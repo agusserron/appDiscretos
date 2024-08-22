@@ -1,4 +1,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<div class="dialog-container">
+  <button type="button" mat-raised-button class="close-button" (click)="closeDialog()">
+    <mat-icon>close</mat-icon>
+  </button>
 <div class="contenedores">
   <h1 class="animate__animated animate__backInDown">INGRESO PROGRAMA</h1>
   <div class="formulario">
@@ -72,14 +76,14 @@
               <alert></alert> 
             </div>
           </div>
-          <button mat-raised-button matStepperNext color="primary">Continuar</button>
+          <button *ngIf="canContinue" mat-raised-button matStepperNext color="primary" (click)="clearAlert()">Continuar</button>
         </form>
       </mat-step>
       
       <!-- Segundo paso del Stepper -->
-      <mat-step [stepControl]="secondFormGroup">
-        <ng-template matStepLabel>Estaciones</ng-template>
-        <form [formGroup]="secondFormGroup" autocomplete="off">
+      <mat-step [stepControl]="stationFormGroup">
+        <ng-template matStepLabel>Estacion</ng-template>
+        <form [formGroup]="stationFormGroup" autocomplete="off">
           <h1 mat-dialog-title>Agregar estación</h1>
           <div mat-dialog-content>
               <form [formGroup]="stationFormGroup" autocomplete="off">
@@ -122,12 +126,12 @@
 
                           <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
                               <mat-label>Latitud</mat-label>
-                              <input type="number" formControlName="latitud" matInput required>
+                              <input type="number" formControlName="latitud" matInput>
                               <mat-hint>Ej: -34.905501</mat-hint>
                           </mat-form-field>
                           <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
                               <mat-label>Longitud</mat-label>
-                              <input type="number" formControlName="longitud" matInput required>
+                              <input type="number" formControlName="longitud" matInput>
                               <mat-hint>Ej: -56.185114</mat-hint>
                           </mat-form-field>
                           <div class="button-and-alert-container"> 
@@ -135,11 +139,11 @@
                             </div>
                           <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
                               <mat-label>Cuenca</mat-label>
-                              <input type="text" formControlName="cuenca" matInput>
+                              <input type="text" formControlName="cuenca" matInput required>
                           </mat-form-field>
                           <mat-form-field style="margin-right:2%" class="subItemField" appearance="fill">
                               <mat-label>Subcuenca</mat-label>
-                              <input type="text" formControlName="subcuenca" matInput>
+                              <input type="text" formControlName="subcuenca" matInput required>
                           </mat-form-field>
                       </div>
                   </div>
@@ -154,10 +158,18 @@
                       </div>
                   </div>
                 </div>
+                <mat-step>
+                  <ng-template matStepLabel>Estación Agregada</ng-template>
+                  <div>
+                    <h2>Estación agregada correctamente</h2>
+                    <p>¿Deseas agregar más estaciones o finalizar el proceso?</p>
+                    <button mat-raised-button  color="primary" style="margin-right: 10px;" matStepperPrevious (click)="addMoreStations()">Agregar más</button>
+                    <button mat-raised-button  color="primary" (click)="closeDialog()">Finalizar</button>
+                  </div>
+                </mat-step>
            
           </div>
           <button mat-raised-button matStepperPrevious color="primary" style="margin-right: 10px;">Volver</button>
-          <button mat-raised-button matStepperNext color="primary">Agregar nueva estación</button>
         </form>
       </mat-step>
       
