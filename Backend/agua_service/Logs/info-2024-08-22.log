@@ -1,0 +1,298 @@
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 10:50:58"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 10:51:00"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 10:51:00"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 10:51:00"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 10:51:00"}
+{"level":"info","message":"POST addProgram/nombre/DDD/codigo/DDD","timestamp":"2024-08-22 10:51:19"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 10:51:36"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 10:51:36"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 10:51:38"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 10:52:16"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 10:52:16"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 10:52:16"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 10:52:52"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 10:52:59"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 10:53:01"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:03:52"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 11:04:05"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 11:04:21"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 11:04:24"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:04:33"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:04:33"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:04:33"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:04:33"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA1/codigo/PRUEBA1","timestamp":"2024-08-22 11:04:43"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:05:14"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:05:14"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 11:05:14"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-08-22 11:05:31"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:05:32"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 11:05:37"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:09:58"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:10:00"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:10:00"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:10:00"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:10:00"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA2/codigo/PRUEBA2","timestamp":"2024-08-22 11:10:08"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:10:22"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:10:22"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 11:10:24"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:10:26"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 11:10:31"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:12:22"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:12:22"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:12:23"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:12:23"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:12:28"}
+{"level":"info","message":"UPDATE updateProgramStatus/idProgram/151","timestamp":"2024-08-22 11:12:42"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:12:43"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 11:13:12"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:13:27"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:13:27"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:13:27"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:13:27"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:13:34"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:20:04"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:20:04"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:20:04"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:20:04"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-22 11:20:13"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:29:15"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:29:15"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:29:15"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:29:15"}
+{"level":"info","message":"POST addProgram/nombre/Prueba5/codigo/Prueba5","timestamp":"2024-08-22 11:29:27"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:29:41"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:29:41"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 11:29:41"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:29:52"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:29:52"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 11:29:53"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:36:38"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:36:39"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:36:39"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:36:39"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:36:39"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA3/codigo/PRUEBA3","timestamp":"2024-08-22 11:36:50"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:37:03"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:37:03"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:40:56"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:40:57"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:40:57"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:40:57"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:40:57"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA4/codigo/PRUEBA4","timestamp":"2024-08-22 11:41:21"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:41:40"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:41:40"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:46:10"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:46:13"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:46:13"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:46:13"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:46:13"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA6/codigo/PRUEBA6","timestamp":"2024-08-22 11:46:22"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:46:36"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:46:36"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:48:04"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:48:05"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:48:05"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:48:05"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:48:05"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA7/codigo/PRUEBA7","timestamp":"2024-08-22 11:48:13"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:48:28"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:48:28"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 11:48:28"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:48:52"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:48:52"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 11:48:53"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 11:53:08"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 11:53:09"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 11:53:09"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 11:53:09"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 11:53:09"}
+{"level":"info","message":"POST addProgram/nombre/prueba8/codigo/prueba8","timestamp":"2024-08-22 11:53:28"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:53:41"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:53:41"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 11:53:42"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 11:53:54"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 11:53:55"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 11:53:55"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 12:02:19"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 12:02:21"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 12:02:21"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 12:02:21"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 12:02:21"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA9/codigo/PRUEBA9","timestamp":"2024-08-22 12:02:37"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:02:50"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:02:50"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 12:02:51"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 12:05:57"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 12:05:58"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 12:05:59"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 12:05:59"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 12:05:59"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA10/codigo/PRUEBA10","timestamp":"2024-08-22 12:06:10"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:06:24"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:06:24"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 12:06:24"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:06:37"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:06:37"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 12:06:38"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 12:10:54"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 12:10:55"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 12:10:55"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 12:10:55"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 12:10:55"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA11/codigo/PRUEBA11","timestamp":"2024-08-22 12:11:04"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:11:16"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:11:16"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 12:11:18"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 12:12:51"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 12:12:53"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 12:12:53"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 12:12:53"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 12:12:53"}
+{"level":"info","message":"POST addProgram/nombre/prueba12/codigo/prueba12","timestamp":"2024-08-22 12:13:01"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:13:15"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:13:15"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 12:13:16"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:13:28"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:13:28"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 12:13:28"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 12:14:58"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 12:14:59"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 12:14:59"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 12:14:59"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 12:14:59"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA13/codigo/PRUEBA13","timestamp":"2024-08-22 12:15:08"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:15:22"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:15:22"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 12:15:23"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 12:16:06"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 12:16:07"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 12:16:07"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 12:16:07"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 12:16:07"}
+{"level":"info","message":"POST addProgram/nombre/PRUEBA14/codigo/PRUEBA14","timestamp":"2024-08-22 12:16:17"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:16:27"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:16:28"}
+{"level":"error","message":"Error addEstacionAgua","timestamp":"2024-08-22 12:16:28"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 12:23:24"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 12:23:25"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 12:23:25"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 12:23:25"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 12:23:25"}
+{"level":"info","message":"POST addProgram/nombre/prueba15/codigo/prueba15","timestamp":"2024-08-22 12:23:34"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:23:47"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:23:47"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 12:23:48"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:24:00"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:24:00"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 12:25:20"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 12:25:21"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 12:25:21"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 12:25:21"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 12:25:21"}
+{"level":"info","message":"POST addProgram/nombre/prueba16/codigo/prueba16","timestamp":"2024-08-22 12:25:29"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:25:41"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:25:41"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 12:25:42"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 12:25:55"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 12:25:55"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:16:38"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:16:39"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:16:39"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:16:39"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:16:39"}
+{"level":"info","message":"POST addProgram/nombre/prueba17/codigo/prueba17","timestamp":"2024-08-22 13:16:51"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:17:07"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:17:07"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:17:07"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:17:40"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:17:41"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:17:41"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:17:41"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:17:41"}
+{"level":"info","message":"POST addProgram/nombre/p1/codigo/p1","timestamp":"2024-08-22 13:17:48"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:17:59"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:17:59"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:18:15"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:18:21"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-08-22 13:18:41"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:23:59"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:24:00"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:24:00"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:24:00"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:24:00"}
+{"level":"info","message":"POST addProgram/nombre/p2/codigo/p2","timestamp":"2024-08-22 13:24:10"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:24:28"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:24:28"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:24:34"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:29:03"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:29:05"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:29:05"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:29:05"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:29:05"}
+{"level":"info","message":"POST addProgram/nombre/p4/codigo/p4","timestamp":"2024-08-22 13:29:13"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:29:40"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:29:41"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:29:41"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:29:41"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:29:41"}
+{"level":"info","message":"POST addProgram/nombre/p5/codigo/p5","timestamp":"2024-08-22 13:29:48"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:30:03"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:30:03"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:30:06"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:35:23"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:35:24"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:35:25"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:35:25"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:35:25"}
+{"level":"info","message":"POST addProgram/nombre/p6/codigo/p6","timestamp":"2024-08-22 13:35:34"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:35:52"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:35:52"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:35:53"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:39:51"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:39:52"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:39:52"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:39:52"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:39:52"}
+{"level":"info","message":"POST addProgram/nombre/p8/codigo/p8","timestamp":"2024-08-22 13:39:59"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:40:12"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:40:12"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:40:12"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:45:50"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:45:51"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:45:51"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:45:51"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:45:51"}
+{"level":"info","message":"POST addProgram/nombre/er/codigo/er","timestamp":"2024-08-22 13:45:56"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:46:10"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:46:10"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:46:11"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:49:18"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:49:19"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:49:19"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:49:19"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:49:19"}
+{"level":"info","message":"POST addProgram/nombre/p9/codigo/p9","timestamp":"2024-08-22 13:49:29"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:49:41"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:49:41"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:49:42"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:52:26"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:52:26"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:52:26"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:52:26"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:52:26"}
+{"level":"info","message":"POST addProgram/nombre/p19/codigo/p19","timestamp":"2024-08-22 13:52:34"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:52:44"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:52:44"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:52:45"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-22 13:54:21"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-22 13:54:22"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-22 13:54:22"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-22 13:54:22"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-22 13:54:22"}
+{"level":"info","message":"POST addProgram/nombre/p60/codigo/p60","timestamp":"2024-08-22 13:54:33"}
+{"level":"info","message":"GET subcuenca by LatLong from database","timestamp":"2024-08-22 13:54:45"}
+{"level":"info","message":"GET getCuencaId from database","timestamp":"2024-08-22 13:54:45"}
+{"level":"info","message":"POST addEstacionAgua","timestamp":"2024-08-22 13:54:45"}

@@ -27,14 +27,11 @@ const existeEstacion = async (req, res) => {
  
     const { codigo, nombre } = req.query;
 
-    console.log('Código:', codigo);
-    console.log('Nombre:', nombre);
     if (!codigo && !nombre) {
       return res.status(400).json({ message: "Código o nombre son requeridos." });
     } 
     try { 
       const exists = await aguaRepository.existeEstacion(codigo, nombre);
-      console.log(exists)
       res.status(200).json({ exists });
     } catch (e) {
 
@@ -90,7 +87,6 @@ const getCuencaId = async (req,res) => {
 
 const addEstacionAgua = async (req, res) => {
   let data = req.body;
-  console.log("unoooo" + JSON.stringify(data, null, 2));
   try {
 
       if (sanitizer.containsXSS(data)) {
@@ -100,24 +96,20 @@ const addEstacionAgua = async (req, res) => {
           return res.status(400).json({ message: "Error en sintaxisJSON" });
       }
 
-
-      console.log("dooos" + data)
       if (!data.codigo || !data.nombre) {
           return res.status(400).json({ message: "Código y nombre son requeridos para la verificación." });
       }
       
-      const exists = await aguaRepository.existeEstacion(data.codigo, data.nombre);
-      console.log("existe" + exists)
+      const exists = await aguaRepository.existeEstacion(data.codigo, data.nombre)
       if (exists) {
-          return res.status(400).json({ message: "La estación ya existe." });
-      }
-
+          return res.status(409).json({ message: "La estación ya existe." });
+       }
+     
       await aguaRepository.addStationAgua(data);
       logInfo(`POST addEstacionAgua`);
       res.status(201).json({ message: "Estación de agua agregada correctamente" });
 
   } catch (e) {
-      console.error('Error en addEstacionAgua:', e); 
       logError(`Error addEstacionAgua`);
       res.status(500).json({ message: "Error al agregar la estación de agua." });
   } finally {

@@ -92,7 +92,7 @@
                         <div class="flex-container">
                           <mat-form-field class="subItemField" appearance="fill">
                               <mat-label>Código</mat-label>
-                              <input type="text" formControlName="codigo" matInput required>
+                              <input type="text" formControlName="codigo" matInput>
                           </mat-form-field>
                           <mat-form-field class="subItemField" appearance="fill">
                               <mat-label>Nombre</mat-label>
@@ -163,7 +163,7 @@
                   <div>
                     <h2>Estación agregada correctamente</h2>
                     <p>¿Deseas agregar más estaciones o finalizar el proceso?</p>
-                    <button mat-raised-button  color="primary" style="margin-right: 10px;" matStepperPrevious (click)="addMoreStations()">Agregar más</button>
+                    <button mat-raised-button  color="primary" style="margin-right: 10px;" (click)="addMoreStations()">Agregar más</button>
                     <button mat-raised-button  color="primary" (click)="closeDialog()">Finalizar</button>
                   </div>
                 </mat-step>

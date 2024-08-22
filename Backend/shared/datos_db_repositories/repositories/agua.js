@@ -99,8 +99,7 @@ export class AguaRepository {
       const data = await this.connection.query(`select * from enumerado`);
       return data;
     }
-
-    
+   
 
     getEstaciones = async () => {
       const data = await this.connection.query(`select * from estacion`);
@@ -121,45 +120,13 @@ export class AguaRepository {
     existeEstacion = async (codigo, nombre) => {
 
       let query = `
-      SELECT COUNT(*) AS count
+      SELECT *
       FROM estacion
-      WHERE 1 = 1
-  `;
-
-  const params = [];
-
-  if (codigo) {
-      query += ` AND estacion = ?`;
-      params.push(codigo);
-  }
-
-  if (nombre) {
-      query += ` AND descripcion = ?`;
-      params.push(nombre);
-  }
-
-  if (codigo && nombre) {
-      query = `
-          SELECT COUNT(*) AS count
-          FROM estacion
-          WHERE estacion = ? OR descripcion = ?
+      WHERE estacion = ? OR descripcion = ?
       `;
-      params.push(nombre);
-  }
 
-  console.log('Consulta SQL:', query);
-  console.log('Parámetros:', params);
-
-  try {
-      const [result] = await this.connection.query(query, params);
-      console.log('Resultado de la consulta:', result);
-
-      const count = result[0]?.count || 0;
-      return count > 0;
-  } catch (error) {
-      console.error('Error en consulta de existencia:', error);
-      throw error; 
-  }
+    const result = await this.connection.execute(query, [codigo, nombre]);
+    return result[0];
   
   };
 

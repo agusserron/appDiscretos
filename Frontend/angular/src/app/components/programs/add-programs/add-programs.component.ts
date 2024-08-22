@@ -104,16 +104,16 @@ export class AddProgramsComponent {
   }
 
   stationFormGroup = this._formBuilder.group({
-    codigo: ['', Validators.required],
-    nombre: ['', Validators.required],
+    codigo: [null, Validators.required],
+    nombre: [null, Validators.required],
     punto: [null, Validators.required],
     matriz: [null, Validators.required],
     departamento: [null, Validators.required],
     ingresoInterno: [false],
-    latitud: ['', Validators.required],
-    longitud: ['', Validators.required],
-    subcuenca: ['', Validators.required],
-    cuenca: ['', Validators.required],
+    latitud: [null, Validators.required],
+    longitud: [null, Validators.required],
+    subcuenca: [null, Validators.required],
+    cuenca: [null, Validators.required],
   });
 
   
@@ -135,8 +135,6 @@ export class AddProgramsComponent {
 
   setAllItems() {
     this.setParametros();
-    console.log(this.parametros)
-
   }
 
   setOptionParams() {
@@ -362,13 +360,13 @@ this.alertService.clear()
 ///ESTACIONES 
 validateStation(): boolean {
   this.alertService.clear();
-  if (this.stationFormGroup.value.nombre == "" || !this.stationFormGroup.value.nombre) {
+  if (this.stationFormGroup.value.nombre == null || !this.stationFormGroup.value.nombre) {
     return this.showError('nombre', "Debe ingresar un nombre");
   }
   else if (this.stationFormGroup.controls['nombre'].hasError('pattern')) {
     return this.showError('nombre', "Debe ingresar un nombre válido");
   }
-  else if (this.stationFormGroup.value.codigo == "" || !this.stationFormGroup.value.codigo) {
+  else if (this.stationFormGroup.value.codigo == null || !this.stationFormGroup.value.codigo) {
     return this.showError('codigo', "Debe ingresar un código");
   }
   else if (!this.stationFormGroup.value.punto) {
@@ -386,10 +384,10 @@ validateStation(): boolean {
   else if (!this.stationFormGroup.value.longitud) {
     return this.showError('longitud', "Debe ingresar una longitud");
   }
-  else if (this.stationFormGroup.value.subcuenca == "" || !this.stationFormGroup.value.subcuenca) {
+  else if (this.stationFormGroup.value.subcuenca == null || !this.stationFormGroup.value.subcuenca) {
     return this.showError('subcuenca', "Debe ingresar una subcuenca");
   }
-  else if (this.stationFormGroup.value.cuenca == "" || !this.stationFormGroup.value.cuenca) {
+  else if (this.stationFormGroup.value.cuenca == null || !this.stationFormGroup.value.cuenca) {
     return this.showError('cuenca', "Debe ingresar una cuenca");
   }
   return true;
@@ -444,26 +442,51 @@ addStationAgua(): void {
           }, 1000);
         },
         error: (err) => {
-          this.alertService.error(err.error.message);
+          const errorMessage = err.error?.message || 'Error desconocido al agregar la estación de agua.';
+          this.alertService.error(errorMessage);
         }
       });
   } catch (error) {
-    console.error('Error en existStation:', error);
     this.alertService.error('Error al verificar la existencia de la estación.');
   }
 }
 
 addMoreStations() {
-  this.stationFormGroup.reset();
-  setTimeout(() => {
-    Object.keys(this.stationFormGroup.controls).forEach(controlName => {
-      const control = this.stationFormGroup.get(controlName);
-      control?.markAsPristine();
-      control?.markAsUntouched();
-    });
+  this.stationFormGroup.reset({
+    codigo: null,
+    nombre: null,
+    punto: null,
+    matriz: null,
+    departamento: null,
+    ingresoInterno: false,
+    latitud: null,
+    longitud: null,
+    subcuenca: null,
+    cuenca: null
+  });
 
+  // Marcar todos los controles como prístinos y no tocados
+  Object.keys(this.stationFormGroup.controls).forEach(controlName => {
+    const control = this.stationFormGroup.get(controlName);
+    if (control) {
+      console.log(`Estado de ${controlName}:`, {
+        value: control.value,
+        valid: control.valid,
+        pristine: control.pristine,
+        touched: control.touched,
+        errors: control.errors
+      });
+    }
+  });
+
+  // Cambiar el índice del paso seleccionado a 1
+  if (this.stepper) {
     this.stepper.selectedIndex = 1;
-  }); 
+  }
+
+  console.log('Formulario después de reset:', this.stationFormGroup.value);
+  console.log('Estado del formulario:', this.stationFormGroup.status);
+  
 }
 
 getTipoPunto() {
@@ -494,7 +517,6 @@ getDepartamentos() {
   this.aguaService.getDepartamentos().subscribe({
     next: (res) => {
       this.departamentos = res;
-      console.log(this.departamentos)
     },
     error: (err) => {
       this.alertService.error(err.error.message);
