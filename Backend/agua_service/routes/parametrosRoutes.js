@@ -7,5 +7,6 @@ router.getAsync('', parametroController.getParametros);
 router.getAsync('/unidades', parametroController.getParametrosUnidades);
 router.getAsync('/grupos', parametroController.getGruposParametros);
 router.getAsync('/codigos/silad', parametroController.getCodigosSiladParametros);
+router.getAsync('/parametros-agua', parametroController.getParamMatrices);
 
 export default router

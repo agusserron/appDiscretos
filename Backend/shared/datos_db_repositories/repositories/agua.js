@@ -224,4 +224,18 @@ export class AguaRepository {
       const data = await this.connection.query(`select * from rango_param_sitio`);
       return data;
     }
+
+    getParametrosAgua= async () => {
+      const data = await this.connection.query(`SELECT p.parametro AS param_nombre,
+        p.nombre_clave AS param_nomclave, pu.id_matriz, pu.id_unidad, 
+        CASE WHEN p.enumerado = 1 THEN 'SI' ELSE 'NO' END AS param_enum, pu.id_parametro,
+        (SELECT GROUP_CONCAT(CONCAT(matriz.nombre, ' (', unidad.uni_nombre, ')') SEPARATOR '; ') AS suma FROM param_unidad 
+        JOIN matriz ON param_unidad.id_matriz = matriz.id_matriz JOIN unidad ON param_unidad.id_unidad = unidad.id_unidad WHERE param_unidad.id_parametro = pu.id_parametro) AS matriz_detalle 
+        FROM parametro p LEFT JOIN param_unidad pu ON p.id_parametro = pu.id_parametro WHERE pu.id_unidad > 0 AND pu.id_matriz > 0 
+        GROUP BY parametro ORDER BY parametro ASC`);
+      return data;
+    }
+
+
+
   }
