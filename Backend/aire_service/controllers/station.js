@@ -1,4 +1,4 @@
-import { StationAireRepository } from "../../shared/datos_db_repositories/index.js";
+ import { StationAireRepository } from "../../shared/datos_db_repositories/index.js";
 import env from "dotenv"
 import { logInfo, logError } from "../../shared/logger/logger.js"
 import sanitizer from "../../shared/sanitizer_middleware/sanitizer.js";

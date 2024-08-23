@@ -73,8 +73,8 @@ export class ProgramsComponent {
 
     addProgram(): void {
     const dialogRef = this.dialog.open(AddProgramsComponent, {
-      height: '1000px',
-      width: '1000px',
+      height: '950px',
+      width: '2000px',
     });
     this.alertService.clear();
     dialogRef.afterClosed().subscribe(result => {
