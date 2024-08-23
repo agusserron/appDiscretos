@@ -44,7 +44,7 @@ import { AddStationComponent } from './components/programs/add-station/add-stati
 import { DialogDeletProgramComponent } from './components/programs/dialog-delet-program/dialog-delet-program.component';
 import { StationAguaComponent } from './components/station-agua/station-agua.component';
 import { ParametrosAguaComponent } from './components/parametros-agua/parametros-agua.component';
-import { CreateStationAguaComponent } from './components/programs/add-programs/create-station-agua/create-station-agua.component';
+//import { CreateStationAguaComponent } from './components/programs/add-programs/create-station-agua/create-station-agua.component';
 
 
 
@@ -80,8 +80,7 @@ import { CreateStationAguaComponent } from './components/programs/add-programs/c
     AddStationComponent,
     DialogDeletProgramComponent,
     StationAguaComponent,
-    ParametrosAguaComponent,
-    CreateStationAguaComponent
+    ParametrosAguaComponent
   ],
   imports: [
     BrowserModule,
