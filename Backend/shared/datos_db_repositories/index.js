@@ -4,6 +4,7 @@ export {PlantRepository} from './repositories/plant.js'
 export {PresentaIAORepository} from './repositories/presenta_iao.js'
 export {StationAireRepository} from './repositories/station_aire.js'
 export {AguaRepository} from './repositories/agua.js'
+export {InstitucionesRepository} from './repositories/instituciones.js'
 
 
 

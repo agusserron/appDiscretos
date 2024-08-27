@@ -1,0 +1,9 @@
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-07-26 15:16:31"}
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-07-26 15:16:44"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-07-26 15:16:44"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-07-26 15:16:44"}
+{"level":"info","message":"GET getStations from database/username: admin","timestamp":"2024-07-26 15:16:46"}
+{"level":"info","message":"GET getInstitutes from database/username: admin","timestamp":"2024-07-26 15:16:49"}
+{"level":"info","message":"GET getPeriods from database/username: admin","timestamp":"2024-07-26 15:16:49"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2024-07-26 15:16:49"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-07-26 15:16:49"}

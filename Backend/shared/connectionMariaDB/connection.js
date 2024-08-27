@@ -13,7 +13,7 @@ async function getConnection() {
                 database: process.env.DB_DATABASE,
                 password: process.env.DB_PASSWORD,
                 port: process.env.DB_PORT,
-                connectionLimit: 5
+                connectionLimit: 6
             });
         }
         const connection = await pool.getConnection();

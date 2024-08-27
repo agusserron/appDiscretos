@@ -1,0 +1,52 @@
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:03:41"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:05:36"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:16:09"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:17:44"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:19:12"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:20:55"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:25:00"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:26:20"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 10:29:12"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 11:53:07"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 11:54:03"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:07:47"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-23 12:07:49"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-23 12:07:52"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:07:58"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:09:05"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:13:06"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:13:42"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:14:57"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:18:12"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:19:21"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:28:02"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:30:23"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:31:01"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:36:35"}
+{"level":"error","message":"Error addInstitucionData/TypeError: Cannot read properties of undefined (reading 'Valores')","timestamp":"2024-08-23 12:36:50"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:42:43"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 12:42:55"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:42:56"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:43:33"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 12:44:20"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:44:21"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 12:46:30"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:46:31"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 12:47:11"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:47:12"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 12:49:28"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:49:29"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 12:50:17"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:50:18"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 12:50:53"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:50:54"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 12:51:04"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:51:05"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 12:53:22"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 13:04:06"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 13:12:17"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 13:40:20"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 13:42:58"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 13:44:33"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-23 13:44:44"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-23 13:44:45"}

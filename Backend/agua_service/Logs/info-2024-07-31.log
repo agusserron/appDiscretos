@@ -1,0 +1,11 @@
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-31 11:25:14"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-07-31 12:17:32"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-07-31 12:17:42"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-07-31 12:18:36"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-07-31 12:18:38"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-07-31 12:18:39"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-07-31 12:18:39"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-07-31 12:18:39"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-07-31 12:18:57"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-07-31 12:19:11"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-31 15:28:34"}

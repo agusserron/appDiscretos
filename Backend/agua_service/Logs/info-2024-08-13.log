@@ -1,0 +1,9 @@
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-13 10:07:07"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-13 10:07:45"}
+{"level":"info","message":"levanto los parametros de agua","timestamp":"2024-08-13 10:07:45"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-08-13 10:07:47"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-13 10:07:49"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-13 10:07:53"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-13 10:08:00"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-13 10:08:00"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-13 10:08:00"}

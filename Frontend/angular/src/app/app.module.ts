@@ -45,7 +45,10 @@ import { DialogDeletProgramComponent } from './components/programs/dialog-delet-
 import { StationAguaComponent } from './components/station-agua/station-agua.component';
 import { ParametrosAguaComponent } from './components/parametros-agua/parametros-agua.component';
 import { CreateStationAguaComponent } from './components/programs/add-programs/create-station-agua/create-station-agua.component';
-
+import { InstitucionesAguaComponent } from './components/instituciones-agua/instituciones-tabla/instituciones-tabla.component';
+import { DialogAgregarInstAguaComponent } from './components/instituciones-agua/dialog-add/dialog-add.component';
+import { DialogEditarInstAguaComponent } from './components/instituciones-agua/dialog-modify/dialog-modify.component';
+import { DialogDeleteInstAguaComponent } from './components/instituciones-agua/dialog-delete/dialog-delete.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +83,10 @@ import { CreateStationAguaComponent } from './components/programs/add-programs/c
     DialogDeletProgramComponent,
     StationAguaComponent,
     ParametrosAguaComponent,
+    InstitucionesAguaComponent,
+    DialogAgregarInstAguaComponent,
+    DialogEditarInstAguaComponent,
+    DialogDeleteInstAguaComponent,
     CreateStationAguaComponent
   ],
   imports: [

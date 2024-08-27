@@ -1,0 +1,14 @@
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-02 11:11:22"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-02 11:34:37"}
+{"level":"error","message":"Error addInstitucionData/TypeError: Cannot read properties of undefined (reading 'Valores')","timestamp":"2024-08-02 11:34:44"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-02 11:38:59"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-02 11:39:05"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-02 11:39:06"}
+{"level":"error","message":"Error addInstitucionData/SqlError: (conn=2897925, no: 1062, SQLState: 23000) Duplicate entry '0' for key 'PRIMARY'\nsql: INSERT INTO institucion\n       SET nombre = ?,\n           estado     = ? - parameters:['bbbbbbbb','1']","timestamp":"2024-08-02 11:42:13"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-02 11:42:26"}
+{"level":"error","message":"Error addInstitucionData/SqlError: (conn=2897925, no: 1062, SQLState: 23000) Duplicate entry '0' for key 'PRIMARY'\nsql: INSERT INTO institucion\n       SET nombre = ?,\n           estado     = ? - parameters:['bbbbbbbbbbbb','1']","timestamp":"2024-08-02 11:42:33"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-02 16:09:37"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-02 16:09:53"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-02 16:09:54"}
+{"level":"info","message":"POST addInstitucionData","timestamp":"2024-08-02 16:10:27"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-08-02 16:10:28"}

@@ -13,7 +13,7 @@ import { AddResultSampleComponent } from './components/collaborators/add-result-
 import { ProgramsComponent } from './components/programs/programs.component';
 import { StationAguaComponent } from './components/station-agua/station-agua.component';
 import { ParametrosAguaComponent } from './components/parametros-agua/parametros-agua.component';
-
+import { InstitucionesAguaComponent } from './components/instituciones-agua/instituciones-tabla/instituciones-tabla.component';
 
 export const routes: any = [
   {path: 'login', component: LoginComponent},
@@ -27,6 +27,7 @@ export const routes: any = [
     {path: 'collaborators', component: AddResultSampleComponent},
     {path: 'programs', component:  ProgramsComponent},
     {path: 'parametros-agua', component:  ParametrosAguaComponent}, 
+    {path: 'instituciones-agua', component:  InstitucionesAguaComponent},     
     {path: 'station-agua', component: StationAguaComponent}
     
     

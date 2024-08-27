@@ -4,6 +4,7 @@ import estacionesRouter from './routes/estacionesRoutes.js'
 import parametrosRouter from './routes/parametrosRoutes.js'
 import programaRouter from './routes/programasRoutes.js'
 import rangosRouter from './routes/rangosRoutes.js'
+import institucionesRouter from './routes/institucionesRoutes.js'
 import corsMiddleware from '../shared/cors_middleware/corsMiddleware.js'
 import helmet from 'helmet'
 //import pool from '../shared/connectionMariaDB/sharedPool.js'
@@ -24,7 +25,7 @@ app.use('/api/agua/estaciones', estacionesRouter);
 app.use('/api/agua/parametros', parametrosRouter);
 app.use('/api/agua/programas', programaRouter);
 app.use('/api/agua/rangos', rangosRouter);
-
+app.use('/api/agua/instituciones', institucionesRouter);
 
 app.listen(port, () => {
   console.log(`Agua Service listening on port ${port}`)
