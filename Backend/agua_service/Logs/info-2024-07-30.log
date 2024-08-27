@@ -1,0 +1,17 @@
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-30 11:42:33"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-30 14:29:36"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-30 14:31:39"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-30 14:37:35"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-07-30 14:45:33"}
+{"level":"info","message":"levanto los parametros de agua","timestamp":"2024-07-30 14:45:33"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-30 14:45:34"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-07-30 14:57:50"}
+{"level":"info","message":"levanto los parametros de agua","timestamp":"2024-07-30 14:57:50"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-30 14:57:51"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-07-30 15:08:08"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-07-30 15:08:15"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-07-30 15:08:20"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-07-30 15:08:36"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-07-30 15:08:36"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-07-30 15:08:37"}
+{"level":"info","message":"GET getInstituciones from database","timestamp":"2024-07-30 15:11:45"}

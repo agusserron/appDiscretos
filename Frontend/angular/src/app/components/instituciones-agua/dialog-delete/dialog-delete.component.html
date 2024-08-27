@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Eliminar Institución</h1>
+<div mat-dialog-content>
+    <p><b>¿Estas seguro de eliminar la siguiente Institución?</b></p>
+    <p><b>Nombre: </b>{{dataInstitucion.nombre}}</p>
+    <p><b>Estado: </b>{{!dataInstitucion.estado ? 'Inactiva' : 'Activa'}}</p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancelar <mat-icon>cancel</mat-icon></button>
+    <button mat-button cdkFocusInitial (click)="delInstitucion()">Eliminar <mat-icon>delete</mat-icon></button>
+</div>
+<div class="alertBox-container">
+    <div class="alertBox">
+        <alert></alert>
+    </div>
+</div>

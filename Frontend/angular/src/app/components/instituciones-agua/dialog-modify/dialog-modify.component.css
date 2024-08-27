@@ -1,0 +1,41 @@
+.column {
+    float: left;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subItemField {
+    width: 40%;
+}
+
+.alertBox {
+    margin-top: 2%;
+    width: 30%;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+}
+
+.mat-dialog-actions{
+    justify-content: center;
+}
+
+.alertBox-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dialog-box {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid black; 
+    padding: 10px; 
+    height: 550px;
+}

@@ -4,20 +4,7 @@
         "amount": 30
     },
     "auditLog": "Logs\\.6a44091311d42b0f75da95c15a42b25efa9296fc-audit.json",
-    "files": [
-        {
-            "date": 1721848093091,
-            "name": "Logs\\info-2024-07-24.log",
-            "hash": "c07a1c8e70bc0ab06385f63b95d26aa101dc1a22195097f0533ee420c9744aab"
-        },
-        {
-            "date": 1721910626274,
-            "name": "Logs\\info-2024-07-25.log"
-        },
-        {
-            "date": 1724415883095,
-            "name": "Logs\\info-2024-08-23.log",
-            "hash": "7d8abbfd9b4104f1a97d5d0ed0d2b9c263a8a9fd27824ad93e581d5d2d842b25"
+   
         }
     ],
     "hashType": "sha256"
