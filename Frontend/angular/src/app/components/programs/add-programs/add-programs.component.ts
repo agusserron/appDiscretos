@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { ProgramService } from 'src/app/services/microservice_agua/programs/program.service';
 import { AlertService } from '../../alert/alert.service';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { CreateStationAguaComponent } from './create-station-agua/create-station-agua.component';
+import { StationAguaService } from 'src/app/services/microservice_agua/station-agua/station-agua.service';
+import { StationAgua } from 'src/app/models/station-agua/sation-agua.module';
+import { from, switchMap } from 'rxjs';
+import { AguaService } from 'src/app/services/microservice_agua/agua/agua.service';
+import { Program } from 'src/app/models/program/program.module';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input'; // También necesitas MatInputModule para los inputs
+import { MatStepper } from '@angular/material/stepper';
+
+
 
 interface Parametro {
   id_parametro: number;
@@ -28,6 +39,12 @@ interface Parametro {
 
 export class AddProgramsComponent {
 
+  @ViewChild(MatStepper) stepper!: MatStepper;
+
+  canContinue: boolean = false;
+
+  isLinear: boolean = true;
+
   parametros: any;
   availableOptions: string[] = [];
 
@@ -42,44 +59,88 @@ export class AddProgramsComponent {
   selectedGroup: string = '';
   groups: { name: string, color: string, parameters: Parametro[] }[] = [];
 
-  selectedOptions: { option: string, color: string }[] = [];
+  selectedOptions: { option: string, color: string, id_parametro: number}[] = [];
+
+  firstFormGroup: FormGroup;
 
 
 
+  //ESTACIONES
+
+  opciones: any[] = [];
+  tipoPunto: any[] = [];
+  matrices: any[] = [];
+  idMatriz!: number;
+  idProgrma!: number;
+  idDepartamento!: number;
+  idTipoPunto!: number;
+
+  departamentos: any[] = [];
+  subCuenca: any;
+  existeEstacion: Boolean = false;
+  estacion!: StationAgua;
+
+ 
+ 
   constructor(
     public dialogRef: MatDialogRef<AddProgramsComponent>,
     public dialog: MatDialog,
     private _formBuilder: FormBuilder,
     public alertService: AlertService,
-    private programService: ProgramService
+    private programService: ProgramService,
+    private stationAguaService: StationAguaService,
+    private aguaService: AguaService,
+    
   ) {
     this.setAllItems();
+    this.firstFormGroup = this._formBuilder.group({
+      nombre: ['', [Validators.required, Validators.pattern("[a-zA-Z0-9\\s.()&/áéíóúÁÉÍÓÚñÑüÜ-]+")]],
+      codigo: ['', [Validators.required]],
+      visiblePorExternos: [''],
+      parametros: this._formBuilder.array([])      
+    });
+    
+    
   }
 
-  AddStation : any = CreateStationAguaComponent;
-
-  programFormGroup = this._formBuilder.group({
-    nombre: ['', [Validators.required, Validators.pattern("[a-zA-Z0-9\\s.()&/áéíóúÁÉÍÓÚñÑüÜ-]+")]],
-    codigo: ['', [Validators.required]],
-    visiblePorExternos: ['', [Validators.required]],
+  stationFormGroup = this._formBuilder.group({
+    codigo: [null, Validators.required],
+    nombre: [null, Validators.required],
+    punto: [null, Validators.required],
+    matriz: [null, Validators.required],
+    departamento: [null, Validators.required],
+    ingresoInterno: [false],
+    latitud: [null, Validators.required],
+    longitud: [null, Validators.required],
+    subcuenca: [null, Validators.required],
+    cuenca: [null, Validators.required],
   });
 
+  
+  ngOnInit() {
+    this.getTipoPunto();
+    this.getMatrices();
+    this.getDepartamentos();
+  }
 
+  goToAddStation() {
+    if (this.stepper) {
+      this.stepper.selectedIndex = 1; 
+    }
+  }
 
-  onNoClick(): void {
-    this.dialogRef.close();
+  closeDialog(): void {
+    this.dialogRef.close({ state: true });
   }
 
   setAllItems() {
     this.setParametros();
-    console.log(this.parametros)
-
   }
 
   setOptionParams() {
     this.availableOptions = [];
     for (const parametro of this.parametros) {
-      this.availableOptions.push(parametro.parametro);
+      this.availableOptions.push(parametro);
     }
   }
 
@@ -94,7 +155,6 @@ export class AddProgramsComponent {
           parameters: groupedParams[groupId]
         }));
 
-        console.log('Grupos finales:', this.groups);
       },
       error: (err) => {
         this.alertService.error(err.error.message);
@@ -118,6 +178,8 @@ export class AddProgramsComponent {
 
     return grouped;
   }
+
+  
 
   getGroupName(groupId: number): string {
     switch (groupId) {
@@ -191,10 +253,19 @@ export class AddProgramsComponent {
     this.filteredOptions = group ? group.parameters : [];
   }
 
+
+
   selectOption(option: string): void {
     const group = this.groups.find(group => group.name === this.selectedGroup);
-    if (group && !this.selectedOptions.some(selected => selected.option === option)) {
-      this.selectedOptions.push({ option, color: group.color });
+    if (group) {
+      const param = group.parameters.find(p => p.parametro === option);
+      if (param && !this.selectedOptions.some(selected => selected.option === option)) {
+        this.selectedOptions.push({ 
+          option: param.parametro, 
+          color: group.color, 
+          id_parametro: param.id_parametro 
+        });
+      }
     }
   }
 
@@ -207,12 +278,18 @@ export class AddProgramsComponent {
     return group ? group.color : 'transparent';
   }
 
+
+
   selectAllOptionsInGroup(): void {
     const group = this.groups.find(group => group.name === this.selectedGroup);
     if (group) {
       group.parameters.forEach(param => {
         if (!this.selectedOptions.some(selected => selected.option === param.parametro)) {
-          this.selectedOptions.push({ option: param.parametro, color: group.color });
+          this.selectedOptions.push({ 
+            option: param.parametro, 
+            color: group.color, 
+            id_parametro: param.id_parametro 
+          });
         }
       });
     }
@@ -223,18 +300,263 @@ export class AddProgramsComponent {
   }
 
 
-  openDialogAddStation() {
-  const dialogRef = this.dialog.open(CreateStationAguaComponent, {
-    width: '800px',
-    height: '700px',
-    data: {} 
-  });
 
-  dialogRef.afterClosed().subscribe(result => {
-    console.log('El diálogo se cerró');
-    
+validateProgram(): boolean {
+  this.alertService.clear();
+  if (this.firstFormGroup.value.nombre == "" || !this.firstFormGroup.value.nombre) {
+    return this.showError('nombre', "Debe ingresar un nombre de programa");
+  } else if (this.firstFormGroup.controls['nombre'].hasError('pattern')) {
+    return this.showError('nombre', "Debe ingresar un nombre de programa válido");
+  } else if (this.firstFormGroup.value.codigo == "" || !this.firstFormGroup.value.codigo) {
+    return this.showError('codigo', "Debe ingresar un código de programa");
+  }
+  return true;
+}
+
+validateAndAddProgram(): void {
+  this.parametros = this.selectedOptions;
+  let visible = this.firstFormGroup.value.visiblePorExternos ? 1 : 0;
+
+  const codigo = this.firstFormGroup.value.codigo;
+  const nombre = this.firstFormGroup.value.nombre;
+
+  if (!this.validateProgram()) {
+    return;
+  }
+
+  const programa = new Program(
+    nombre!,
+    codigo!,
+    visible,
+    0,
+    this.parametros
+  );
+
+  this.programService.addProgram(programa).subscribe({
+    next: (resp) => {
+      this.idProgram = resp.id;
+      this.alertService.success("Programa agregado exitosamente", this.options);
+      this.canContinue = true; 
+    },
+    error: (err) => {
+      if (err.status === 0) {
+        this.alertService.clear();
+        this.alertService.error("Servicio sin conexión", this.options);
+      } else if (err.status === 400) {
+        this.alertService.error(err.error.message, this.options);
+      } else if (err.status === 409) {
+        this.alertService.error(err.error.message, this.options);
+      }
+    }
   });
 }
 
-  addProgram() { }
+clearAlert() {
+this.alertService.clear()
+}
+
+
+
+///ESTACIONES 
+validateStation(): boolean {
+  this.alertService.clear();
+  if (this.stationFormGroup.value.nombre == null || !this.stationFormGroup.value.nombre) {
+    return this.showError('nombre', "Debe ingresar un nombre");
+  }
+  else if (this.stationFormGroup.controls['nombre'].hasError('pattern')) {
+    return this.showError('nombre', "Debe ingresar un nombre válido");
+  }
+  else if (this.stationFormGroup.value.codigo == null || !this.stationFormGroup.value.codigo) {
+    return this.showError('codigo', "Debe ingresar un código");
+  }
+  else if (!this.stationFormGroup.value.punto) {
+    return this.showError('punto', "Debe seleccionar un punto");
+  }
+  else if (!this.stationFormGroup.value.matriz) {
+    return this.showError('matriz', "Debe seleccionar una matriz");
+  }
+  else if (!this.stationFormGroup.value.departamento) {
+    return this.showError('departamento', "Debe seleccionar un departamento");
+  }
+  else if (!this.stationFormGroup.value.latitud) {
+    return this.showError('latitud', "Debe ingresar una latitud");
+  }
+  else if (!this.stationFormGroup.value.longitud) {
+    return this.showError('longitud', "Debe ingresar una longitud");
+  }
+  else if (this.stationFormGroup.value.subcuenca == null || !this.stationFormGroup.value.subcuenca) {
+    return this.showError('subcuenca', "Debe ingresar una subcuenca");
+  }
+  else if (this.stationFormGroup.value.cuenca == null || !this.stationFormGroup.value.cuenca) {
+    return this.showError('cuenca', "Debe ingresar una cuenca");
+  }
+  return true;
+}
+
+options = {
+  autoClose: true,
+  keepAfterRouteChange: false
+};
+
+
+showError(controlName: string, errorMessage: string): boolean {
+  this.alertService.error(errorMessage, this.options);
+  return false;
+}
+
+
+addStationAgua(): void {
+  this.alertService.clear();
+  if (!this.validateStation()) {
+    return;
+  }
+  const form = this.stationFormGroup.value;
+
+  const latitud = this.stationFormGroup.get('latitud')?.value;
+  const longitud = this.stationFormGroup.get('longitud')?.value;
+
+  const latitudNumber = latitud !== null && latitud !== undefined ? parseFloat(latitud) : NaN;
+  const longitudNumber = longitud !== null && longitud !== undefined ? parseFloat(longitud) : NaN;
+ 
+  const newStation = new StationAgua(
+    form.codigo!,
+    form.nombre!,
+    Number(latitudNumber),   
+    Number(longitudNumber), 
+    Number(this.idProgram),
+    0,
+    Number(form.punto!),
+    Number(form.departamento!),
+    this.subCuenca.sub_cue_cuenca_id,
+    form.ingresoInterno == true ? 1 : 0,
+    Number(form.matriz!),
+  );
+  try {
+      this.stationAguaService.addStationAgua(newStation).subscribe({
+        next: (res) => {
+          this.alertService.success(res.message);
+          if (this.stepper) {
+            this.stepper.selectedIndex = 2;
+          }
+          setTimeout(() => {
+          }, 1000);
+        },
+        error: (err) => {
+          const errorMessage = err.error?.message || 'Error desconocido al agregar la estación de agua.';
+          this.alertService.error(errorMessage);
+        }
+      });
+  } catch (error) {
+    this.alertService.error('Error al verificar la existencia de la estación.');
+  }
+}
+
+addMoreStations() {
+  this.stationFormGroup.reset({
+    codigo: null,
+    nombre: null,
+    punto: null,
+    matriz: null,
+    departamento: null,
+    ingresoInterno: false,
+    latitud: null,
+    longitud: null,
+    subcuenca: null,
+    cuenca: null
+  });
+
+  // Marcar todos los controles como prístinos y no tocados
+  Object.keys(this.stationFormGroup.controls).forEach(controlName => {
+    const control = this.stationFormGroup.get(controlName);
+    if (control) {
+      console.log(`Estado de ${controlName}:`, {
+        value: control.value,
+        valid: control.valid,
+        pristine: control.pristine,
+        touched: control.touched,
+        errors: control.errors
+      });
+    }
+  });
+
+  // Cambiar el índice del paso seleccionado a 1
+  if (this.stepper) {
+    this.stepper.selectedIndex = 1;
+  }
+
+  console.log('Formulario después de reset:', this.stationFormGroup.value);
+  console.log('Estado del formulario:', this.stationFormGroup.status);
+  
+}
+
+getTipoPunto() {
+  this.stationAguaService.getTypePoint().subscribe({
+    next: (res) => {
+      this.tipoPunto = res;
+    },
+    error: (err) => {
+      this.alertService.error(err.error.message);
+    }
+  })
+
+}
+
+getMatrices() {
+  this.aguaService.getMatrices().subscribe({
+    next: (res) => {
+      this.matrices = res;
+    },
+    error: (err) => {
+      this.alertService.error(err.error.message);
+    }
+  })
+
+}
+
+getDepartamentos() {
+  this.aguaService.getDepartamentos().subscribe({
+    next: (res) => {
+      this.departamentos = res;
+    },
+    error: (err) => {
+      this.alertService.error(err.error.message);
+    }
+  })
+
+}
+
+setSubcuenca() {
+  const latitud = this.stationFormGroup.get('latitud')?.value;
+  const longitud = this.stationFormGroup.get('longitud')?.value;
+
+  this.stationAguaService.getSubcuenca(latitud, longitud).pipe(
+    switchMap((res) => {
+      if (!res || !res.sub_cue_cuenca_id) {
+        this.alertService.clear();
+        this.alertService.error("Subcuenca no encontrada", this.options);
+      }
+      this.subCuenca = res;
+      return this.stationAguaService.getCuencaById(this.subCuenca.sub_cue_cuenca_id);
+    })
+  ).subscribe({
+    next: (cuencaNombre) => {
+      this.stationFormGroup.patchValue({
+        subcuenca: this.subCuenca.sub_cue_nombre,
+        cuenca: cuencaNombre[0].cue_nombre
+      });
+    },
+    error: (err) => {
+      if (err.status == 0) {
+        this.alertService.clear();
+        this.alertService.error("Servicio sin conexión", this.options);
+      }
+      else if (err.status == 400) {
+        this.alertService.error(err.error.message, this.options);
+      }
+    }
+  });
+}
+
+
+
 }

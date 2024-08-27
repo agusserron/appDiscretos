@@ -1,0 +1,24 @@
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-19 11:44:58"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-19 11:45:05"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-19 11:45:05"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-19 11:45:05"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-19 11:45:05"}
+{"level":"info","message":"POST addProgram/nombre/ttt/codigo/ttt","timestamp":"2024-08-19 11:46:13"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-19 11:54:33"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-19 11:54:34"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-19 11:54:34"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-19 11:54:34"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-19 11:54:34"}
+{"level":"info","message":"POST addProgram/nombre/oo/codigo/oo","timestamp":"2024-08-19 11:54:43"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-19 11:59:57"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-19 11:59:58"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-19 11:59:58"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-19 11:59:58"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-19 11:59:58"}
+{"level":"info","message":"POST addProgram/nombre/dd/codigo/dd","timestamp":"2024-08-19 12:00:03"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-19 12:03:40"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-19 12:03:41"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-19 12:03:41"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-19 12:03:41"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-19 12:03:41"}
+{"level":"info","message":"POST addProgram/nombre/k/codigo/k","timestamp":"2024-08-19 12:03:48"}

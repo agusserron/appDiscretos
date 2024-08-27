@@ -51,11 +51,6 @@ export class NavbarComponent implements OnInit {
       roles: ['SRD-ADMIN', 'SRD-AIRE'],
       external: false
     },
-    /*{
-      displayName: 'AGUA',
-      iconName: '#agua',
-      route: '/login',
-    },*/
     {
       displayName: 'EMPRESAS',
       iconName: '#company',
@@ -94,18 +89,18 @@ export class NavbarComponent implements OnInit {
           iconName: '#data',
           route: '/SRD/programs',
           external: false,
-          roles: []
+          roles: ['SRD-ADMIN', 'SRD-AGUA']
         },
         {
           displayName: 'ESTACIONES',
           iconName: '#plant',
           route: '/SRD/station-agua',
           external: false,
-          roles: []
+          roles: ['SRD-ADMIN', 'SRD-AGUA']
         },
         {
-          displayName: 'PARAMETROS',
-          iconName: '#plant',
+          displayName: 'PARÁMETROS',
+          iconName: '#report',
           route: '/SRD/parametros-agua',
           external: false,
           roles: []
@@ -116,6 +111,7 @@ export class NavbarComponent implements OnInit {
           route: '/SRD/instituciones-agua',
           external: false,
           roles: []
+          roles: ['SRD-ADMIN', 'SRD-AGUA']
         }        
       ],
       roles: ['SRD-ADMIN'],

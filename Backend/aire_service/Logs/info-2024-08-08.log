@@ -1,0 +1,4 @@
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-08-08 11:29:22"}
+{"level":"info","message":"GET getAllNroEnlaces  /username: admin","timestamp":"2024-08-08 11:29:22"}
+{"level":"info","message":"GET getPlants from database/username: admin","timestamp":"2024-08-08 11:29:22"}
+{"level":"info","message":"GET getDepartaments from database/username: admin","timestamp":"2024-08-08 11:37:02"}

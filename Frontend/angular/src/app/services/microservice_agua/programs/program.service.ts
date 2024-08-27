@@ -29,6 +29,17 @@ export class ProgramService {
     return this.http.put(`${environment.apiAgua}/programas/data`, body);
   }
 
+  existProgram(codigo: string, nombre: string): Observable<any> {
+    let params = new HttpParams()
+      .set('codigo', codigo)
+      .set('nombre', nombre);
+    return this.http.get<any>(`${environment.apiAgua}/programas/existePrograma`, { params });
+  }
+
+  addProgram(program: any): Observable<any> {
+    return this.http.post<any>(`${environment.apiAgua}/programas/programa`, program);
+  }
+
 
 }
 

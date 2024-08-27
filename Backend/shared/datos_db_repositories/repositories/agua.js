@@ -99,6 +99,7 @@ export class AguaRepository {
       const data = await this.connection.query(`select * from enumerado`);
       return data;
     }
+   
 
     getEstaciones = async () => {
       const data = await this.connection.query(`select * from estacion`);
@@ -116,6 +117,58 @@ export class AguaRepository {
       return data;
     }
 
+    existeEstacion = async (codigo, nombre) => {
+
+      let query = `
+      SELECT *
+      FROM estacion
+      WHERE estacion = ? OR descripcion = ?
+      `;
+
+    const result = await this.connection.execute(query, [codigo, nombre]);
+    return result[0];
+  
+  };
+
+  addStationAgua = async ( data ) => {
+      await this.connection.execute(
+        `INSERT INTO estacion
+         SET estacion = ?,
+             descripcion = ?,
+             latitud = ?,
+             longitud = ?,
+             gid = ?,
+             id_programa = ?,
+             version = ?,
+             id_tipo_punto = ?,
+             id_departamento = ?,
+             id_sub_cuenca = ?,
+             orden_ingreso = ?,
+             ingreso_interno = ?,
+             id_matriz = ?,
+             estacion_activa = ?`,
+        [
+            data.codigo,
+            data.nombre,
+            data.latitud,
+            data.longitud,
+            0,
+            data.idPrograma,          
+            data.version,            
+            data.id_tipo_punto,     
+            data.id_departamento,
+            data.id_sub_cuenca,
+            0,    
+            data.ingreso_interno,    
+            data.id_matriz,
+            1
+        ]
+    );
+}
+
+
+
+
     getTipoPuntoEstacion = async () => {
       const data = await this.connection.query(`select * from tipo_punto_estacion`);
       return data;
@@ -130,6 +183,17 @@ export class AguaRepository {
       const [rows] = await this.connection.query(query);
       return rows;
     };
+
+
+    getCuencaId = async (nroCuenca) => {
+      const query = `
+      SELECT c.*
+      FROM cuenca c
+      WHERE c.id = ?
+      `;    
+      const data = await this.connection.query(query, [nroCuenca]);
+      return data;
+    }
 
     getProgramasParametros = async () => {
       const data = await this.connection.query(`select * from programa_parametro`);

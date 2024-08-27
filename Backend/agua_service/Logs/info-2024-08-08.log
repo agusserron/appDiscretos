@@ -1,0 +1,119 @@
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 09:04:44"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 09:04:46"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 09:04:46"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 09:04:46"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 09:04:46"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 09:07:21"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2995587, no: 1062, SQLState: 23000) Duplicate entry '0' for key 'PRIMARY'\nsql: INSERT INTO programa_parametro\n                   SET id_programa = ?,\n                       id_parametro = ? - parameters:[67,2007]/","timestamp":"2024-08-08 09:07:21"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 09:28:49"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 09:28:51"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 09:28:51"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 09:28:51"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 09:28:51"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 09:29:01"}
+{"level":"info","message":"POST addProgram/nombre/aaaaaaaaaaaaaaaaaaaaa/codigo/aaaaaaaaaaaaaaaa","timestamp":"2024-08-08 09:29:01"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 09:32:26"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2995876, no: 1062, SQLState: 23000) Duplicate entry 'aaaaaaaaaaaaaaaa' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Laguna del Sauce','...]/","timestamp":"2024-08-08 09:32:26"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 09:56:43"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 09:56:45"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 09:56:45"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 09:56:45"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 09:56:45"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 09:56:54"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 09:57:04"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2996205, no: 1062, SQLState: 23000) Duplicate entry 'LL' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Laguna del Sauce','...]/","timestamp":"2024-08-08 09:57:04"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 10:18:41"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:18:43"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:18:43"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:18:43"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:18:43"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:18:56"}
+{"level":"info","message":"POST addProgram/nombre/Laguna del Sauce/codigo/00000","timestamp":"2024-08-08 10:18:56"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:21:40"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:21:40"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:21:40"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:21:40"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:21:48"}
+{"level":"info","message":"POST addProgram/nombre/Laguna del Sauce/codigo/00","timestamp":"2024-08-08 10:21:49"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:23:28"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:23:28"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:23:28"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:23:28"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:23:34"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2996546, no: 1062, SQLState: 23000) Duplicate entry 'P' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Playa','P',0,0,0,1,...]/","timestamp":"2024-08-08 10:23:34"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 10:27:55"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:27:55"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:27:55"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:27:55"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:27:55"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:28:03"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2996603, no: 1062, SQLState: 23000) Duplicate entry 'P' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Playa','P',0,0,0,1,...]/","timestamp":"2024-08-08 10:28:03"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 10:29:11"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:29:12"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:29:12"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:29:12"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:29:12"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:29:28"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2996603, no: 1062, SQLState: 23000) Duplicate entry 'P' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Playa','P',0,0,0,1,...]/","timestamp":"2024-08-08 10:29:28"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 10:37:28"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:37:29"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:37:29"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:37:29"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:37:29"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:37:42"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2996694, no: 1062, SQLState: 23000) Duplicate entry 'P' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Playa','P',0,0,0,1,...]/","timestamp":"2024-08-08 10:37:42"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 10:39:30"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:39:31"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:39:31"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:39:31"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:39:31"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:39:42"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2996736, no: 1062, SQLState: 23000) Duplicate entry 'P' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Playa','P',0,0,0,1,...]/","timestamp":"2024-08-08 10:39:42"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 10:54:15"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:54:16"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:54:17"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:54:17"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:54:17"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:54:27"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2996898, no: 1062, SQLState: 23000) Duplicate entry 'P' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Playa','P',0,0,0,1,...]/","timestamp":"2024-08-08 10:54:27"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 10:57:57"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 10:57:58"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 10:57:58"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 10:57:58"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 10:57:58"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 10:58:06"}
+{"level":"error","message":"Error addProgram/SqlError: (conn=2996931, no: 1062, SQLState: 23000) Duplicate entry 'P' for key 'programa_codigo_programa_key'\nsql: INSERT INTO programa \n          SET  nombre_programa = ?,\n            codigo_programa = ?, \n            visible_externos = ?, \n            version = ?, \n            id_programa_silad = ?,\n            estado = ?\n           - parameters:['Playa','P',0,0,0,1,...]/","timestamp":"2024-08-08 10:58:06"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 11:04:52"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 11:04:53"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 11:04:53"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 11:04:53"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 11:04:54"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 11:05:30"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 11:18:47"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 11:18:47"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 11:18:47"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 11:18:47"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-08-08 11:25:30"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 11:25:33"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 11:25:35"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 11:25:35"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 11:25:35"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 11:25:35"}
+{"level":"info","message":"GET getEstaciones from database","timestamp":"2024-08-08 11:29:28"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 11:29:31"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 11:37:02"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 11:37:02"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 11:54:34"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 11:54:35"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 11:54:35"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 11:54:35"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 11:54:35"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 11:54:42"}
+{"level":"info","message":"GET getProgramas from database","timestamp":"2024-08-08 12:03:15"}
+{"level":"info","message":"GET getParameters from database","timestamp":"2024-08-08 12:03:16"}
+{"level":"info","message":"GET getTipoPuntoEstacion from database","timestamp":"2024-08-08 12:03:16"}
+{"level":"info","message":"GET getMatrices from database","timestamp":"2024-08-08 12:03:16"}
+{"level":"info","message":"GET getDepartamentos from database","timestamp":"2024-08-08 12:03:16"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 12:03:23"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 12:03:32"}
+{"level":"info","message":"GET getEstacionesPrograma from database","timestamp":"2024-08-08 12:16:08"}
