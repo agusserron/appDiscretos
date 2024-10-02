@@ -69,6 +69,17 @@ export class TableGenericComponent implements AfterViewInit {
     });
   }
 
+  editActionProgram(element: any): void {
+    const dialogRef = this.dialog.open(this.dialogComponents[3], {
+      data: element,
+      height: '800px',
+      width: '1000px',
+    });
+    dialogRef.afterClosed().subscribe((result:any) => {
+      this.dialogClosed.emit(result);
+    });
+  }
+
   deleteAction (element:any) : void {
     const dialogRef = this.dialog.open(this.dialogComponents[0], {
       data: element,

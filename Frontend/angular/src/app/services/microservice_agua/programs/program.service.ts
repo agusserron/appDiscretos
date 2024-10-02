@@ -40,6 +40,10 @@ export class ProgramService {
     return this.http.post<any>(`${environment.apiAgua}/programas/programa`, program);
   }
 
+  getParamsProgram(idProgram: number): Observable<any> {
+    return this.http.get<any>(`${environment.apiAgua}/programas/parametrosPrograma${idProgram}`);
+  }
+
 
 }
 

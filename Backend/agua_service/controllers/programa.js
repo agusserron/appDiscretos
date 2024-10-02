@@ -38,6 +38,20 @@ const getProgramasParametros = async (req,res) => {
     }
 }
 
+const getParamProgram = async (req,res) => {
+    try {        
+        let idPrograma = req.params.programId;
+        const parametrosPrograma = await aguaRepository.getParamProgram(idPrograma);
+        logInfo(`GET parametrosPrograma from database`);
+        res.status(200).json(parametrosPrograma);
+    } catch (e) {
+        logError(`Error parametrosPrograma/${e}`);
+        res.status(500).json({ message: "Error, obteniendo los parametros del programa." });
+    } finally {
+        release();
+    }
+}
+
 const getEstacionesPrograma = async (req,res) => {
     try {
         let idPrograma = req.params.programId;
@@ -115,5 +129,6 @@ export default {
     getProgramasParametros,
     getEstacionesPrograma,
     updateProgramStatus,
-    addProgram
+    addProgram,
+    getParamProgram
 }

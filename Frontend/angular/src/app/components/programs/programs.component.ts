@@ -7,6 +7,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Program } from 'src/app/models/program/program.module';
 import { AddProgramsComponent } from './add-programs/add-programs.component';
 import { AddStationComponent } from './add-station/add-station.component';
+import { DialogModifyProgramComponent } from './dialog-modify-program/dialog-modify-program.component';
 import { DialogDeletProgramComponent } from './dialog-delet-program/dialog-delet-program.component';
 
 @Component({
@@ -30,6 +31,7 @@ export class ProgramsComponent {
     AddProgramsComponent: any = AddProgramsComponent;
     AddStationComponent : any = AddStationComponent;
     DialogDeletProgramComponent : any = DialogDeletProgramComponent;
+    DialogModifyProgramComponent: any = DialogModifyProgramComponent;
     dataSource!: MatTableDataSource<Program>;
     
     displayedColumns: string[] = ['nombre_programa', 'codigo_programa', 'visible_externos', 'version', 'estado', 'estaciones', 'accion'];

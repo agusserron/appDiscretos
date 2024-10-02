@@ -80,4 +80,17 @@ export class ProgramRepository {
     return programaId;
     }
 
+    getParamProgram = async (idProgram) => {
+    
+      const query = `
+        SELECT p.*
+        FROM programa_parametros pp
+        JOIN parametros p ON pp.id_parametro = p.id
+        WHERE pp.id_programa = ?
+      `;
+      
+      const result = await this.connection.execute(query, [idProgram]);     
+      return result[0]; 
+    };
+
 }

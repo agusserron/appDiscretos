@@ -110,7 +110,6 @@ export class NavbarComponent implements OnInit {
           iconName: '#plant',
           route: '/SRD/instituciones-agua',
           external: false,
-          roles: []
           roles: ['SRD-ADMIN', 'SRD-AGUA']
         }        
       ],
