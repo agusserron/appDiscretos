@@ -1,7 +1,7 @@
 # SDA-RD
 Sistema de Datos Ambientales- Recepción Discreta
 
-## Produccion (en test) : 172.20.110.33/angular_testing/SRD
+## Test : 172.28.110.33/angular_testing/SRD
 ## Produccion http://172.28.0.60/angular-testing/login
 
 Pasos para levantar el ambiente de test: 
@@ -48,7 +48,7 @@ DB_PASSWORD = pass
 
 3. Usuario de test : 
    -admin
-   -Nuevoamb13nt3.2023
+   -Nuevoamb13nt3.2024
 
 
 
