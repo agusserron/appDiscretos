@@ -1,4 +1,4 @@
-# SDA-RD
+# SRD
 Sistema de Datos Ambientales- Recepción Discreta
 
 ## Test : 172.28.110.33/angular_testing/SRD
