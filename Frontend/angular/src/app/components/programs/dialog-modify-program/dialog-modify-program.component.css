@@ -1,0 +1,273 @@
+.title {
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+    font-family: Roboto, helvetica neue, Arial, sans-serif;
+  }
+  
+  section {
+    display: table;
+  }
+  
+  .stteperItem {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mat-form-field,
+  .mat-checkbox {
+    margin-bottom: 16px; 
+  }
+  
+  
+  h2 {
+    margin-top: 24px; 
+  }
+  
+  .parameters-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    margin-bottom: 100px;
+  }
+  
+  .parameters-column, .selected-options {
+    flex: 1; 
+    min-width: 0;
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .scrollable-list {
+    max-height: 300px; 
+    overflow-y: auto;
+    overflow-x: hidden; 
+  }
+  
+  .mat-chip-list {
+    max-height: 200px; 
+    overflow-y: auto; 
+  }
+  
+  .mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: center; /* Centrar los elementos verticalmente */
+    gap: 10px; /* Espacio entre el checkbox y el botón */
+    margin-bottom: 0; /* Sobrescribir el margen inferior si es necesario */
+    max-height: 100px; 
+  }
+  
+  .comboCtrl {
+    margin-top: 2%;
+    display: inline-grid;
+    width: 25%;
+  }
+  
+  .contenedor {
+    display: flex;
+    margin-top: 2%;
+    width: 90%;
+  }
+  
+  .bloqueIzq {
+    display: inline-grid;
+    width: 26%;
+  }
+  
+  .bloqueDer {
+    width: 26%;
+  }
+  
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .mat-form-field-infix {
+    display: flex;
+  }
+  
+  .mat-hint{
+    font-size: 15px;
+  }
+  
+  
+  .mat-form-field.subItemField,
+  .mat-checkbox.subItemField {
+    margin-bottom: 0; 
+  }
+  
+  .mat-form-field {
+    max-width: 300px; 
+  }
+  
+  .form-fields-container {
+    display: flex;
+    gap: 15px; 
+  }
+  
+  .mat-form-field {
+    flex: 1; 
+  }
+  .formulario {
+    border: solid 0px;
+    border-radius: 30px;
+    margin: 1%;
+    background-color: white;
+    text-align: left;
+    height: 90%;
+  }
+  
+  
+  .animate__animated.animate__backInDown {
+    text-align: center;
+    margin-top: 1%
+  }
+  
+  .fila {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .columna1,
+  .columna2 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .columna1 {
+      width: 50%;
+    }
+  
+    .columna2 {
+      width: 50%;
+    }
+  }
+  
+  .separator {
+    border: none; 
+    height: 2px; 
+    background-color: #494848c2; 
+    margin: 20px 0; 
+  }
+  
+  .subItemField {
+    width: 100%;
+  }
+  
+  .stteperItem {
+    background-color: rgb(255, 255, 255);
+    border: solid 0px;
+    border-radius: 30px;
+    margin-top: 1%;
+  }
+  
+  
+  .mat-dialog-actions{
+    margin-bottom: 10px;
+  }
+  
+  .mat-dialog-content{
+    min-height: 550px;
+  }
+  
+  .dialog-container {
+    position: relative; 
+    padding: 10px;
+  }
+  
+  
+  .close-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+  }
+  
+  ::ng-deep .mat-button-focus-overlay {
+    display: none !important; 
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .divide{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  
+  
+  .centered-button2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; 
+    margin-top: 20px;
+  }
+   
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .button-fijo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; 
+    bottom: 40px; 
+    width: 100%; 
+    padding: 10px;
+  }
+  
+  .mat-dialog-container {
+    max-height: 600px !important; 
+  }
+  
+  .button-and-alert-container {
+    display: flex;
+    align-items: center; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    gap: 10px;
+    min-height: 80px;
+  }
+  
+  .alertBox{
+    width: auto; 
+    margin: 0;
+  }
+
+  .separator-container { 
+    position: relative; 
+    margin: 20px 0; 
+    width: 100%;
+  }
+  
+  .colum { 
+    min-height: 400px;
+  }
+   

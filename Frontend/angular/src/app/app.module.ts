@@ -48,6 +48,7 @@ import { InstitucionesAguaComponent } from './components/instituciones-agua/inst
 import { DialogAgregarInstAguaComponent } from './components/instituciones-agua/dialog-add/dialog-add.component';
 import { DialogEditarInstAguaComponent } from './components/instituciones-agua/dialog-modify/dialog-modify.component';
 import { DialogDeleteInstAguaComponent } from './components/instituciones-agua/dialog-delete/dialog-delete.component';
+import { DialogModifyProgramComponent } from './components/programs/dialog-modify-program/dialog-modify-program.component';
 
 
 
@@ -90,7 +91,8 @@ import { DialogDeleteInstAguaComponent } from './components/instituciones-agua/d
     DialogAgregarInstAguaComponent,
     DialogEditarInstAguaComponent,
     DialogDeleteInstAguaComponent,
-    ParametrosAguaComponent
+    ParametrosAguaComponent,
+    DialogModifyProgramComponent
 
   ],
   imports: [

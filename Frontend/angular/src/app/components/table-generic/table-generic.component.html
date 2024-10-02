@@ -34,13 +34,16 @@
         
         <th mat-header-cell *matHeaderCellDef>Acciones</th>
         <td mat-cell *matCellDef="let element" class="cadaCol">
-          <button mat-icon-button color="warn" (click)="deleteAction(element)" *ngIf="element.userStatus === undefined || !esFilaDesactivada(element)">
+          <button mat-icon-button color="warn" (click)="deleteAction(element)" *ngIf="dialogComponents[0] && (element.userStatus === undefined || !esFilaDesactivada(element))">
             <mat-icon>delete</mat-icon>
           </button>
-          <button mat-icon-button color="primary" (click)="editAction(element)" *ngIf="element.userStatus === undefined || !esFilaDesactivada(element)">
+          <button mat-icon-button color="primary" (click)="editAction(element)" *ngIf="dialogComponents[1] && (element.userStatus === undefined || !esFilaDesactivada(element))">
             <mat-icon>edit</mat-icon>
-          </button>       
-          <button mat-icon-button color="primary" (click)="userDelete(element)" *ngIf="element.userStatus !== undefined && esFilaDesactivada(element)">
+          </button>
+          <button mat-icon-button color="primary" (click)="editActionProgram(element)" *ngIf="dialogComponents[3] && (element.userStatus === undefined || !esFilaDesactivada(element))">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button color="primary" (click)="userDelete(element)" *ngIf="dialogComponents[2] && element.userStatus !== undefined && esFilaDesactivada(element)">
             <mat-icon>feedback</mat-icon>
           </button>
         </td>

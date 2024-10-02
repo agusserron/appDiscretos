@@ -1,0 +1,3 @@
+{"level":"info","message":"GET getCompanies from database/username: admin","timestamp":"2024-09-24 11:22:18"}
+{"level":"info","message":"GET getParameters from database/username: admin","timestamp":"2024-09-24 11:22:18"}
+{"level":"info","message":"GET getUnits from database/username: admin","timestamp":"2024-09-24 11:22:18"}

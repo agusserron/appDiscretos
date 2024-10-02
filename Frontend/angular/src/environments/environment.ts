@@ -2,7 +2,7 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-//const baseIP = "http://172.20.110.33:3005";
+//const baseIP = "http://172.28.110.33:3005";
 const baseIP = "http://localhost:3005";
 
 export const environment = {

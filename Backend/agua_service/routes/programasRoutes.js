@@ -8,6 +8,7 @@ router.getAsync('/parametros', porgramaController.getProgramasParametros);
 router.getAsync('/:programId', porgramaController.getEstacionesPrograma); 
 router.put('/data', porgramaController.updateProgramStatus);
 router.postAsync('/programa', porgramaController.addProgram);
+router.getAsync('/parametrosPrograma', porgramaController.getParamProgram);
 
 
 export default router
