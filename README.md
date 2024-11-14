@@ -46,8 +46,8 @@ DB_PASSWORD = pass
    -node index.js 
 
 3. Usuario de test : 
-   -admin
-   -Nuevoamb13nt3.2023
+   -admin_srd
+   -P4sw0rd.05
 
 
 
